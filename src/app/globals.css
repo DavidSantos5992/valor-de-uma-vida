@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.cdnfonts.com/css/open-sans');
+
+.text-shadow {
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.45);
+}

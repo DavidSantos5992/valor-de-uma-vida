@@ -1,10 +1,53 @@
-import React from 'react';
+'use client'
+
+import Link from 'next/link';
+import Button from '../Button';
+import Image from 'next/image';
+import logo from '../../../public/images/header_Logo.svg'
 
 export default function Header() {
 
-    return(
-        <header className='w-full h-[75px] flex items-center bg-white shadow-md font-bold font-sans uppercase box-border pl-[24px] pr-[24px] '>
-            <h1>valor de uma vida</h1>
+    const respawn = () => {
+        console.log('teste')
+    }
+
+    return (
+        <header className='w-full h-[75px] flex items-center justify-between shadow-md font-bold font-sans uppercase box-border pl-[24px] pr-[24px] bg-white'>
+
+            <div className=' w-[33.33%]  flex items-center'>
+                <Image src={logo} alt="logo valor de uma vida" className='w-[55.8px] mr-[20px] text-shadow' />
+                <h1 className='font-sans text-[16px]   text-black text-shadow'>Valor de uma vida</h1>
+            </div>
+
+            <nav className='flex  w-[33.33%] '>
+
+                <Link className='mr-[27px]' href={'/'}>
+                    início
+                </Link>
+
+                <Link className='mr-[27px]' href={'/'}>
+                    sobre nós
+                </Link>
+
+                <Link className='mr-[27px]' href={'/'}>
+                    parceiros
+                </Link>
+
+                <Link className='mr-[27px]' href={'/'}>
+                    notícias
+                </Link>
+
+                <Link className='mr-[0]' href={'/'}>
+                    contato
+                </Link>
+
+            </nav>
+
+            <div className=' w-[33.33%] flex justify-end '>
+                <Button className=" w-[158px] h-[34px] text-[15px] bg-yellow-400 shadow-md rounded-[20px] uppercase" title={'seja parceiro'} onPress={() => respawn()} />
+            </div>
+
+
         </header>
     )
 }
