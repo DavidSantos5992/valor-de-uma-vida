@@ -7,3 +7,21 @@
 .text-shadow {
     text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.45);
 }
+
+.background-Fundo {
+    background: rgba(26, 26, 26, 0.456)
+}
+
+.custom-clip-path {
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.box-shadow-custom {
+  box-shadow: 0px 100px 400px rgb(255, 0, 0);
+}
+
+
+
+
+
+

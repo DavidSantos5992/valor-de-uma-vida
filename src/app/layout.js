@@ -1,4 +1,7 @@
 import './globals.css'
+import Image from 'next/image'
+import logo from '../../public/images/hero_Logo.svg'
+import fundo from '../../public/images/FundoLayout.png'
 import Header from "@/components/Header"
 
 export const metadata = {
@@ -10,10 +13,44 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
+
         <Header />
 
+        <div className='w-full h-[688px] flex items-center relative box-border '>
+
+          <Image className='w-full h-full object-cover absolute top-0 left-0'
+            src={fundo}
+            alt='Fundo estatic da pagina'
+          />
+
+
+          <div className='w-full h-[100%] flex items-center relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'>
+
+            <div className='flex items-center '>
+              <Image className='w-[135px] h-[135px]' src={logo} alt='Logo valor de uma vida' />
+              <h2 className='ml-[20px] font-bold font-sans uppercase ext-[28px] text-white text-shadow'>valor de uma vida</h2>
+            </div>
+
+            <div className='w-[48%] h-[100%]  absolute right-0  bg-layoutClipPath box-shadow-custom custom-clip-path'>
+
+              <div className='w-full h-full relative'>
+
+                <h1 className='max-w-[360px] absolute right-[25px] top-[45%] text-[16px] uppercase leading-[27px] text-white font-sans font-bold text-end whitespace-wrap'>
+                  desde 2014 prestando auxílio  a pessoas com Vulnerabilidades sociais e portadoras de diversas doenças crônicas Em várzea Paulista
+                </h1>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
         {children}
-        
+
       </body>
     </html>
   )
