@@ -39,6 +39,8 @@ export default function RootLayout({ children }) {
                   desde 2014 prestando auxílio  a pessoas com Vulnerabilidades sociais e portadoras de diversas doenças crônicas Em várzea Paulista
                 </h1>
 
+                
+
               </div>
 
             </div>

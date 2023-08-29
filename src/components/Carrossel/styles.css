@@ -1,0 +1,70 @@
+.carroselContainer {
+    width: 97%;
+    height: 515px;
+    margin: 40px 0 40px 24px;
+    background: red;
+}
+
+
+.carrosel {
+    background: green;
+    display: flex;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+.carrosel::-webkit-scrollbar {
+    display: none;
+    }
+
+
+.carrosel .item {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    width: 280px;
+    flex: none;
+}
+
+.carrosel .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrosel .item .info {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carrosel .item .info span {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.carrosel .item .info .name {
+    font-size: 1rem;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.buttons button:nth-child(1) {
+    margin-right: 30px;
+}
+
+
+
