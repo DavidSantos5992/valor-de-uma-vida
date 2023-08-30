@@ -20,12 +20,13 @@ export default function Carrossel() {
     const handleRightClick = (e) => {
         console.log('r', carousel.current.offsetWidth)
         carousel.current.scrollLeft += carousel.current.offsetWidth
-
     }
 
     return (
 
         <div className="carroselContainer">
+
+            <h1 className='font-sans'>campanhas</h1>
 
             <div className="carrosel" ref={carousel}>
 
@@ -56,6 +57,33 @@ export default function Carrossel() {
                     </div>
 
                 </div>
+                <div className="item">
+                    <div className="image">
+                        <Image src={img2} />
+                    </div>
+
+                </div>
+
+                <div className="item">
+                    <div className="image">
+                        <Image src={img3} />
+                    </div>
+
+                </div>
+
+                <div className="item">
+                    <div className="image">
+                        <Image src={img} />
+                    </div>
+
+                </div>
+
+                <div className="item">
+                    <div className="image">
+                        <Image src={img2} />
+                    </div>
+
+                </div>
 
                 <div className="item">
                     <div className="image">
@@ -67,7 +95,6 @@ export default function Carrossel() {
              
 
             </div>
-
 
             <button className='leftClick' onClick={handleLeftClick}>
                 <Image src={arrow_Left} />

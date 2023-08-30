@@ -16,7 +16,7 @@ export default function Header() {
 
             <div className=' w-[33.33%]  flex items-center'>
                 <Image src={logo} alt="logo valor de uma vida" className='w-[55.8px] mr-[20px] text-shadow' />
-                <h1 className='font-sans text-[16px]   text-black text-shadow'>Valor de uma vida</h1>
+                <strong className='font-sans text-[16px] font-bold  text-black text-shadow'>Valor de uma vida</strong>
             </div>
 
             <nav className='flex  w-[33.33%] '>

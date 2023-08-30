@@ -3,6 +3,7 @@ import Image from 'next/image'
 import logo from '../../public/images/hero_Logo.svg'
 import fundo from '../../public/images/FundoLayout.png'
 import Header from "@/components/Header"
+import { lazy, Suspense } from 'react'
 
 export const metadata = {
   title: 'Valor de uma vida',
@@ -35,8 +36,8 @@ export default function RootLayout({ children }) {
 
               <div className='w-full h-full relative'>
 
-                <h1 className='max-w-[360px] absolute right-[25px] top-[45%] text-[16px] uppercase leading-[27px] text-white font-sans font-bold text-end whitespace-wrap'>
-                  desde 2014 prestando auxílio  a pessoas com Vulnerabilidades sociais e portadoras de diversas doenças crônicas Em várzea Paulista
+                <h1 className='max-w-[517px] text-shadow absolute right-[25px] top-[43%] text-[21px] uppercase leading-[27px] text-white font-sans font-bold text-end whitespace-wrap'>
+                  desde 2014 prestando auxílio <br /> a pessoas com <strong className='text-yellow-300'> Vulnerabilidades sociais</strong> e portadoras de diversas <strong className='text-yellow-300'>doenças crônicas</strong> Em <strong>várzea Paulista</strong>
                 </h1>
 
                 
