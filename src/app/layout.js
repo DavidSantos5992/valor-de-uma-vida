@@ -1,7 +1,7 @@
 import './globals.css'
 import Image from 'next/image'
 import logo from '../../public/images/hero_Logo.svg'
-import fundo from '../../public/images/FundoLayout.png'
+import fundo from '../../public/images/hero_Image.svg'
 import Header from "@/components/Header"
 import { lazy, Suspense } from 'react'
 
@@ -19,11 +19,10 @@ export default function RootLayout({ children }) {
 
         <div className='w-full h-[688px] flex items-center relative box-border '>
 
-          <Image className='w-full h-full object-cover absolute top-0 left-0'
+          <Image className=' h-full object-cover absolute top-0 left-0'
             src={fundo}
-            alt='Fundo estatic da pagina'
+            alt='Fundo estatico da pagina'
           />
-
 
           <div className='w-full h-[100%] flex items-center relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'>
 
@@ -40,15 +39,11 @@ export default function RootLayout({ children }) {
                   desde 2014 prestando auxílio <br /> a pessoas com <strong className='text-yellow-300'> Vulnerabilidades sociais</strong> e portadoras de diversas <strong className='text-yellow-300'>doenças crônicas</strong> Em <strong>várzea Paulista</strong>
                 </h1>
 
-                
-
               </div>
 
             </div>
 
           </div>
-
-
 
         </div>
 
