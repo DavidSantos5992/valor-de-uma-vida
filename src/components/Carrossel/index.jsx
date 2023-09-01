@@ -35,7 +35,14 @@ export default function Carrossel() {
             photo: img3,
             text: '',
             alt: 'Camapanha de dia das crinaças valor de uma vida'
-        }
+        },
+        {
+            name: 'dia das crianças',
+            type: 'campanha',
+            photo: img3,
+            text: '',
+            alt: 'Camapanha de dia das crinaças valor de uma vida'
+        },
 
     ])
 

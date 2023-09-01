@@ -12,7 +12,7 @@ export default function Header() {
     }
 
     return (
-        <header className='w-full h-[75px] flex items-center justify-between shadow-md font-bold font-sans uppercase box-border pl-[24px] pr-[24px] bg-white'>
+        <header className='w-full h-[75px] flex items-center justify-between shadow-md font-bold font-sans uppercase box-border pl-[24px] pr-[24px] fixed z-20 bg-white'>
 
             <div className=' w-[33.33%]  flex items-center'>
                 <Image src={logo} alt="logo valor de uma vida" className='w-[55.8px] mr-[20px] text-shadow' />
