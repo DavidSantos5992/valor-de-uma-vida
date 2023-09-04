@@ -11,6 +11,7 @@ module.exports = {
         'layoutClipPath2': ' #05C7F2',
         'layoutClipPath3': ' #05D65E',
         'layoutClipPath4': ' #F2E205',
+        'facaColaboracao': ' #78F0AB',
       },
     },
   },

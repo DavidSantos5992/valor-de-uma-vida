@@ -29,7 +29,6 @@ img {
     clip-path: polygon(100% 0, 0 38.5%, 100% 100%);
 }
 
-
 .box-shadow-custom {
   box-shadow: 0px 100px 400px rgb(255, 0, 0);
 }
