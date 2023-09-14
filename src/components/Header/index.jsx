@@ -44,7 +44,10 @@ export default function Header() {
             </nav>
 
             <div className=' w-[33.33%] flex justify-end '>
-                <Button className=" w-[158px] h-[34px] text-[15px] bg-yellow-400 shadow-md rounded-[20px] uppercase" title={'seja parceiro'} onPress={() => respawn()} />
+                <Button className=" w-[158px] h-[34px] text-[15px] bg-yellow-400 shadow-md rounded-[20px] uppercase"
+                    title={'seja parceiro'}
+                    onPress={() => respawn()}
+                />
             </div>
 
 

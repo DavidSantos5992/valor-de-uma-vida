@@ -9,21 +9,19 @@ import img3 from '../../../public/images/cards carrosel/campaigns_Item_03.png'
 import arrow_Left from '../../../public/images/arrow_Left.svg'
 import arrow_Right from '../../../public/images/arrow_Right.svg'
 
-export default function Carrossel() {
+export default function Carrossel({ title, className, type }) {
 
     const [itemsCarrosel, setItemsCarrosel] = useState([
 
         {
             name: 'natal',
-            type: 'campanha',
             photo: img,
             text: '',
             alt: 'Camapanha de natal valor de uma vida'
         },
-     
+
         {
             name: 'inverno',
-            type: 'campanha',
             photo: img2,
             text: '',
             alt: 'Camapanha de inverno valor de uma vida'
@@ -31,14 +29,13 @@ export default function Carrossel() {
 
         {
             name: 'dia das crianças',
-            type: 'campanha',
             photo: img3,
             text: '',
             alt: 'Camapanha de dia das crinaças valor de uma vida'
         },
+
         {
             name: 'dia das crianças',
-            type: 'campanha',
             photo: img3,
             text: '',
             alt: 'Camapanha de dia das crinaças valor de uma vida'
@@ -58,39 +55,52 @@ export default function Carrossel() {
     }
 
     const handleClickCarrosel = (k) => {
-        console.log('clicou',k)
+        console.log('clicou', k)
     }
 
     return (
 
-        <div className="carroselContainer">
+        <div className={className}>
 
-            <h1 className='font-sans'>campanhas</h1>
+            <div className="carroselContainer">
 
-            <div className="carrosel" ref={carousel}>
+                <h1 className='font-sans'>{title}</h1>
 
-                {itemsCarrosel.map((item,key) =>
-                    
-                    <div onClick={()=>handleClickCarrosel(key)} key={key} className="item">
+                <div className="carrosel" ref={carousel}>
 
-                        <div className="image">
-                            <Image src={item.photo} alt='foto' />
-                        </div>
-                        
-                    </div>
+                    {
+                        type === 'card' && (
+                            <>
+                                {
+                                    itemsCarrosel.map((item, key) =>
 
-                )}
+                                        <div onClick={() => handleClickCarrosel(key)} key={key} className="item">
+
+                                            <div className="image">
+                                                <Image src={item.photo} alt='foto' />
+                                            </div>
+
+                                        </div>
+
+                                    )
+                                }
+                            </>
+                        )
+                    }
+
+
+                </div>
+
+                <button className='leftClick' onClick={handleLeftClick}>
+                    {<Image src={arrow_Left} alt='Seta para esquerda' />}
+                </button>
+
+                <button className='rightClick' onClick={handleRightClick} >
+                    {<Image src={arrow_Right} alt='Seta para direita' />}
+                </button>
+
 
             </div>
-
-            <button className='leftClick' onClick={handleLeftClick}>
-                {<Image src={arrow_Left} alt='Seta para esquerda' />}
-            </button>
-
-            <button className='rightClick' onClick={handleRightClick} >
-                {<Image src={arrow_Right} alt='Seta para direita' />}
-            </button>
-
 
         </div>
 
