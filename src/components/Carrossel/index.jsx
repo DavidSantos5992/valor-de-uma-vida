@@ -43,6 +43,44 @@ export default function Carrossel({ title, className, type }) {
 
     ])
 
+    const [news, setNews] = useState([
+
+        {
+            title: 'lorem ipsum',
+            photo: img3,
+            alt: '',
+            text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
+            url: ''
+        },
+
+        {
+            title: 'lorem ipsum',
+            photo: img3,
+            alt: '',
+            text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
+            url: ''
+        },
+
+        {
+            title: 'lorem ipsum',
+            photo: img3,
+            alt: '',
+            text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
+            url: ''
+        },
+
+        {
+            title: 'lorem ipsum',
+            photo: img3,
+            alt: '',
+            text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
+            url: ''
+        },
+
+
+
+    ])
+
     const carousel = useRef(null)
 
     const handleLeftClick = (e) => {
@@ -77,7 +115,7 @@ export default function Carrossel({ title, className, type }) {
                                         <div onClick={() => handleClickCarrosel(key)} key={key} className="item">
 
                                             <div className="image">
-                                                <Image src={item.photo} alt='foto' />
+                                                <Image src={item.photo} alt={item.alt} />
                                             </div>
 
                                         </div>
@@ -86,6 +124,32 @@ export default function Carrossel({ title, className, type }) {
                                 }
                             </>
                         )
+                    }
+
+                    {
+                        type === 'news' && (
+                            <>
+                                {
+                                    news.map((item, key) =>
+
+                                        <div onClick={() => handleClickCarrosel(key)} key={key} className="w-[358px] h-[528px] flex items-center justify-center ml-[10px] mr-[80px] rounded-[20px]">
+
+                                            <div className='w-[338px] h-[520px] bg-white box-border pr-[29px] pl-[29px] pt-[22.8px] shadow-black shadow-md rounded-[20px] overflow-hidden'>
+                                                <Image className='w-[280px] h-60  rounded-[10px]' src={item.photo} alt={item.alt} />
+                                                
+                                                <h3 className='text-black text-[21px] font-sans font-bold uppercase leading-loose mb-[5px]' >{item.title}</h3>
+                                                <p className='text-black text-base font-normal h-[165px]  overflow-hidden font-sans leading-normal'>{item.text}   </p>
+
+                                            </div>
+
+                                        </div>
+
+                                    )
+                                }
+                            </>
+                        )
+
+
                     }
 
 

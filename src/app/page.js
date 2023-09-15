@@ -3,10 +3,11 @@ import SectionPhoto from "@/components/SectionPhoto"
 export default function Home() {
   return (
     <>
-      <Carrossel type={'card'} className={'w-[1216px] h-[515px] ml-auto mr-auto '} title={'campanhas'} />
+      <Carrossel title={'campanhas'} type={'card'} className={'w-[1216px] h-[515px] ml-auto mr-auto '}  />
+      
       <SectionPhoto />
 
-      {/* <Carrossel type={'news'} className={'w-full h-[528px] bg-red-500 absolute top-[3300px] flex items-center justify-center z-10 '}/> */}
+      <Carrossel title={'noticias'} type={'news'} className={'w-[1216px]  h-[637px]  absolute  left-[20%] z-20 top-[3320px] box-border  '}/>
 
     </>
   )

@@ -4,9 +4,7 @@
     height: 100%;
     margin: auto;
     margin-top: 40px;
-    margin-bottom: 24px;
     position: relative;
-    /* background: red; */
 }
 
 .carroselContainer h1 {
@@ -18,9 +16,8 @@
     font-size: 38px;
     font-style: normal;
     font-weight: 700;
-    line-height: 76.5px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -31,9 +28,6 @@
     user-select: none;
     margin-left: 6px;
     box-sizing: border-box;
-    /* background: green; */
-    /* padding-bottom: 70px; */
-    /* border-bottom: solid 2px black; */
 }
 
 .carrosel::-webkit-scrollbar {
@@ -52,12 +46,10 @@
 .carrosel .item:last-child {
     margin: 0px;
     margin-right: 30px;
-    /* background-color: greenyellow; */
 }
 
 .carrosel .item:first-child {
     margin-left: 30px;
-    /* background-color: greenyellow; */
 }
 
 
@@ -88,7 +80,6 @@
 .leftClick img,
 .rightClick img {
     width: 50px;
-    /* height: 25px; */
 }
 
 
@@ -97,7 +88,6 @@
     left: -5%;
     top: 25%;
     position: absolute;
-    /* background: greenyellow; */
 }
 
 .rightClick {
@@ -105,5 +95,4 @@
     position: absolute;
     top: 25%;
     right: -5%;
-    /* background: greenyellow; */
 }

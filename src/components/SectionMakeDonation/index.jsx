@@ -14,9 +14,9 @@ export default function SectionMakeDonation() {
 
     return (
 
-        <section className='w-[500px] h-[1054px] flex flex-col items-center shadow-black shadow-lg box-border pt-[250px] border-none rounded-[30px] mb-[50px] absolute top-[3620px] right-[116px] bg-facaColaboracao z-0'>
+        <section className='w-[500px] h-[1194px] flex flex-col items-center shadow-black shadow-lg box-border pt-[250px] border-none rounded-[30px] mb-[50px] absolute top-[3580px] right-[116px] bg-facaColaboracao z-0'>
 
-            <div>
+            <div className='mt-[160px]'>
                 <Image src={logo}
                     className='w-[142px] h-[142px] ml-auto mb-[14px] mr-auto'
                     alt='Logo Valor de Uma Vida'
@@ -28,7 +28,7 @@ export default function SectionMakeDonation() {
                 <p className='text-center text-base text-[21px] font-bold uppercase text-shadow text-gray-800 not-italic'>Várzea Paulista - sp </p>
             </address>
 
-            <h3 className='text-[28px] text-shadow font-bold font-sans uppercase mt-[20px] mb-[54px]'>faça uma colaboração</h3>
+            <h3 className='text-[28px] text-shadow font-bold font-sans uppercase mt-[20px] mb-[45px]'>faça uma colaboração</h3>
 
             <Image className='w-[200px] h-auto mb-[54px] '
                 src={qrCode}
