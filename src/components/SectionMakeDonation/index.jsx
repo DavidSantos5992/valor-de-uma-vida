@@ -40,8 +40,7 @@ export default function SectionMakeDonation() {
                 <Image className='w-[30px] h-auto' src={iconWhatsApp} alt='Whatsapp - Valor de Uma Vida' />
             </div>
 
-            <Button className='w-[214px] h-[42px] rounded-[20px] font-sans text-[21px] font-semibold bg-sectionButton flex items-center justify-center mt-auto mb-auto' title={'Faça a Diferença'} onPress={()=> handleButton()}/>
+            <Button className='w-[214px] h-[42px] rounded-[20px] font-sans text-[21px] font-semibold bg-sectionButton flex items-center justify-center mt-auto mb-auto' title={'Faça a Diferença'} onPress={() => handleButton()} />
         </section>
-        
     )
 }

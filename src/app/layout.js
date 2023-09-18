@@ -75,6 +75,8 @@ export default function RootLayout({ children }) {
         <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute top-[2650px] rotate-[72deg] z-0'></div>
         <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute top-[2790px] rotate-[72deg] z-0'></div>
         <SectionMakeDonation/>
+
+        
       </body>
 
     </html>
