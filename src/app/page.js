@@ -56,11 +56,11 @@ export default function Home() {
 
         <h1 className="w-[484px] h-[60px] mr-auto ml-auto border-b-4 border-stone-900 text-black text-[38px] font-bold font-sans uppercase leading-[76.50px]">Campanhas realizadas</h1>
 
-        <Campaigns campaign={natal} mainColor={'rose-500'} fontColor={'text-rose-500'} />
+        <Campaigns campaign={natal} mainColor={'bg-rose-500'} fontColor={'text-rose-500'} />
 
-        <Campaigns campaign={inverno} mainColor={'sky-800'} fontColor={'text-sky-800'} />
+        <Campaigns campaign={inverno} mainColor={'bg-sky-800'} fontColor={'text-sky-800'} />
 
-        <Campaigns campaign={diaDasCriancas} mainColor={'teal-300'} fontColor={'text-emerald-300'} />
+        <Campaigns campaign={diaDasCriancas} mainColor={'bg-teal-300'} fontColor={'text-emerald-300'} />
 
 
       </section>

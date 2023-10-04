@@ -74,9 +74,28 @@ export default function RootLayout({ children }) {
         <div className='w-[77%] h-[992.668px]  absolute top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
         <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute top-[2650px] rotate-[72deg] z-0'></div>
         <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute top-[2790px] rotate-[72deg] z-0'></div>
-        <SectionMakeDonation/>
+        <SectionMakeDonation />
 
-        
+        <div className='w-full min-h-[600px] absolute top-[6550px] '>
+
+          <div className="w-full min-h-[600px] relative ">
+
+            <div className="w-[1200px] h-[100px] absolute top-16 -left-[400px] bg-yellow-500 -rotate-45 z-0"></div>
+            <div className="w-[1400px] h-[100px] absolute top-[90px] -left-[300px] bg-yellow-500 -rotate-45 z-0"></div>
+            <div className="w-[1000px] h-[500px] absolute -top-[160px] -right-[250px] bg-blue-400 rotate-[36deg] z-0"></div>
+            <div className="w-full absolute top-[384px] bg-red-300 ">
+
+              <h1 className='w-full text-center text-black text-[38px]  font-bold font-sans uppercase leading-[76.50px]'>parceiros</h1>
+
+              <div className=""></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
       </body>
 
     </html>
