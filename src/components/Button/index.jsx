@@ -1,4 +1,4 @@
-
+'use client'
 function Button({ className, title, onPress }) {
 
     const handleClick = () => {
