@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import About from '@/components/About';
 import Button from '@/components/Button';
 import SectionMakeDonation from '@/components/SectionMakeDonation';
@@ -46,10 +47,12 @@ export default function RootLayout({ children }) {
   return (
 
     <html lang="pt-br">
+
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
+
       <body>
 
         <Header />
@@ -143,11 +146,9 @@ export default function RootLayout({ children }) {
 
               </div>
 
+              <Footer />
+
             </div>
-
-
-
-
 
           </div>
 

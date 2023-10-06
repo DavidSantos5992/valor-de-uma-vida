@@ -30,18 +30,12 @@ img {
 }
 
 .box-shadow-custom {
-  box-shadow: 0px 100px 400px rgb(255, 0, 0);
+    box-shadow: 0px 100px 400px rgb(255, 0, 0);
 }
 
 body {
     overflow-x: hidden;
 }
 
-.teste {
-    background-color: red;
-}
 
-
-
-
-
+/* ------ */
