@@ -119,11 +119,11 @@ export default function RootLayout({ children }) {
 
               <h1 className='w-full mb-[180px] text-center text-black text-[38px]  font-bold font-sans uppercase leading-[76.50px]'>parceiros</h1>
 
-              <div className="flex flex-wrap mb-[288px]">
+              <div className="flex flex-wrap mb-[288px] ">
 
                 {partners.map((element, index) => (
 
-                  <Image className="w-[200px] ml-[59px] mr-[50px]" key={index} src={element.image} alt={element.name} />
+                  <Image className="w-[200px] ml-auto mr-auto" key={index} src={element.image} alt={element.name} />
 
                 ))}
               </div>
