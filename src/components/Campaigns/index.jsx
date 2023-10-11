@@ -50,7 +50,7 @@ export default function Campaigns({ campaign, mainColor, fontColor }) {
 
                         <div key={index} className='w-[290px] h-[290px] flex items-center justify-center rounded-[35px] mr-[30px] overflow-hidden'>
 
-                            <Image alt={campaign.alt} className=' w-[282px] h-[282px] rounded-[35px]' src={element} />
+                            <Image alt={campaign.alt} className=' w-[282px] h-auto rounded-[35px]' src={element} />
 
                         </div>
 
