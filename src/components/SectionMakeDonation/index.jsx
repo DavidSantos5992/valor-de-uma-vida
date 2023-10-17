@@ -82,6 +82,7 @@ export default function SectionMakeDonation() {
                             />
 
                             <p className={`text-[21px] ml-[20px] text-shadow font-bold font-Sans uppercase leading-loose ${doence.color}`}>{doence.name}</p>
+                            
                         </div>
 
                     ))

@@ -1,5 +1,5 @@
 'use client'
-import { React, useRef, useState } from 'react';
+import { React, useRef, useState, useEffect } from 'react';
 import './styles.css'
 import Image from 'next/image';
 import img from '../../../public/images/cards carrosel/campaigns_Item_01.png'
@@ -33,7 +33,6 @@ export default function Carrossel({ title, className, type }) {
             text: '',
             alt: 'Camapanha de dia das crinaças valor de uma vida'
         },
-
         {
             name: 'dia das crianças',
             photo: img3,
@@ -85,15 +84,81 @@ export default function Carrossel({ title, className, type }) {
 
     const handleLeftClick = (e) => {
         carousel.current.scrollLeft -= carousel.current.offsetWidth
-
     }
 
     const handleRightClick = (e) => {
-        carousel.current.scrollLeft += carousel.current.offsetWidth
+        console.log('Clicou no botão direito');
+        carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
 
     const handleClickCarrosel = (k) => {
         console.log('clicou', k)
+    }
+
+    /* -------------------- */
+
+    function CustomCarousel(props) {
+        const slider = useRef(null);
+        let isDown = useRef(false);
+        let startX = useRef(null);
+        let scrollLeft = useRef(null);
+
+        useEffect(() => {
+            if (slider && slider.current) {
+                let sliderRef = slider.current;
+                sliderRef.addEventListener("mousedown", one);
+                sliderRef.addEventListener("mousedown", two);
+                sliderRef.addEventListener("mouseleave", three);
+                sliderRef.addEventListener("mouseup", four);
+                sliderRef.addEventListener("mousemove", five);
+
+                return () => {
+                    sliderRef.removeEventListener("mousedown", one);
+                    sliderRef.removeEventListener("mousedown", two);
+                    sliderRef.removeEventListener("mouseleave", three);
+                    sliderRef.removeEventListener("mouseup", four);
+                    sliderRef.removeEventListener("mousemove", five);
+                };
+            }
+        }, []);
+
+        function one(e) {
+            isDown.current = true;
+            startX.current = e.pageX - slider.current.offsetLeft;
+            scrollLeft.current = slider.current.scrollLeft;
+        }
+
+        function two(e) {
+            isDown.current = true;
+            startX.current = e.pageX - slider.current.offsetLeft;
+            scrollLeft.current = slider.current.scrollLeft;
+        }
+
+        function three() {
+            isDown.current = false;
+        }
+
+        function four() {
+            isDown.current = false;
+        }
+
+        function five(e) {
+            if (!isDown.current) return;
+            e.preventDefault();
+            const x = e.pageX - slider.current.offsetLeft;
+            const walk = x - startX.current;
+            slider.current.scrollLeft = scrollLeft.current - walk;
+        }
+
+        return (
+            <div className="carrosel" ref={slider}>
+                {props.children}
+            </div>
+        );
+    }
+
+    function Box({ index }) {
+        return <div className="box">Box {index}</div>;
     }
 
     return (
@@ -104,39 +169,44 @@ export default function Carrossel({ title, className, type }) {
 
                 <h1 className='font-sans'>{title}</h1>
 
-                <div className="carrosel" ref={carousel}>
 
-                    {
-                        type === 'card' && (
-                            <>
-                                {
-                                    itemsCarrosel.map((item, key) =>
+                {
+                    type === 'card' && (
 
-                                        <div onClick={() => handleClickCarrosel(key)} key={key} className="item">
 
-                                            <div className="image">
-                                                <Image src={item.photo} alt={item.alt} />
-                                            </div>
+                        <CustomCarousel>
 
-                                        </div>
+                            {
+                                itemsCarrosel.map((item, key) =>
 
-                                    )
-                                }
-                            </>
-                        )
-                    }
+                                    <div onClick={() => handleClickCarrosel(key)} key={key} className="box">
 
-                    {
-                        type === 'news' && (
-                            <>
+                                        <Image className='w-[336px] h-[336px]' src={item.photo} alt={item.alt} />
+
+                                    </div>
+
+                                )
+                            }
+
+                        </CustomCarousel>
+
+                    )
+                }
+
+                {
+                    type === 'news' && (
+                        <>
+                            <CustomCarousel>
+
                                 {
                                     news.map((item, key) =>
 
-                                        <div onClick={() => handleClickCarrosel(key)} key={key} className="w-[358px] h-[528px] flex items-center justify-center ml-[10px] mr-[80px] rounded-[20px]">
+                                        <div onClick={() => handleClickCarrosel(key)} key={key} className=" w-[358px] h-[528px] flex items-center justify-center ml-[10px] mr-[80px] rounded-[20px]">
 
                                             <div className='w-[338px] h-[520px] bg-white box-border pr-[29px] pl-[29px] pt-[22.8px] shadow-black shadow-md rounded-[20px] overflow-hidden'>
-                                                <Image className='w-[280px] h-60  rounded-[10px]' src={item.photo} alt={item.alt} />
-                                                
+                                                <Image src={item.photo} alt={item.alt} priority={true} />
+
+
                                                 <h3 className='text-black text-[21px] font-sans font-bold uppercase leading-loose mb-[5px]' >{item.title}</h3>
                                                 <p className='text-black text-base font-normal h-[165px]  overflow-hidden font-sans leading-normal'>{item.text}   </p>
 
@@ -146,14 +216,12 @@ export default function Carrossel({ title, className, type }) {
 
                                     )
                                 }
-                            </>
-                        )
 
+                            </CustomCarousel>
+                        </>
+                    )
+                }
 
-                    }
-
-
-                </div>
 
                 <button className='leftClick' onClick={handleLeftClick}>
                     {<Image src={arrow_Left} alt='Seta para esquerda' />}
@@ -162,6 +230,9 @@ export default function Carrossel({ title, className, type }) {
                 <button className='rightClick' onClick={handleRightClick} >
                     {<Image src={arrow_Right} alt='Seta para direita' />}
                 </button>
+
+
+
 
 
             </div>

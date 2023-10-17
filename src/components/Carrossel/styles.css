@@ -21,18 +21,19 @@
 }
 
 
-.carrosel {
+/* .carrosel {
     display: flex;
     overflow-y: auto;
     scroll-behavior: smooth;
     user-select: none;
     margin-left: 6px;
     box-sizing: border-box;
+    background: red;
 }
 
 .carrosel::-webkit-scrollbar {
     display: none;
-}
+} */
 
 
 .carrosel .item {
@@ -95,4 +96,42 @@
     position: absolute;
     top: 25%;
     right: -5%;
+}
+
+/* --------------------- */
+
+
+.box {
+    box-sizing: border-box;
+    width: 336px;
+    height: 336px;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.carrosel {
+    position: relative;
+    overflow-x: scroll;
+    height: 528px;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.carrosel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.carrosel::-webkit-scrollbar {
+    display: none;
 }

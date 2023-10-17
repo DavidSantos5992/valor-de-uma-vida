@@ -50,7 +50,9 @@ export default function Home() {
 
       <SectionPhoto />
 
-      <Carrossel title={'noticias'} type={'news'} className={'w-[1216px]  h-[637px]  absolute  left-[20%] z-20 top-[3320px] box-border  '} />
+    <div className="w-[100vw] flex items-center justify-center absolute z-20 top-[3320px] box-border ">
+      <Carrossel title={'noticias'} type={'news'} className={'w-[1216px]  h-[637px] '} />
+    </div>
 
       <section className="w-full h-[1771px]  absolute top-[4837px] box-border pt-[60px] ">
 

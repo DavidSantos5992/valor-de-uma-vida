@@ -67,15 +67,16 @@ export default function RootLayout({ children }) {
           <div className='w-full h-[100%] flex items-center relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'>
 
             <div className='flex items-center '>
-              <Image className='w-[135px] h-[135px]' src={logo} alt='Logo valor de uma vida' />
-              <h2 className='ml-[20px] font-bold font-sans uppercase ext-[28px] text-white text-shadow'>valor de uma vida</h2>
+              <Image className='lg:w-[135px] lg:h-[135px] md:w-[90px] md:h-[90px]' src={logo} alt='Logo valor de uma vida' />
+
+              <h2 className='ml-[20px] font-bold font-sans uppercase lg:text-[28px] md:text-[18px] text-white text-shadow'>valor de uma vida</h2>
             </div>
 
-            <div className='w-[48%] h-[100%]  absolute right-0  bg-layoutClipPath box-shadow-custom custom-clip-path'>
+            <div className='lg:w-[48%] md:w-[60%] h-[100%]  absolute right-0  bg-layoutClipPath box-shadow-custom custom-clip-path'>
 
-              <div className='w-full h-full relative'>
+              <div className='w-full h-full relative bggre900'>
 
-                <h1 className='max-w-[517px] text-shadow absolute right-[25px] top-[43%] text-[21px] uppercase leading-[27px] text-white font-sans font-bold text-end whitespace-wrap'>
+                <h1 className='max-w-[517px] text-shadow absolute right-[25px] top-[43%] lg:text-[21px] md:text-[18px] uppercase leading-[27px] text-white font-sans font-bold text-end whitespace-wrap'>
                   desde 2014 prestando auxílio <br /> a pessoas com <strong className='text-yellow-300'> Vulnerabilidades sociais</strong> e portadoras de diversas <strong className='text-yellow-300'>doenças crônicas</strong> Em <strong>várzea Paulista</strong>
                 </h1>
 
@@ -99,7 +100,8 @@ export default function RootLayout({ children }) {
 
         <div>
           <div className='w-[100%] h-[992.668px]  absolute top-[2513px] left-0  bg-layoutClipPath3 box-shadow-custom custom-clip-left'></div>
-          <About image={escorregador_Valor_de_Uma_Vida} className={'w-[95%] flex justify-between items-center absolute top-[2780px] right-0 z-10'} photo={2} title={'sobre nós'} text={' Nossa equipe conta com pessoas engajadas em fazer o bem ao próximo, e devido a isso, realizamos nosso trabalho com muito amor e carinho aos nossos amigos que precisam de suporte, sejam eles pessoas doentes ou moradores de rua. Com carinho, recebemos todo tipo de auxílio, seja ele financeiro ou em espécie, pois o que realmente importa é o carinho e amor com o próximo.'} />
+          <About image={escorregador_Valor_de_Uma_Vida} className={'w-[95%] flex justify-between items-center absolute top-[2780px] right-0 z-10'} photo={2} title={'sobre nós'} text={' Nossa equipe conta com pessoas engajadas em fazer o bem ao próximo, e devido a isso, realizamos nosso trabalho com muito amor e carinho aos nossos amigos que precisam de suporte, sejam eles pessoas doentes ou moradores de rua. Com carinho, recebemos todo tipo de auxílio, seja ele financeiro ou em espécie, pois o que realmente importa é o carinho e amor com o próximo.'}
+          />
         </div>
 
         <div className='w-[77%] h-[992.668px]  absolute top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
@@ -138,7 +140,10 @@ export default function RootLayout({ children }) {
 
                     <p className="text-white text-[67px] font-bold font-sans uppercase leading-[100.50px] text-shadow mb-[124px] ">Faça Parte Dessa História</p>
 
-                    <Button className='w-[555.37px] h-[67px] shadow-inner bg-yellow-400 shadow-black rounded-[39.59px] justify-center items-center text-black text-[21px] font-bold font-sans uppercase leading-loose' title={'Seja nosso parceiro'} />
+                    <Button
+                      className='w-[555.37px] h-[67px] shadow-inner bg-yellow-400 shadow-black rounded-[39.59px] justify-center items-center text-black text-[21px] font-bold font-sans uppercase leading-loose'
+                      title={'Seja nosso parceiro'}
+                    />
 
                   </div>
 
