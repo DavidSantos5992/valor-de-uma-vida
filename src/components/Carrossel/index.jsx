@@ -151,7 +151,7 @@ export default function Carrossel({ title, className, type }) {
         }
 
         return (
-            <div className="carrosel" ref={slider}>
+            <div className="carrosel lg:h-[528px] md:h-[409px] " ref={slider}>
                 {props.children}
             </div>
         );
@@ -179,9 +179,13 @@ export default function Carrossel({ title, className, type }) {
                             {
                                 itemsCarrosel.map((item, key) =>
 
-                                    <div onClick={() => handleClickCarrosel(key)} key={key} className="box">
+                                    <div
+                                        onClick={() => handleClickCarrosel(key)}
+                                        key={key}
+                                        className="lg:w-[336px] lg:h-[336px] md:w-[220px] md:h-[220px] md:ml-[10px] lg:ml-[20px] rounded-[20px] box-border overflow-hidden"
+                                    >
 
-                                        <Image className='w-[336px] h-[336px]' src={item.photo} alt={item.alt} />
+                                        <Image className='w-full h-full' src={item.photo} alt={item.alt} />
 
                                     </div>
 
@@ -201,10 +205,19 @@ export default function Carrossel({ title, className, type }) {
                                 {
                                     news.map((item, key) =>
 
-                                        <div onClick={() => handleClickCarrosel(key)} key={key} className=" w-[358px] h-[528px] flex items-center justify-center ml-[10px] mr-[80px] rounded-[20px]">
+                                        <div
+                                            onClick={() => handleClickCarrosel(key)}
+                                            key={key}
+                                            className="md:w-[248px] md:h-[408px] lg:w-[358px] lg:h-[528px] flex items-center justify-center ml-[10px] lg:mr-[80px] rounded-[20px] "
+                                        >
 
-                                            <div className='w-[338px] h-[520px] bg-white box-border pr-[29px] pl-[29px] pt-[22.8px] shadow-black shadow-md rounded-[20px] overflow-hidden'>
-                                                <Image src={item.photo} alt={item.alt} priority={true} />
+                                            <div
+                                                className='md:w-[248px] md:h-[405px] lg:w-[338px] lg:h-[520px] bg-white box-border pr-[29px] pl-[29px] pt-[22.8px] shadow-black shadow-md rounded-[20px] overflow-hidden'
+                                            >
+
+                                                <Image
+                                                    className='w-full ' src={item.photo} alt={item.alt} priority={true}
+                                                />
 
 
                                                 <h3 className='text-black text-[21px] font-sans font-bold uppercase leading-loose mb-[5px]' >{item.title}</h3>
@@ -223,16 +236,13 @@ export default function Carrossel({ title, className, type }) {
                 }
 
 
-                <button className='leftClick' onClick={handleLeftClick}>
+                <button className='leftClick md:hidden lg:block' onClick={handleLeftClick}>
                     {<Image src={arrow_Left} alt='Seta para esquerda' />}
                 </button>
 
-                <button className='rightClick' onClick={handleRightClick} >
+                <button className='rightClick md:hidden lg:block' onClick={handleRightClick} >
                     {<Image src={arrow_Right} alt='Seta para direita' />}
                 </button>
-
-
-
 
 
             </div>

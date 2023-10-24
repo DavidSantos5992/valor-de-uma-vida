@@ -5,6 +5,7 @@
     margin: auto;
     margin-top: 40px;
     position: relative;
+    background: red;
 }
 
 .carroselContainer h1 {
@@ -110,9 +111,10 @@
 }
 
 .carrosel {
+    width: 100%;
     position: relative;
+    margin: 0 auto;
     overflow-x: scroll;
-    height: 528px;
     overflow-y: hidden;
     white-space: nowrap;
     transition: all 0.2s;
@@ -125,6 +127,8 @@
     overflow-y: hidden;
     display: grid;
     grid-auto-flow: column;
+    background: rgb(211, 91, 11);
+
 }
 
 .carrosel {
@@ -134,4 +138,11 @@
 
 .carrosel::-webkit-scrollbar {
     display: none;
+}
+
+@media(max-width: 960px) {
+    .carrosel {
+        /* width: 70%; */
+        background-color: blue;
+    }
 }

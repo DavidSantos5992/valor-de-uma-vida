@@ -92,21 +92,34 @@ export default function RootLayout({ children }) {
 
         <div>
 
-          <div className='w-[100%] h-[992.668px]  absolute right-0  bg-layoutClipPath2 box-shadow-custom custom-clip-path'></div>
+          <div className='w-[100%] h-[992.668px]  absolute  top-[2020px]  lg:top-none right-0  bg-layoutClipPath2 box-shadow-custom custom-clip-path'></div>
 
-          <About image={foto_quem_somos_valor_de_uma_vida} className={'w-[95%] flex justify-between items-center absolute top-[2200px] z-10'} photo={1} title={'Quem somos'} text={'Nossa instituição, desde 2014, vem prestando serviços com grande potencial na cidade de Várzea Paulista, onde nos localizamos. E, é claro, que ajudamos amigos de todos os lugares, levando o bem e a boa qualidade de vida.'} />
+          <About
+            image={foto_quem_somos_valor_de_uma_vida}
+            className={'w-[95%] flex justify-between items-center absolute lg:top-[2200px] md:top-[2280px] z-10'}
+            photo={1}
+            title={'Quem somos'}
+            text={'Nossa instituição, desde 2014, vem prestando serviços com grande potencial na cidade de Várzea Paulista, onde nos localizamos. E, é claro, que ajudamos amigos de todos os lugares, levando o bem e a boa qualidade de vida.'}
+          />
 
         </div>
 
         <div>
           <div className='w-[100%] h-[992.668px]  absolute top-[2513px] left-0  bg-layoutClipPath3 box-shadow-custom custom-clip-left'></div>
-          <About image={escorregador_Valor_de_Uma_Vida} className={'w-[95%] flex justify-between items-center absolute top-[2780px] right-0 z-10'} photo={2} title={'sobre nós'} text={' Nossa equipe conta com pessoas engajadas em fazer o bem ao próximo, e devido a isso, realizamos nosso trabalho com muito amor e carinho aos nossos amigos que precisam de suporte, sejam eles pessoas doentes ou moradores de rua. Com carinho, recebemos todo tipo de auxílio, seja ele financeiro ou em espécie, pois o que realmente importa é o carinho e amor com o próximo.'}
+
+          <About
+            image={escorregador_Valor_de_Uma_Vida}
+            className={'w-[95%] flex justify-between items-center absolute top-[2780px] right-0 z-10'}
+            photo={2}
+            title={'sobre nós'}
+            text={' Nossa equipe conta com pessoas engajadas em fazer o bem ao próximo, e devido a isso, realizamos nosso trabalho com muito amor e carinho aos nossos amigos que precisam de suporte, sejam eles pessoas doentes ou moradores de rua. Com carinho, recebemos todo tipo de auxílio, seja ele financeiro ou em espécie, pois o que realmente importa é o carinho e amor com o próximo.'}
           />
         </div>
 
         <div className='w-[77%] h-[992.668px]  absolute top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
         <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute top-[2650px] rotate-[72deg] z-0'></div>
         <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute top-[2790px] rotate-[72deg] z-0'></div>
+      
         <SectionMakeDonation />
 
         <div className='w-full min-h-[600px] absolute top-[6550px] '>

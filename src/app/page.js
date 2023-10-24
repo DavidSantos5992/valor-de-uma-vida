@@ -46,23 +46,45 @@ export default function Home() {
 
     <>
 
-      <Carrossel title={'campanhas'} type={'card'} className={'w-[1216px] h-[515px] ml-auto mr-auto '} />
+      <Carrossel
+        title={'campanhas'}
+        type={'card'}
+        className={'lg:w-[1216px] md:w-[912px] lg:h-[515px] md:h-[350px] ml-auto mr-auto'}
+      />
 
       <SectionPhoto />
 
-    <div className="w-[100vw] flex items-center justify-center absolute z-20 top-[3320px] box-border ">
-      <Carrossel title={'noticias'} type={'news'} className={'w-[1216px]  h-[637px] '} />
-    </div>
+      <div className="w-[100vw] flex items-center justify-center absolute z-20 top-[3320px] box-border ">
+
+        <Carrossel
+          title={'noticias'}
+          type={'news'}
+          className={'w-[1216px]  h-[637px] '}
+        />
+
+      </div>
 
       <section className="w-full h-[1771px]  absolute top-[4837px] box-border pt-[60px] ">
 
         <h1 className="w-[484px] h-[60px] mr-auto ml-auto border-b-4 border-stone-900 text-black text-[38px] font-bold font-sans uppercase leading-[76.50px]">Campanhas realizadas</h1>
 
-        <Campaigns campaign={natal} mainColor={'bg-rose-500'} fontColor={'text-rose-500'} />
+        <Campaigns
+          campaign={natal}
+          mainColor={'bg-rose-500'}
+          fontColor={'text-rose-500'}
+        />
 
-        <Campaigns campaign={inverno} mainColor={'bg-sky-800'} fontColor={'text-sky-800'} />
+        <Campaigns
+          campaign={inverno}
+          mainColor={'bg-sky-800'}
+          fontColor={'text-sky-800'}
+        />
 
-        <Campaigns campaign={diaDasCriancas} mainColor={'bg-teal-300'} fontColor={'text-emerald-300'} />
+        <Campaigns
+          campaign={diaDasCriancas}
+          mainColor={'bg-teal-300'}
+          fontColor={'text-emerald-300'}
+        />
 
 
       </section>
