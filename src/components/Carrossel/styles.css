@@ -5,7 +5,7 @@
     margin: auto;
     margin-top: 40px;
     position: relative;
-    background: red;
+    /* background: red; */
 }
 
 .carroselContainer h1 {
@@ -127,8 +127,6 @@
     overflow-y: hidden;
     display: grid;
     grid-auto-flow: column;
-    background: rgb(211, 91, 11);
-
 }
 
 .carrosel {
@@ -142,7 +140,11 @@
 
 @media(max-width: 960px) {
     .carrosel {
-        /* width: 70%; */
-        background-color: blue;
+        width: 64%;
+        /* background-color: blue; */
+    }
+
+    .carroselContainer h1 {
+        font-size: 25px;
     }
 }

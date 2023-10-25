@@ -116,9 +116,9 @@ export default function RootLayout({ children }) {
           />
         </div>
 
-        <div className='w-[77%] h-[992.668px]  absolute top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
-        <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute top-[2650px] rotate-[72deg] z-0'></div>
-        <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute top-[2790px] rotate-[72deg] z-0'></div>
+        <div className='md:w-[62%] md:h-[800.668px] lg:w-[57%] lg:h-[992.668px]  absolute md:top-[3009px] lg:top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
+        <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2600px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
+        <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
       
         <SectionMakeDonation />
 

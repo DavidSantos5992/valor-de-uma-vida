@@ -51,6 +51,13 @@ export default function Carrossel({ title, className, type }) {
             text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
             url: ''
         },
+        {
+            title: 'lorem ipsum',
+            photo: img3,
+            alt: '',
+            text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
+            url: ''
+        },
 
         {
             title: 'lorem ipsum',
