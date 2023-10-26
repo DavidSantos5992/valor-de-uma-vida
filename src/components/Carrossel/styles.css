@@ -1,11 +1,11 @@
+
 .carroselContainer {
-    /* width: 1216px; */
     width: 100%;
     height: 100%;
     margin: auto;
     margin-top: 40px;
     position: relative;
-    /* background: red; */
+    background: red;
 }
 
 .carroselContainer h1 {
@@ -139,8 +139,14 @@
 }
 
 @media(max-width: 960px) {
+
+    .carroselContainer {
+        width: 780px;
+        background: red;
+    }
+
     .carrosel {
-        width: 64%;
+        width: 100%;
         /* background-color: blue; */
     }
 

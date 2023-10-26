@@ -119,7 +119,7 @@ export default function RootLayout({ children }) {
         <div className='md:w-[62%] md:h-[800.668px] lg:w-[57%] lg:h-[992.668px]  absolute md:top-[3009px] lg:top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
         <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2600px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
         <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
-      
+
         <SectionMakeDonation />
 
         <div className='w-full min-h-[600px] absolute top-[6550px] '>
@@ -128,7 +128,7 @@ export default function RootLayout({ children }) {
 
             <div className="w-[1200px] h-[100px] absolute top-16 -left-[400px] bg-yellow-500 -rotate-45 z-0"></div>
             <div className="w-[1400px] h-[100px] absolute top-[90px] -left-[300px] bg-yellow-500 -rotate-45 z-0"></div>
-            <div className="w-[1000px] h-[500px] absolute -top-[160px] -right-[250px] bg-blue-400 rotate-[36deg] z-0"></div>
+            <div className="md:w-[542.667px]  lg:w-[1000px] md:h-[285.333px] lg:h-[500px] absolute md:-top-[300px] lg:-top-[160px]  md:right-[0px] lg:-right-[250px] bg-blue-400 md:rotate-[36deg] lg:rotate-[36deg] z-0 custom-clip-blue-tablet"></div>
 
             <div className="w-full absolute top-[384px] ">
 

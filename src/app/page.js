@@ -59,7 +59,7 @@ export default function Home() {
         <Carrossel
           title={'noticias'}
           type={'news'}
-          className={'w-[1216px]  h-[637px] '}
+          className={'lg:w-[1216px]  h-[637px] bg-red-200'}
         />
 
       </div>
