@@ -1,10 +1,10 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Head from 'next/head';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import About from '@/components/About';
 import Button from '@/components/Button';
 import SectionMakeDonation from '@/components/SectionMakeDonation';
 import Image from 'next/image';
-
 import './globals.css';
 
 import logo from '../../public/images/hero_Logo.svg';
@@ -16,6 +16,7 @@ import sescImg from '../../public/images/parceiros/img_Sesc.svg';
 import ksbImg from '../../public/images/parceiros/img_KSB.svg';
 import RotaryImg from '../../public/images/parceiros/img_Rotary.svg';
 import bannerEscorregador from '../../public/images/banner_escorregador.svg';
+
 
 
 const partners = [
@@ -39,7 +40,7 @@ const partners = [
 
 export const metadata = {
   title: 'Valor de uma Vida',
-  description: 'Informações sobre Valor de uma Vida',
+  description: 'Ong Valor de uma Vida',
 };
 
 export default function RootLayout({ children }) {
@@ -48,10 +49,10 @@ export default function RootLayout({ children }) {
 
     <html lang="pt-br">
 
-      <head>
+      <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-      </head>
+      </Head>
 
       <body>
 
@@ -116,9 +117,10 @@ export default function RootLayout({ children }) {
           />
         </div>
 
-        <div className='md:w-[62%] md:h-[800.668px] lg:w-[57%] lg:h-[992.668px]  absolute md:top-[3009px] lg:top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
-        <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2600px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
-        <div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
+        <div className='md:w-[594px] md:h-[800.668px] lg:w-[77%] lg:h-[992.668px]  absolute md:top-[3009px] lg:top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
+        {<div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2600px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>}
+
+        {<div className='md:w-[90.728px] lg:w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>}
 
         <SectionMakeDonation />
 
@@ -126,11 +128,15 @@ export default function RootLayout({ children }) {
 
           <div className="w-full min-h-[600px] relative ">
 
-            <div className="w-[1200px] h-[100px] absolute top-16 -left-[400px] bg-yellow-500 -rotate-45 z-0"></div>
-            <div className="w-[1400px] h-[100px] absolute top-[90px] -left-[300px] bg-yellow-500 -rotate-45 z-0"></div>
+            <div className="md:w-[900px] lg:w-[1200px] h-[100px] absolute md:top-[-150px] lg:top-16 -left-[400px] bg-yellow-500 md:rotate-[-35deg] lg:-rotate-45 z-0"></div>
+
+            <div className="md:w-[900px] lg:w-[1400px] h-[100px] absolute md:top-[-150px] lg:top-[90px] lg:-left-[300px] md:-left-[150px] bg-yellow-500 md:rotate-[-35deg] lg:-rotate-45 z-0"></div>
+
+
+
             <div className="md:w-[542.667px]  lg:w-[1000px] md:h-[285.333px] lg:h-[500px] absolute md:-top-[300px] lg:-top-[160px]  md:right-[0px] lg:-right-[250px] bg-blue-400 md:rotate-[36deg] lg:rotate-[36deg] z-0 custom-clip-blue-tablet"></div>
 
-            <div className="w-full absolute top-[384px] ">
+            <div className="w-full absolute md:top-0 lg:top-[384px] ">
 
               <h1 className='w-full mb-[180px] text-center text-black text-[38px]  font-bold font-sans uppercase leading-[76.50px]'>parceiros</h1>
 
@@ -138,20 +144,20 @@ export default function RootLayout({ children }) {
 
                 {partners.map((element, index) => (
 
-                  <Image className="w-[200px] ml-auto mr-auto" key={index} src={element.image} alt={element.name} />
+                  <Image className="md:w-[165.333px] lg:w-[200px] ml-auto mr-auto" key={index} src={element.image} alt={element.name} />
 
                 ))}
               </div>
 
               <div className=" mb-[311px]">
 
-                <div className="w-full relative">
+                <div className="w-full relative ">
 
                   <Image className="w-full h-auto" src={bannerEscorregador} alt="Banner Valor de uma vida" />
 
-                  <div className="w-full h-full flex flex-col box-border pt-[369px] items-center  bg-opacity-30 bg-black absolute top-0 left-0 z-10">
+                  <div className="w-full h-full flex flex-col items-center sm:justify-center box-border lg:pt-[369px]   bg-opacity-30 bg-black absolute top-0 left-0 z-10">
 
-                    <p className="text-white text-[67px] font-bold font-sans uppercase leading-[100.50px] text-shadow mb-[124px] ">Faça Parte Dessa História</p>
+                    <p className="text-white md:text-[44px] lg:text-[67px] font-bold font-sans uppercase leading-[100.50px] text-shadow mb-[124px] ">Faça Parte Dessa História</p>
 
                     <Button
                       className='w-[555.37px] h-[67px] shadow-inner bg-yellow-400 shadow-black rounded-[39.59px] justify-center items-center text-black text-[21px] font-bold font-sans uppercase leading-loose'

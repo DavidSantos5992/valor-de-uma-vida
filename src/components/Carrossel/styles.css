@@ -5,7 +5,6 @@
     margin: auto;
     margin-top: 40px;
     position: relative;
-    background: red;
 }
 
 .carroselContainer h1 {
@@ -142,7 +141,6 @@
 
     .carroselContainer {
         width: 780px;
-        background: red;
     }
 
     .carrosel {
