@@ -59,34 +59,30 @@ export default function Header() {
 
                 </div>
 
-                <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
 
                     <li>
-                        <Link class="text-sm  " href="#">
+                        <Link className="text-sm  " href="#">
                             início
                         </Link>
                     </li>
 
                     <li>
-                        <Link class="text-sm  font-bold" href="#"> sobre nós</Link>
+                        <Link className="text-sm  font-bold" href="#"> sobre nós</Link>
                     </li>
 
 
 
                     <li>
-                        <Link class="text-sm  " href="#">parceiros</Link>
+                        <Link className="text-sm  " href="#">parceiros</Link>
                     </li>
 
-
-
                     <li>
-                        <Link class="text-sm  " href="#">notícias</Link>
+                        <Link className="text-sm  " href="#">notícias</Link>
                     </li>
 
-
-
                     <li>
-                        <Link class="text-sm  " href="#">contato</Link>
+                        <Link className="text-sm  " href="#">contato</Link>
                     </li>
                 </ul>
 

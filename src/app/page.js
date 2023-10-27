@@ -49,7 +49,7 @@ export default function Home() {
       <Carrossel
         title={'campanhas'}
         type={'card'}
-        className={'lg:w-[1216px] md:w-[912px] lg:h-[515px] md:h-[350px] ml-auto mr-auto'}
+        className={'sm:w-[350px] md:w-[912px] lg:h-[515px] md:h-[350px] ml-auto mr-auto '}
       />
 
       <SectionPhoto />
