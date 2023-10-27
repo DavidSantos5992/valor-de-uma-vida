@@ -58,24 +58,26 @@ export default function RootLayout({ children }) {
 
         <Header />
 
-        <div className='w-full h-[688px] flex items-center relative box-border overflow-hidden'>
+        <div className='sm: h-[539px] w-full lg:h-[688px] flex items-center relative box-border overflow-hidden'>
 
-          <Image className=' h-[100%] w-[100%] object-cover absolute top-0 left-0'
+          <Image className='h-[100%] w-[100%] object-cover absolute top-0 left-0'
             src={fundo}
             alt='Fundo estatico da pagina'
           />
 
-          <div className='w-full h-[100%] flex items-center relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'>
+          <div className=' w-full h-[100%] flex items-center sm:justify-center md:justify-normal relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'>
 
-            <div className='flex items-center '>
+            <div className='flex items-center sm:flex-col md:flex-row sm:justify-center '>
+
               <Image className='lg:w-[135px] lg:h-[135px] md:w-[90px] md:h-[90px]' src={logo} alt='Logo valor de uma vida' />
 
               <h2 className='ml-[20px] font-bold font-sans uppercase lg:text-[28px] md:text-[18px] text-white text-shadow'>valor de uma vida</h2>
+            
             </div>
 
-            <div className='lg:w-[48%] md:w-[60%] h-[100%]  absolute right-0  bg-layoutClipPath box-shadow-custom custom-clip-path'>
+            <div className='lg:w-[48%] md:w-[60%] h-[100%]  absolute lg:right-0  bg-layoutClipPath box-shadow-custom custom-clip-path'>
 
-              <div className='w-full h-full relative bggre900'>
+              <div className='w-full h-full relative '>
 
                 <h1 className='max-w-[517px] text-shadow absolute right-[25px] top-[43%] lg:text-[21px] md:text-[18px] uppercase leading-[27px] text-white font-sans font-bold text-end whitespace-wrap'>
                   desde 2014 prestando auxílio <br /> a pessoas com <strong className='text-yellow-300'> Vulnerabilidades sociais</strong> e portadoras de diversas <strong className='text-yellow-300'>doenças crônicas</strong> Em <strong>várzea Paulista</strong>
@@ -160,7 +162,7 @@ export default function RootLayout({ children }) {
                     <p className="text-white md:text-[44px] lg:text-[67px] font-bold font-sans uppercase leading-[100.50px] text-shadow mb-[124px] ">Faça Parte Dessa História</p>
 
                     <Button
-                      className='w-[555.37px] h-[67px] shadow-inner bg-yellow-400 shadow-black rounded-[39.59px] justify-center items-center text-black text-[21px] font-bold font-sans uppercase leading-loose'
+                      className='sm:w-[226.56px] sm:h-[27.33px] lg:w-[555.37px] lg:h-[67px] shadow-inner bg-yellow-400 shadow-black rounded-[39.59px] justify-center items-center text-black text-[21px] font-bold font-sans uppercase leading-loose'
                       title={'Seja nosso parceiro'}
                     />
 

@@ -5,6 +5,7 @@
     margin: auto;
     margin-top: 40px;
     position: relative;
+    background: red;
 }
 
 .carroselContainer h1 {
@@ -107,6 +108,7 @@
     height: 336px;
     flex-shrink: 0;
     margin-left: 20px;
+    background-color: black;
 }
 
 .carrosel {
@@ -146,6 +148,23 @@
     .carrosel {
         width: 100%;
         /* background-color: blue; */
+    }
+
+    .carroselContainer h1 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 640px) {
+
+    .carroselContainer {
+        width: 390px;
+        background-color: green;
+    }
+
+    .carrosel {
+        width: 100%;
+        background-color: blue;
     }
 
     .carroselContainer h1 {

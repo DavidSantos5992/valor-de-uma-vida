@@ -243,11 +243,11 @@ export default function Carrossel({ title, className, type }) {
                 }
 
 
-                <button className='leftClick md:hidden lg:block' onClick={handleLeftClick}>
+                <button className='leftClick sm:hidden lg:block' onClick={handleLeftClick}>
                     {<Image src={arrow_Left} alt='Seta para esquerda' />}
                 </button>
 
-                <button className='rightClick md:hidden lg:block' onClick={handleRightClick} >
+                <button className='rightClick sm:hidden lg:block' onClick={handleRightClick} >
                     {<Image src={arrow_Right} alt='Seta para direita' />}
                 </button>
 
