@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'layoutClipPath': ' rgba(4, 150, 66, 0.60)',
         'layoutClipPath2': ' #05C7F2',
+        'layoutClipPathMobile': '#4D9CCF',
         'layoutClipPath3': ' #05D65E',
         'layoutClipPath4': ' #F2E205',
         'facaColaboracao': ' #78F0AB',

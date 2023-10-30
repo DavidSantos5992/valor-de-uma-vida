@@ -29,6 +29,17 @@ img {
     clip-path: polygon(100% 0, 0 38.5%, 100% 100%);
 }
 
+.custom-clip-mobile {
+    clip-path: polygon(50% 27%, 100% 0, 100% 30%, 57% 60%, 41% 60%, 0 30%, 0 0);
+}
+
+.clipPathMobile {
+    clip-path: polygon(50% 9%, 100% 0, 100% 35%, 100% 66%, 75% 83%, 50% 100%, 25% 83%, 0 65%, 0% 35%, 0 0);
+}
+
+.clipPathMobile-2 {
+    clip-path: polygon(50% 9%, 100% 0, 100% 35%, 100% 66%, 75% 83%, 50% 100%, 25% 83%, 0 65%, 0% 35%, 0 0);
+}
 
 
 body {
@@ -36,6 +47,7 @@ body {
 }
 
 @media (max-width: 960px) {
+
     /* responsalve */
     .custom-clip-blue-tablet {
         clip-path: polygon(100% 0, 0 0, 100% 87%);

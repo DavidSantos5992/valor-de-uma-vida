@@ -65,15 +65,16 @@ export default function SectionMakeDonation() {
     ]
 
     return (
-        <div className="w-full md:h-[905px] lg:h-[1194px] absolute top-[3580px] left-0  z-0 ">
+        <div className="w-full md:h-[905px] lg:h-[1194px] absolute sm:top-[3000px] md:top-[3580px] left-0  md:z-0 ">
 
-            <section className='md:w-[400px] lg:w-[558px] h-[677px] absolute md:top-[300px] md:left-[60px] lg:top-[530px] lg:left-[122px] '>
-                <p className='md:w-[400px] lg:w-[558px] h-44 mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px]'> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
+            <section className='md:w-[400px] lg:w-[558px]  md:h-[677px] absolute md:top-[300px] md:left-[60px] lg:top-[530px] lg:left-[122px] '>
+                
+                <p className=' sm:text-center md:w-[400px] lg:w-[558px] sm:mt-[900px] md:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] '> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
 
                 {
                     doences.map((doence, index) => (
 
-                        <div key={index} className='flex items-center mb-[20px]'>
+                        <div key={index} className='flex items-center mb-[20px] box-border sm:pl-2 md:pl-0'>
 
                             <Image
                                 className='md:w-[26px] lg:w-[36px] h-auto'
@@ -90,7 +91,7 @@ export default function SectionMakeDonation() {
 
             </section>
 
-            <section className='md:w-[375px]  md:h-[890px] lg:w-[500px] lg:h-[1194px] flex flex-col items-center shadow-black shadow-lg box-border pt-[250px] border-none rounded-[30px] mb-[50px] absolute md:right-[36px] lg:right-[116px] bg-facaColaboracao '>
+            <section className='sm:w-[370px] md:w-[375px] sm:ml-[.7%] sm:h-[840px] md:h-[890px] lg:w-[500px] lg:h-[1194px] flex flex-col items-center shadow-black shadow-lg box-border sm:pt-[100px] md:pt-[250px] border-none rounded-[30px] mb-[50px] absolute  md:right-[36px] lg:right-[116px] bg-facaColaboracao '>
 
                 <div className='md:mt-[20px] lg:mt-[160px]'>
                     <Image src={logo}
@@ -100,23 +101,25 @@ export default function SectionMakeDonation() {
                     <strong className='text-base text-[21px] font-bold uppercase text-shadow text-gray-800 not-italic'>VALOR DE UMA VIDA</strong>
                 </div>
 
-                <address className='md:w-[307px] lg:w-[395px] md:h-[64px] lg:h-[79px] flex items-center   justify-center solid border-t mt-[20px] border-b border-black box-border md:pb-[5px] md:pt-[5px] lg:pb-[17px]'>
+                <address className='sm:w-[312px] sm:h-[55px] md:w-[307px] lg:w-[395px] md:h-[64px] lg:h-[79px] flex items-center   justify-center solid border-t mt-[20px] border-b border-black box-border md:pb-[5px] md:pt-[5px] lg:pb-[17px]'>
+
                     <p className='text-center text-base text-[21px] font-bold uppercase text-shadow text-gray-800 not-italic'>Várzea Paulista - sp </p>
+
                 </address>
 
-                <h3 className='md:text-[20px] lg:text-[28px] text-shadow font-bold font-sans uppercase md:mt-[15px] lg:mt-[20px] mb-[40px]'>faça uma colaboração</h3>
+                <h3 className='md:text-[20px] lg:text-[28px] text-shadow font-bold font-sans uppercase sm:mt-[15px] lg:mt-[20px] mb-[40px]'>faça uma colaboração</h3>
 
-                <Image className='md:w-[150px] lg:w-[200px] h-auto md:mb-[40px] lg:mb-[54px] '
+                <Image className='sm:w-[185px] md:w-[150px] lg:w-[200px] h-auto sm:mb-[25px] md:mb-[40px] lg:mb-[54px] '
                     src={qrCode}
                     alt='Código QRcode' />
 
-                <div className='md:w-[307px] lg:w-[396px] md:h-[52px] lg:h-[70px] border-t border-b solid border-black flex items-center justify-around '>
+                <div className='sm:w-[312px] md:w-[307px] lg:w-[396px] sm:h-[52px] lg:h-[70px] border-t border-b solid border-black flex items-center justify-around '>
                     <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconInstagram} alt='Instagram - Valor de Uma Vida' />
                     <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconFacebook} alt='Facebook - Valor de Uma Vida' />
                     <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconWhatsApp} alt='Whatsapp - Valor de Uma Vida' />
                 </div>
 
-                <Button className='w-[214px] md:h-[30px] lg:h-[42px] rounded-[20px] font-sans lg:text-[21px] md:text-[15px] font-semibold bg-sectionButton flex items-center justify-center mt-auto mb-auto' title={'Faça a Diferença'} onPress={() => handleButton()} />
+                <Button className='sm:w-[243px] sm:h-[35px] w-[214px] md:h-[30px] lg:h-[42px] rounded-[20px] font-sans sm:text-[16px] lg:text-[21px] md:text-[15px] font-semibold bg-sectionButton flex items-center justify-center mt-auto mb-auto' title={'Faça a Diferença'} onPress={() => handleButton()} />
             </section>
 
         </div>

@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
               <Image className='lg:w-[135px] lg:h-[135px] md:w-[90px] md:h-[90px]' src={logo} alt='Logo valor de uma vida' />
 
               <h2 className='ml-[20px] font-bold font-sans uppercase lg:text-[28px] md:text-[18px] text-white text-shadow'>valor de uma vida</h2>
-            
+
             </div>
 
             <div className='lg:w-[48%] md:w-[60%] h-[100%]  absolute lg:right-0  bg-layoutClipPath box-shadow-custom custom-clip-path'>
@@ -95,11 +95,11 @@ export default function RootLayout({ children }) {
 
         <div>
 
-          <div className='w-[100%] h-[992.668px]  absolute  top-[2020px]  lg:top-none right-0  bg-layoutClipPath2 box-shadow-custom custom-clip-path'></div>
+          <div className='sm:hidden md:block w-[100%] h-[992.668px]  absolute  top-[2020px]  lg:top-none right-0  bg-layoutClipPath2 box-shadow-custom custom-clip-path'></div>
 
           <About
             image={foto_quem_somos_valor_de_uma_vida}
-            className={'w-[95%] flex justify-between items-center absolute lg:top-[2200px] md:top-[2280px] z-10'}
+            className={'w-[95%] sm:flex-col md:flex-row flex justify-between items-center absolute lg:top-[2200px] md:top-[2280px] z-10'}
             photo={1}
             title={'Quem somos'}
             text={'Nossa instituição, desde 2014, vem prestando serviços com grande potencial na cidade de Várzea Paulista, onde nos localizamos. E, é claro, que ajudamos amigos de todos os lugares, levando o bem e a boa qualidade de vida.'}
@@ -108,21 +108,55 @@ export default function RootLayout({ children }) {
         </div>
 
         <div>
-          <div className='w-[100%] h-[992.668px]  absolute top-[2513px] left-0  bg-layoutClipPath3 box-shadow-custom custom-clip-left'></div>
 
-          <About
-            image={escorregador_Valor_de_Uma_Vida}
-            className={'w-[95%] flex justify-between items-center absolute top-[2780px] right-0 z-10'}
-            photo={2}
-            title={'sobre nós'}
-            text={' Nossa equipe conta com pessoas engajadas em fazer o bem ao próximo, e devido a isso, realizamos nosso trabalho com muito amor e carinho aos nossos amigos que precisam de suporte, sejam eles pessoas doentes ou moradores de rua. Com carinho, recebemos todo tipo de auxílio, seja ele financeiro ou em espécie, pois o que realmente importa é o carinho e amor com o próximo.'}
-          />
+          <div className='sm:hidden md:block w-[100%] h-[992.668px]  absolute top-[2513px] left-0  bg-layoutClipPath3 box-shadow-custom custom-clip-left'></div>
+
+          {/* md para cima  */}
+
+          <div className='sm:hidden md:block'>
+            <About
+              image={escorregador_Valor_de_Uma_Vida}
+              className={'w-[95%]  flex justify-between items-center absolute top-[2780px] right-0 z-10 '}
+              photo={2}
+              title={'sobre nós'}
+              text={' Nossa equipe conta com pessoas engajadas em fazer o bem ao próximo, e devido a isso, realizamos nosso trabalho com muito amor e carinho aos nossos amigos que precisam de suporte, sejam eles pessoas doentes ou moradores de rua. Com carinho, recebemos todo tipo de auxílio, seja ele financeiro ou em espécie, pois o que realmente importa é o carinho e amor com o próximo.'}
+            />
+          </div>
+
+          {/* md para baixo  */}
+
+          <div className='sm:block md:hidden'>
+
+            <About
+              image={escorregador_Valor_de_Uma_Vida}
+              className={'w-[95%]  flex flex-col justify-between items-center absolute top-[2200px] right-0 z-10 '}
+              photo={1}
+              title={'sobre nós'}
+              text={' Nossa equipe conta com pessoas engajadas em fazer o bem ao próximo, e devido a isso, realizamos nosso trabalho com muito amor e carinho aos nossos amigos que precisam de suporte, sejam eles pessoas doentes ou moradores de rua. Com carinho, recebemos todo tipo de auxílio, seja ele financeiro ou em espécie, pois o que realmente importa é o carinho e amor com o próximo.'}
+            />
+
+          </div>
+
         </div>
 
-        <div className='md:w-[594px] md:h-[800.668px] lg:w-[77%] lg:h-[992.668px]  absolute md:top-[3009px] lg:top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
-        {<div className='w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2600px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>}
+        <div className='sm:hidden md:block md:w-[594px] md:h-[800.668px] lg:w-[77%] lg:h-[992.668px]  absolute md:top-[3009px] lg:top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
 
-        {<div className='md:w-[90.728px] lg:w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>}
+        <div className='sm:hidden md:block w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2600px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
+
+        {/* clip versão mobile quem somos */}
+
+        <div className='sm:block w-full h-[929px] bg-layoutClipPath2 clipPathMobile z-10'>
+
+          <div className='w-full h-[262px] bg-layoutClipPathMobile custom-clip-mobile '></div>
+
+
+        </div>
+
+        {/* clip versão mobile sobre nós*/}
+
+        <div className='sm:block w-full sm:h-[1300px] md:h-[929px] bg-layoutClipPath4 absolute clipPathMobile sm:top-[2000px] md:hidden z-[-1]'></div>
+
+        <div className='sm:hidden md:block md:w-[90.728px] lg:w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
 
         <SectionMakeDonation />
 

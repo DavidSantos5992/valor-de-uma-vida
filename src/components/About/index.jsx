@@ -8,13 +8,13 @@ export default function About({ image, photo, title, text, className }) {
 
             {photo == 1 && (
                 <Image
-                    className='rounded-[50%] lg:w-[575px] h-auto md:w-[426px]'
+                    className='rounded-[50%] lg:w-[575px] h-auto sm:w-[322px] md:w-[426px]'
                     src={image}
                     alt='Entrega de presente - Valor de uma Vida'
                 />
             )}
 
-            <section className='max-w-[443px]  '>
+            <section className='sm:ml-[20px] sm:mt-[25px] md:m-0  md:max-w-[443px]  '>
 
                 <h1 className='text-center font-sans font-bold text-shadow mb-[30px] lg:text-[51px] md:text-[38px] capitalize'>
                     {title}

@@ -56,11 +56,11 @@ export default function Home() {
 
       <div className="w-[100vw] flex items-center justify-center absolute z-20 top-[3320px] box-border ">
 
-        <Carrossel
+        {/* <Carrossel
           title={'noticias'}
           type={'news'}
           className={'lg:w-[1216px]  h-[637px] '}
-        />
+        /> */}
 
       </div>
 
