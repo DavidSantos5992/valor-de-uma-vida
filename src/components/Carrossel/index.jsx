@@ -189,7 +189,7 @@ export default function Carrossel({ title, className, type }) {
                                     <div
                                         onClick={() => handleClickCarrosel(key)}
                                         key={key}
-                                        className="sm:w-[100px] sm:h-[100px] lg:w-[336px] lg:h-[336px] md:w-[220px] md:h-[220px]  sm:ml-[10px] lg:ml-[20px] rounded-[20px] box-border overflow-hidden "
+                                        className="sm:w-[100px] sm:h-[100px] lg:w-[280px] lg:h-[280px] md:w-[220px] md:h-[220px]  sm:ml-[10px] lg:ml-[20px] rounded-[20px] box-border overflow-hidden "
                                     >
                                         <Image className='w-full h-full' src={item.photo} alt={item.alt} />
 

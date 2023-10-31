@@ -69,7 +69,7 @@ export default function SectionMakeDonation() {
 
             <section className='md:w-[400px] lg:w-[558px]  md:h-[677px] absolute md:top-[300px] md:left-[60px] lg:top-[530px] lg:left-[122px] '>
 
-                <p className=' sm:text-center md:w-[400px] lg:w-[558px] sm:mt-[900px] md:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] '> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
+                <p className=' sm:text-center md:text-left md:w-[400px] lg:w-[558px] sm:mt-[900px] md:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] '> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
 
                 {
                     doences.map((doence, index) => (
@@ -115,28 +115,28 @@ export default function SectionMakeDonation() {
 
                 <div className='sm:w-[312px] md:w-[307px] lg:w-[396px] sm:h-[52px] lg:h-[70px] border-t border-b solid border-black flex items-center justify-around '>
 
-                    <a
+                    <a className='hover:transform hover:scale-110'
                         href="https://www.instagram.com/valordeumavida.ong/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconInstagram} alt='Instagram - Valor de Uma Vida' />
+                        <Image className='md:w-[22px] lg:w-[30px] h-auto ' src={iconInstagram} alt='Instagram - Valor de Uma Vida' />
                     </a>
 
-                    <a
+                    <a className='hover:transform hover:scale-110'
                         href="https://www.facebook.com/ovalordeumavida"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconFacebook} alt='Facebook - Valor de Uma Vida' />
+                        <Image className='md:w-[22px] lg:w-[30px] h-auto ' src={iconFacebook} alt='Facebook - Valor de Uma Vida' />
                     </a>
 
-                    <a
+                    <a className='hover:transform hover:scale-110'
                         href="https://api.whatsapp.com/send/?phone=5511933117977&text&type=phone_number&app_absent=0"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconWhatsApp} alt='Whatsapp - Valor de Uma Vida' />
+                        <Image className='md:w-[22px] lg:w-[30px] h-auto ' src={iconWhatsApp} alt='Whatsapp - Valor de Uma Vida' />
                     </a>
                 </div>
 

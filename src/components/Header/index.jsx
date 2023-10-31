@@ -65,7 +65,7 @@ export default function Header() {
 
                 <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
 
-                    <li>
+                    <li className='hover:transform hover:scale-110'>
                         <ScrollLink
                             className="text-sm cursor-pointer"
                             to="inicio"
@@ -77,7 +77,7 @@ export default function Header() {
                         </ScrollLink>
                     </li>
 
-                    <li>
+                    <li className='hover:transform hover:scale-110'>
                         <ScrollLink
                             className="text-sm cursor-pointer "
                             to='quem_somos'
@@ -91,7 +91,7 @@ export default function Header() {
 
 
 
-                    <li>
+                    <li className='hover:transform hover:scale-110'>
                         <ScrollLink
                             className="text-sm cursor-pointer"
                             to='parceiros'
@@ -103,19 +103,9 @@ export default function Header() {
                         </ScrollLink>
                     </li>
 
-                    {/* <li>
-                        <ScrollLink 
-                        className="text-sm cursor-pointer"
-                        to=''
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                         >
-                         notícias
-                         </ScrollLink>
-                    </li> */}
+                    
 
-                    <li>
+                    <li className='hover:transform hover:scale-110'>
                         <ScrollLink
                             className="text-sm cursor-pointer"
                             to='contato'
@@ -129,7 +119,7 @@ export default function Header() {
                 </ul>
 
                 <Button
-                    className="sm:hidden lg:block w-[158px] h-[34px] text-[15px] shadow-inner bg-yellow-400 shadow-gray-700  rounded-[20px] uppercase"
+                    className="sm:hidden lg:block w-[158px] h-[34px] text-[15px] shadow-inner bg-yellow-400 hover:bg-yellow-500 shadow-gray-700  rounded-[20px] uppercase"
                     title={'seja parceiro'}
                     onPress={() => respawn()}
                 />
