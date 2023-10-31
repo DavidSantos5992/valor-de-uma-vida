@@ -64,7 +64,7 @@ export default function Home() {
 
       </div>
 
-      <section className="w-full h-[1771px]  absolute top-[4837px] box-border pt-[60px] ">
+      <section className="w-full sm:h-[1340px] md:h-[1771px]  absolute top-[4837px] box-border pt-[60px] ">
 
         <h1 className="sm:w-[356px] md:w-[322.67px] lg:w-[484px] h-[60px] text-shadow mr-auto ml-auto border-b-4 border-stone-900 text-black sm:text-[25.33px] sm:text-center lg:text-[38px] font-bold font-sans uppercase leading-[76.50px]">Campanhas realizadas</h1>
 

@@ -145,9 +145,9 @@ export default function RootLayout({ children }) {
 
         {/* clip versão mobile quem somos */}
 
-        <div className='sm:block w-full h-[929px] bg-layoutClipPath2 clipPathMobile z-10'>
+        <div className='sm:block md:hidden w-full h-[929px] bg-layoutClipPath2 clipPathMobile z-10'>
 
-          <div className='w-full h-[262px] bg-layoutClipPathMobile custom-clip-mobile '></div>
+          <div className='md:hidden w-full h-[262px] bg-layoutClipPathMobile custom-clip-mobile '></div>
 
 
         </div>
@@ -157,6 +157,8 @@ export default function RootLayout({ children }) {
         <div className='sm:block w-full sm:h-[1300px] md:h-[929px] bg-layoutClipPath4 absolute clipPathMobile sm:top-[2000px] md:hidden z-[-1]'></div>
 
         <div className='sm:hidden md:block md:w-[90.728px] lg:w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
+        
+        <div className='sm:hidden md:block md:w-[90.728px] lg:w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2800px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
 
         <SectionMakeDonation />
 
@@ -174,29 +176,30 @@ export default function RootLayout({ children }) {
 
             <div className="w-full absolute md:top-0 lg:top-[384px] ">
 
-              <h1 className='w-full mb-[180px] text-center text-black text-[38px]  font-bold font-sans uppercase leading-[76.50px]'>parceiros</h1>
+              <h1 className='w-full sm:mb-[80px] md:mb-[180px] text-center  text-black text-shadow text-[38px]  font-bold font-sans uppercase leading-[76.50px]'>parceiros</h1>
 
               <div className="flex flex-wrap mb-[288px] ">
 
                 {partners.map((element, index) => (
 
-                  <Image className="md:w-[165.333px] lg:w-[200px] ml-auto mr-auto" key={index} src={element.image} alt={element.name} />
+                  <Image className="sm:w-[100px] sm:mr-10 sm:mb-14 md:w-[165.333px] lg:w-[200px] ml-auto mr-auto" key={index} src={element.image} alt={element.name} />
 
                 ))}
+
               </div>
 
-              <div className=" mb-[311px]">
+              <div className="sm:mb-[200px] md:mb-[311px]">
 
                 <div className="w-full relative ">
 
                   <Image className="w-full h-auto" src={bannerEscorregador} alt="Banner Valor de uma vida" />
 
-                  <div className="w-full h-full flex flex-col items-center sm:justify-center box-border lg:pt-[369px]   bg-opacity-30 bg-black absolute top-0 left-0 z-10">
+                  <div className="w-full h-full flex flex-col items-center sm:justify-center box-border lg:pt-[369px]   bg-opacity-30 bg-black absolute top-0 left-0 z-10 ">
 
-                    <p className="text-white md:text-[44px] lg:text-[67px] font-bold font-sans uppercase leading-[100.50px] text-shadow mb-[124px] ">Faça Parte Dessa História</p>
+                    <p className="text-white sm:text-[20px] md:text-[44px] lg:text-[67px] font-bold font-sans uppercase leading-[100.50px] text-shadow sm:mt-[34px] md:mb-[124px] ">Faça Parte Dessa História</p>
 
                     <Button
-                      className='sm:w-[226.56px] sm:h-[27.33px] lg:w-[555.37px] lg:h-[67px] shadow-inner bg-yellow-400 shadow-black rounded-[39.59px] justify-center items-center text-black text-[21px] font-bold font-sans uppercase leading-loose'
+                      className='sm:w-[226.56px] sm:h-[27.33px] lg:w-[555.37px] lg:h-[67px] shadow-inner bg-yellow-400 shadow-black rounded-[39.59px] justify-center items-center text-black sm:text-[16px] md:text-[21px] font-bold font-sans uppercase '
                       title={'Seja nosso parceiro'}
                     />
 
