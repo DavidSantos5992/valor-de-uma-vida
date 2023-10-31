@@ -43,12 +43,12 @@ export default function Campaigns({ campaign, mainColor, fontColor }) {
 
             </div>
 
-            <div className='sm:w-[244px] md:w-[550px] lg:w-[82%] h-[282px] lg:ml-[42px] md:ml-[20px] flex flex-wrap items-center '>
+            <div className='sm:w-[244px] md:w-[550px] lg:w-[82%] h-[282px] lg:ml-[42px] md:ml-[20px] flex sm:flex-wrap md:flex-nowrap items-center '>
 
                 {
                     campaign.photos.map((element, index) => (
                         
-                        <div key={index} className='bg-red-500 sm:w-[68px] sm:h-[68px] md:w-[188px] lg:w-[292px] md:h-[188px] lg:h-[292px]  flex items-center justify-center rounded-[10px] md:rounded-[35px] sm:mr-[10px] md:mr-[20px] lg:mr-[30px] overflow-hidden'>
+                        <div key={index} className=' sm:w-[68px] sm:h-[68px] md:w-[188px] lg:w-[292px] md:h-[188px] lg:h-[292px]  flex items-center justify-center rounded-[10px] md:rounded-[35px] sm:mr-[10px] md:mr-[20px] lg:mr-[30px] overflow-hidden'>
 
                             <Image alt={campaign.alt} className=' w-[282px] h-auto sm:rounded-[10px] md:rounded-[35px]' src={element} />
 

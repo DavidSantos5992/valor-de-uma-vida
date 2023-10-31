@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'; // Importe useState e useEffect do React
-import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 import Button from '../Button';
 import Image from 'next/image';
 import logo from '../../../public/images/header_Logo.svg'
@@ -39,10 +39,14 @@ export default function Header() {
 
             <nav className="relative px-4 py-4 flex justify-between items-center bg-white shadow-md font-bold font-sans uppercase ">
 
-                <Link className=" flex items-center backdrop:text-3xl font-bold leading-none" href="#">
+                <ScrollLink
+                    className=" flex items-center backdrotext
+                -3
+                xl
+                 font-bold leading-none" >
                     <Image src={logo} alt="logo valor de uma vida" className='w-[55.8px] mr-[20px] text-shadow whitespace-nowrap' />
                     <strong className='font-sans text-[16px] font-bold  text-black text-shadow whitespace-nowrap'>Valor de uma vida</strong>
-                </Link>
+                </ScrollLink>
 
                 <div className="lg:hidden">
 
@@ -62,27 +66,65 @@ export default function Header() {
                 <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
 
                     <li>
-                        <Link className="text-sm  " href="#">
+                        <ScrollLink
+                            className="text-sm cursor-pointer"
+                            to="inicio"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
                             início
-                        </Link>
+                        </ScrollLink>
                     </li>
 
                     <li>
-                        <Link className="text-sm  font-bold" href="#"> sobre nós</Link>
+                        <ScrollLink
+                            className="text-sm cursor-pointer "
+                            to='quem_somos'
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            sobre nós
+                        </ScrollLink>
                     </li>
 
 
 
                     <li>
-                        <Link className="text-sm  " href="#">parceiros</Link>
+                        <ScrollLink
+                            className="text-sm cursor-pointer"
+                            to='parceiros'
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            parceiros
+                        </ScrollLink>
                     </li>
 
-                    <li>
-                        <Link className="text-sm  " href="#">notícias</Link>
-                    </li>
+                    {/* <li>
+                        <ScrollLink 
+                        className="text-sm cursor-pointer"
+                        to=''
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                         >
+                         notícias
+                         </ScrollLink>
+                    </li> */}
 
                     <li>
-                        <Link className="text-sm  " href="#">contato</Link>
+                        <ScrollLink
+                            className="text-sm cursor-pointer"
+                            to='contato'
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            contato
+                        </ScrollLink>
                     </li>
                 </ul>
 
@@ -102,12 +144,16 @@ export default function Header() {
                 <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto z-[999]">
                     <div className="flex items-center mb-8">
 
-                        <Link className="mr-auto text-3xl flex flex-col justify-center items-center font-bold leading-none " href="#">
+                        <ScrollLink
+                            className="mr-auto text-3xflex
+                         f
+                         lex
+                         -col justify-center items-center font-bold leading-none " >
 
                             <Image src={logo} alt="logo valor de uma vida" className='w-[55.8px] mr-[20px] mb-3 text-shadow whitespace-nowrap' />
                             <strong className='font-sans text-[16px] font-bold  text-black text-shadow whitespace-nowrap'>Valor de uma vida</strong>
 
-                        </Link>
+                        </ScrollLink>
                         <button className="navbar-close">
                             {/* Ícone de fechar o menu aqui */}
                         </button>
@@ -119,37 +165,57 @@ export default function Header() {
 
                             <li className="mb-1">
 
-                                <Link className="block p-4 text-sm font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">início
-                                </Link>
+                                <ScrollLink
+                                    className="block p-4 texsm
+                                 f
+                                 ont
+                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >início
+                                </ScrollLink>
 
                             </li>
 
                             <li className="mb-1">
 
-                                <Link className="block p-4 text-sm font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">sobre nós
-                                </Link>
+                                <ScrollLink
+                                    className="block p-4 texsm
+                                 f
+                                 ont
+                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >sobre nós
+                                </ScrollLink>
 
                             </li>
 
                             <li className="mb-1">
 
-                                <Link className="block p-4 text-sm font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">
+                                <ScrollLink
+                                    className="block p-4 texsm
+                                 f
+                                 ont
+                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >
                                     parceiros
-                                </Link>
+                                </ScrollLink>
 
                             </li>
 
                             <li className="mb-1">
 
-                                <Link className="block p-4 text-sm font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">notícias
-                                </Link>
+                                <ScrollLink
+                                    className="block p-4 texsm
+                                 f
+                                 ont
+                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >notícias
+                                </ScrollLink>
 
                             </li>
 
                             <li className="mb-1">
 
-                                <Link className="block p-4 text-sm font-semibold  hover:bg-blue-50 hover:text-blue-600 rounded" href="#">contato
-                                </Link>
+                                <ScrollLink
+                                    className="block p-4 texsm
+                                 f
+                                 ont
+                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >contato
+                                </ScrollLink>
                             </li>
                         </ul>
 
@@ -157,7 +223,7 @@ export default function Header() {
 
                     <div className="mt-auto">
                         <div className="pt-6">
-                            <a className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl" href="#">Seja parceiro</a>
+                            <a className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl" >Seja parceiro</a>
                         </div>
                         <p className="my-4 text-xs text-center ">
                             <span>Copyright © 2023, Valor de uma vida</span>

@@ -8,6 +8,7 @@ import Image from 'next/image';
 import './globals.css';
 
 import logo from '../../public/images/hero_Logo.svg';
+import Whatsapp from '../../public/images/whatsapp_Icon_Fixed.svg';
 import fundo from '../../public/images/fundo.svg';
 import foto_quem_somos_valor_de_uma_vida from '../../public/images/quem-somos-valor-de-uma-vida.png';
 import escorregador_Valor_de_Uma_Vida from '../../public/images/escorregador-Valor-de-Uma-Vida.png';
@@ -58,6 +59,16 @@ export default function RootLayout({ children }) {
 
         <Header />
 
+        <a
+          className='fixed bottom-10 right-5 sm:w-[50px] z-[999]'
+          href="https://api.whatsapp.com/send/?phone=5511933117977&text&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <Image src={Whatsapp} alt='icone whatsapp' />
+        </a>
+
         <div className='sm: h-[539px] w-full lg:h-[688px] flex items-center relative box-border overflow-hidden'>
 
           <Image className='h-[100%] w-[100%] object-cover absolute top-0 left-0'
@@ -65,7 +76,7 @@ export default function RootLayout({ children }) {
             alt='Fundo estatico da pagina'
           />
 
-          <div className=' w-full h-[100%] flex items-center sm:justify-center md:justify-normal relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'>
+          <div id='inicio' className=' w-full h-[100%] flex items-center sm:justify-center md:justify-normal relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'>
 
             <div className='flex items-center sm:flex-col md:flex-row sm:justify-center '>
 
@@ -97,13 +108,15 @@ export default function RootLayout({ children }) {
 
           <div className='sm:hidden md:block w-[100%] h-[992.668px]  absolute  top-[2020px]  lg:top-none right-0  bg-layoutClipPath2 box-shadow-custom custom-clip-path'></div>
 
-          <About
-            image={foto_quem_somos_valor_de_uma_vida}
-            className={'w-[95%] sm:flex-col md:flex-row flex justify-between items-center absolute lg:top-[2200px] md:top-[2280px] z-10'}
-            photo={1}
-            title={'Quem somos'}
-            text={'Nossa instituição, desde 2014, vem prestando serviços com grande potencial na cidade de Várzea Paulista, onde nos localizamos. E, é claro, que ajudamos amigos de todos os lugares, levando o bem e a boa qualidade de vida.'}
-          />
+          <div id="quem_somos">
+            <About
+              image={foto_quem_somos_valor_de_uma_vida}
+              className={'w-[95%] sm:flex-col md:flex-row flex justify-between items-center absolute lg:top-[2200px] md:top-[2280px] z-10'}
+              photo={1}
+              title={'Quem somos'}
+              text={'Nossa instituição, desde 2014, vem prestando serviços com grande potencial na cidade de Várzea Paulista, onde nos localizamos. E, é claro, que ajudamos amigos de todos os lugares, levando o bem e a boa qualidade de vida.'}
+            />
+          </div>
 
         </div>
 
@@ -113,7 +126,7 @@ export default function RootLayout({ children }) {
 
           {/* md para cima  */}
 
-          <div className='sm:hidden md:block'>
+          <div className='sm:hidden md:block' id='sobre_nos'>
             <About
               image={escorregador_Valor_de_Uma_Vida}
               className={'w-[95%]  flex justify-between items-center absolute top-[2780px] right-0 z-10 '}
@@ -157,7 +170,7 @@ export default function RootLayout({ children }) {
         <div className='sm:block w-full sm:h-[1300px] md:h-[929px] bg-layoutClipPath4 absolute clipPathMobile sm:top-[2000px] md:hidden z-[-1]'></div>
 
         <div className='sm:hidden md:block md:w-[90.728px] lg:w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
-        
+
         <div className='sm:hidden md:block md:w-[90.728px] lg:w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2800px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
 
         <SectionMakeDonation />
@@ -174,7 +187,7 @@ export default function RootLayout({ children }) {
 
             <div className="md:w-[542.667px]  lg:w-[1000px] md:h-[285.333px] lg:h-[500px] absolute md:-top-[300px] lg:-top-[160px]  md:right-[0px] lg:-right-[250px] bg-blue-400 md:rotate-[36deg] lg:rotate-[36deg] z-0 custom-clip-blue-tablet"></div>
 
-            <div className="w-full absolute md:top-0 lg:top-[384px] ">
+            <div id='parceiros' className="w-full absolute md:top-0 lg:top-[384px] ">
 
               <h1 className='w-full sm:mb-[80px] md:mb-[180px] text-center  text-black text-shadow text-[38px]  font-bold font-sans uppercase leading-[76.50px]'>parceiros</h1>
 
@@ -197,6 +210,7 @@ export default function RootLayout({ children }) {
                   <div className="w-full h-full flex flex-col items-center sm:justify-center box-border lg:pt-[369px]   bg-opacity-30 bg-black absolute top-0 left-0 z-10 ">
 
                     <p className="text-white sm:text-[20px] md:text-[44px] lg:text-[67px] font-bold font-sans uppercase leading-[100.50px] text-shadow sm:mt-[34px] md:mb-[124px] ">Faça Parte Dessa História</p>
+
 
                     <Button
                       className='sm:w-[226.56px] sm:h-[27.33px] lg:w-[555.37px] lg:h-[67px] shadow-inner bg-yellow-400 shadow-black rounded-[39.59px] justify-center items-center text-black sm:text-[16px] md:text-[21px] font-bold font-sans uppercase '

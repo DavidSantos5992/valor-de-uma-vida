@@ -68,7 +68,7 @@ export default function SectionMakeDonation() {
         <div className="w-full md:h-[905px] lg:h-[1194px] absolute sm:top-[3000px] md:top-[3580px] left-0  md:z-0 ">
 
             <section className='md:w-[400px] lg:w-[558px]  md:h-[677px] absolute md:top-[300px] md:left-[60px] lg:top-[530px] lg:left-[122px] '>
-                
+
                 <p className=' sm:text-center md:w-[400px] lg:w-[558px] sm:mt-[900px] md:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] '> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
 
                 {
@@ -83,7 +83,7 @@ export default function SectionMakeDonation() {
                             />
 
                             <p className={`md:text-[18px] lg:text-[21px] ml-[20px] text-shadow font-bold font-Sans uppercase leading-loose ${doence.color}`}>{doence.name}</p>
-                            
+
                         </div>
 
                     ))
@@ -93,7 +93,7 @@ export default function SectionMakeDonation() {
 
             <section className='sm:w-[370px] md:w-[375px] sm:ml-[.7%] sm:h-[840px] md:h-[890px] lg:w-[500px] lg:h-[1194px] flex flex-col items-center shadow-black shadow-lg box-border sm:pt-[100px] md:pt-[250px] border-none rounded-[30px] mb-[50px] absolute  md:right-[36px] lg:right-[116px] bg-facaColaboracao '>
 
-                <div className='md:mt-[20px] lg:mt-[160px]'>
+                <div id='contato' className='md:mt-[20px] lg:mt-[160px]'>
                     <Image src={logo}
                         className='md:w-[107px] lg:w-[142px] h-auto ml-auto mb-[14px] mr-auto'
                         alt='Logo Valor de Uma Vida'
@@ -114,12 +114,34 @@ export default function SectionMakeDonation() {
                     alt='Código QRcode' />
 
                 <div className='sm:w-[312px] md:w-[307px] lg:w-[396px] sm:h-[52px] lg:h-[70px] border-t border-b solid border-black flex items-center justify-around '>
-                    <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconInstagram} alt='Instagram - Valor de Uma Vida' />
-                    <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconFacebook} alt='Facebook - Valor de Uma Vida' />
-                    <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconWhatsApp} alt='Whatsapp - Valor de Uma Vida' />
+
+                    <a
+                        href="https://www.instagram.com/valordeumavida.ong/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconInstagram} alt='Instagram - Valor de Uma Vida' />
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/ovalordeumavida"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconFacebook} alt='Facebook - Valor de Uma Vida' />
+                    </a>
+
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5511933117977&text&type=phone_number&app_absent=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image className='md:w-[22px] lg:w-[30px] h-auto' src={iconWhatsApp} alt='Whatsapp - Valor de Uma Vida' />
+                    </a>
                 </div>
 
-                <Button className='sm:w-[243px] sm:h-[35px] w-[214px] md:h-[30px] lg:h-[42px] rounded-[20px] font-sans sm:text-[16px] lg:text-[21px] md:text-[15px] font-semibold bg-sectionButton flex items-center justify-center mt-auto mb-auto' title={'Faça a Diferença'} onPress={() => handleButton()} />
+                {/* <Button className='sm:w-[243px] sm:h-[35px] w-[214px] md:h-[30px] lg:h-[42px] rounded-[20px] font-sans sm:text-[16px] lg:text-[21px] md:text-[15px] font-semibold bg-sectionButton flex items-center justify-center mt-auto mb-auto' title={'Faça a Diferença'} onPress={() => handleButton()} /> */}
+                
             </section>
 
         </div>

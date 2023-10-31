@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar-thumb {
+    background: #facc15;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar{
+    background: rgb(238, 238, 238);
+}
+
 img {
     pointer-events: none;
 }
