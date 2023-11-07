@@ -2,7 +2,7 @@
 import bannerEscorregador from '../../../public/images/banner_escorregador.svg';
 import Image from 'next/image';
 import { Link as ScrollLink } from "react-scroll";
-import Button from '../Button';
+// import Button from '../Button';
 
 export default function BannerPartner() {
 

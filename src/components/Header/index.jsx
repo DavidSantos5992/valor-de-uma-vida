@@ -40,12 +40,18 @@ export default function Header() {
             <nav className="relative px-4 py-4 flex justify-between items-center bg-white shadow-md font-bold font-sans uppercase ">
 
                 <ScrollLink
-                    className=" flex items-center backdrotext
-                -3
-                xl
-                 font-bold leading-none" >
-                    <Image src={logo} alt="logo valor de uma vida" className='w-[55.8px] mr-[20px] text-shadow whitespace-nowrap' />
+                    to='inicio'
+                    className=" flex items-center  text-3 font-bold leading-none" >
+
+                    <Image
+                        className='w-[55.8px] mr-[20px] text-shadow whitespace-nowrap'
+                        priority={true}
+                        src={logo}
+                        alt="logo valor de uma vida"
+                    />
+
                     <strong className='font-sans text-[16px] font-bold  text-black text-shadow whitespace-nowrap'>Valor de uma vida</strong>
+
                 </ScrollLink>
 
                 <div className="lg:hidden">
@@ -103,7 +109,7 @@ export default function Header() {
                         </ScrollLink>
                     </li>
 
-                    
+
 
                     <li className='hover:transform hover:scale-110'>
                         <ScrollLink
@@ -131,19 +137,26 @@ export default function Header() {
 
             <ul className={isMenuOpen ? 'navbar-menu' : 'navbar-menu hidden'}>
                 <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 z-40" onClick={toggleMenu}></div>
-                <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto z-[999]">
+                <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto z-[999] ">
                     <div className="flex items-center mb-8">
 
                         <ScrollLink
-                            className="mr-auto text-3xflex
-                         f
-                         lex
-                         -col justify-center items-center font-bold leading-none " >
-
-                            <Image src={logo} alt="logo valor de uma vida" className='w-[55.8px] mr-[20px] mb-3 text-shadow whitespace-nowrap' />
-                            <strong className='font-sans text-[16px] font-bold  text-black text-shadow whitespace-nowrap'>Valor de uma vida</strong>
-
+                            to='inicio'
+                            className="mr-auto text-3xl flex flex-col justify-center items-center font-bold leading-none"
+                        >
+                            <Image
+                                src={logo}
+                                alt="logo valor de uma vida"
+                                className="w-[55.8px] mr-[20px] mb-3 text-shadow whitespace-nowrap"
+                            />
+                            <strong
+                                className="font-sans text-[16px] font-bold text-black text-shadow whitespace-nowrap"
+                            >
+                                Valor de uma vida
+                            </strong>
                         </ScrollLink>
+
+
                         <button className="navbar-close">
                             {/* Ícone de fechar o menu aqui */}
                         </button>
@@ -156,10 +169,22 @@ export default function Header() {
                             <li className="mb-1">
 
                                 <ScrollLink
-                                    className="block p-4 texsm
-                                 f
-                                 ont
-                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >início
+                                    to='inicio'
+                                    className="block p-4 text-sm font-semibold hover:bg-blue-50 hover:text-blue-600 rounded"
+                                >
+                                    Início
+                                </ScrollLink>
+
+
+                            </li>
+
+                            <li className="mb-1">
+
+                                <ScrollLink
+                                    to="quem_somos"
+                                    className="block p-4 text-sm font-semibold hover:bg-blue-50 hover:text-blue-600 rounded"
+                                >
+                                    Sobre nós
                                 </ScrollLink>
 
                             </li>
@@ -167,45 +192,34 @@ export default function Header() {
                             <li className="mb-1">
 
                                 <ScrollLink
-                                    className="block p-4 texsm
-                                 f
-                                 ont
-                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >sobre nós
+                                    to='parceiros'
+                                    className="block p-4 text-sm font-semibold hover:bg-blue-50 hover:text-blue-600 rounded"
+                                >
+                                    Parceiros
                                 </ScrollLink>
+
 
                             </li>
 
-                            <li className="mb-1">
+                            {/* <li className="mb-1">
 
                                 <ScrollLink
-                                    className="block p-4 texsm
-                                 f
-                                 ont
-                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >
-                                    parceiros
+                                    className="block p-4 text-sm font-semibold hover:bg-blue-50 hover:text-blue-600 rounded"
+                                >
+                                    Notícias
                                 </ScrollLink>
 
-                            </li>
+
+                            </li> */}
 
                             <li className="mb-1">
-
                                 <ScrollLink
-                                    className="block p-4 texsm
-                                 f
-                                 ont
-                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >notícias
+                                    to='contato'
+                                    className="block p-4 text-sm font-semibold hover:bg-blue-50 hover:text-blue-600 rounded"
+                                >
+                                    Contato
                                 </ScrollLink>
 
-                            </li>
-
-                            <li className="mb-1">
-
-                                <ScrollLink
-                                    className="block p-4 texsm
-                                 f
-                                 ont
-                                 -semibold  hover:bg-blue-50 hover:text-blue-600 rounded" >contato
-                                </ScrollLink>
                             </li>
                         </ul>
 

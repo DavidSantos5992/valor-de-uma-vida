@@ -66,21 +66,35 @@ export default function RootLayout({ children }) {
           rel="noopener noreferrer"
         >
 
-          <Image src={Whatsapp} alt='icone whatsapp' />
+          <Image
+            src={Whatsapp}
+            alt='icone whatsapp'
+          />
         </a>
 
         <div className='sm: h-[539px] w-full lg:h-[688px] flex items-center relative box-border overflow-hidden'>
 
           <Image className='h-[100%] w-[100%] object-cover absolute top-0 left-0'
             src={fundo}
-            alt='Fundo estatico da pagina'
+            alt='Fundo estatico da pagina valor de uma vida'
+            priority={true}
           />
 
-          <div id='inicio' className=' w-full h-[100%] flex items-center sm:justify-center md:justify-normal relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'>
+
+
+          <div
+            id='inicio'
+            className=' w-full h-[100%] flex items-center sm:justify-center md:justify-normal relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'
+          >
 
             <div className='flex items-center sm:flex-col md:flex-row sm:justify-center '>
 
-              <Image className='lg:w-[135px] lg:h-[135px] md:w-[90px] md:h-[90px]' src={logo} alt='Logo valor de uma vida' />
+              <Image
+                className='lg:w-[135px] lg:h-[135px] md:w-[90px] md:h-[90px]'
+                src={logo}
+                alt='Logo valor de uma vida'
+                priority={true}
+              />
 
               <h2 className='ml-[20px] font-bold font-sans uppercase lg:text-[28px] md:text-[18px] text-white text-shadow'>valor de uma vida</h2>
 
@@ -195,7 +209,11 @@ export default function RootLayout({ children }) {
 
                 {partners.map((element, index) => (
 
-                  <Image className="sm:w-[100px] sm:mr-10 sm:mb-14 md:w-[165.333px] lg:w-[200px] ml-auto mr-auto" key={index} src={element.image} alt={element.name} />
+                  <Image
+                    className="sm:w-[100px] sm:mr-10 sm:mb-14 md:w-[165.333px] lg:w-[200px] ml-auto mr-auto"
+                    key={index} src={element.image}
+                    alt={element.name}
+                  />
 
                 ))}
 
@@ -213,6 +231,7 @@ export default function RootLayout({ children }) {
         </div>
 
       </body>
+
     </html>
   )
 
