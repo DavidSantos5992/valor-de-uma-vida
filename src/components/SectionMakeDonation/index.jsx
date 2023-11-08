@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
-import logo from '../../../public/images/cc_logo.svg'
+import logo from '../../../public/images/cc_Logo.svg'
 import qrCode from '../../../public/images/qr_Code.svg'
 import iconFacebook from '../../../public/images/icon_Facebook.svg'
 import iconWhatsApp from '../../../public/images/icon_WhatsApp.svg'
