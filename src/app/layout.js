@@ -41,7 +41,7 @@ const partners = [
 
 export const metadata = {
   title: 'Valor de uma Vida',
-  description: 'Ong Valor de uma Vida',
+  description: 'Ong Valor de uma Vida, ',
 };
 
 export default function RootLayout({ children }) {
@@ -53,6 +53,37 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+
+        {/*metatag "author" para indicar o autor do site */}
+        <meta name="author" content="David Henrique Silva dos Santos" />
+
+        {/*  metatag de palavras-chave, conforme necessário */}
+        <meta name="keywords" content="ong,valor vida, como ajudar uma ong, fazer doação para ong, valor de uma vida, solidariedade, ajudar pessoas, verdadeiro valor da vida,quanto vale uma vida, valores materiais," />
+
+        {/* responsivo em dispositivos móveis. */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* controla o comportamento dos motores de busca  */}
+        <meta name="robots" content="index, follow" />
+
+        {/* controlar como o conteúdo do seu site é exibido nas redes sociais,  */}
+        <meta property="og:title" content="Valor De Uma Vida" />
+        <meta property="og:description" content="Ong não governamental, voltada para ajuda de, crianças, adultos e idosos, com doenças crônicas" />
+
+        {/* metatags controlam como o conteúdo é exibido no Twitter. */}
+        <meta name="twitter:title" content="Valor De Uma Vida" />
+        <meta name="twitter:description" content="Ong não governamental, voltada para ajuda de, crianças, adultos e idosos, com doenças crônicas" />
+
+        {/* imagem a ser exibida quando o conteúdo do seu site é compartilhado em redes sociais. */}
+        <meta property="og:image" content="https://scontent.fcpq17-1.fna.fbcdn.net/v/t39.30808-6/359737765_661134682731609_6214284387648160420_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFnurcvImlRbZGk0YzLzTbUhg5j8ZNfrCiGDmPxk1-sKKpCqgDX6V1EOZeIW8DsfKr6h0U9rN5bcivj83I-FRaP&_nc_ohc=DwJ9NGKEXa8AX9qmBhF&_nc_ht=scontent.fcpq17-1.fna&oh=00_AfAP32eLkgpgLR-H-j-9kHDh_AA5UyGVcoAFLEDuP7VJJQ&oe=6551470A" />
+
+        {/* define o tipo de conteúdo do seu site, como "website", "article", "product", etc. */}
+        <meta property="og:type" content="website" />
+
+        {/*  a escala da tela em dispositivos móveis, pode especificar um valor específico para "viewport" para telas pequenas. */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
       </Head>
 
       <body>

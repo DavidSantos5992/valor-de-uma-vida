@@ -1,6 +1,7 @@
 'use client'
 import { React, useRef, useState, useEffect } from 'react';
 import './styles.css'
+import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image';
 import img from '../../../public/images/cards carrosel/campaigns_Item_01.png'
 import img2 from '../../../public/images/cards carrosel/campaigns_Item_02.png'
@@ -17,27 +18,24 @@ export default function Carrossel({ title, className, type }) {
             name: 'natal',
             photo: img,
             text: '',
-            alt: 'Camapanha de natal valor de uma vida'
+            alt: 'Camapanha de natal valor de uma vida',
+            id: 'natal_solidario'
         },
 
         {
             name: 'inverno',
             photo: img2,
             text: '',
-            alt: 'Camapanha de inverno valor de uma vida'
+            alt: 'Camapanha de inverno valor de uma vida',
+            id: 'inverno_solidario'
         },
 
         {
             name: 'dia das crianças',
             photo: img3,
             text: '',
-            alt: 'Camapanha de dia das crinaças valor de uma vida'
-        },
-        {
-            name: 'dia das crianças',
-            photo: img3,
-            text: '',
-            alt: 'Camapanha de dia das crinaças valor de uma vida'
+            alt: 'Camapanha de dia das crinaças valor de uma vida',
+            id: 'diaDasCriancas_solidario'
         },
 
     ])
@@ -186,14 +184,18 @@ export default function Carrossel({ title, className, type }) {
                             {
                                 itemsCarrosel.map((item, key) =>
 
-                                    <div
+                                    <ScrollLink
+                                        className="sm:w-[100px] sm:h-[100px] lg:w-[280px] lg:h-[280px] md:w-[220px] md:h-[220px]  sm:ml-[10px] lg:ml-[20px] rounded-[20px] box-border overflow-hidden "
+                                        to={item.id}
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
                                         onClick={() => handleClickCarrosel(key)}
                                         key={key}
-                                        className="sm:w-[100px] sm:h-[100px] lg:w-[280px] lg:h-[280px] md:w-[220px] md:h-[220px]  sm:ml-[10px] lg:ml-[20px] rounded-[20px] box-border overflow-hidden "
                                     >
                                         <Image className='w-full h-full' src={item.photo} alt={item.alt} />
 
-                                    </div>
+                                    </ScrollLink>
 
                                 )
                             }

@@ -2,22 +2,53 @@ import Carrossel from "@/components/Carrossel"
 import SectionPhoto from "@/components/SectionPhoto"
 import Campaigns from "@/components/Campaigns"
 
+//----------------------------------------------
+// imagem principal
 import Natal_valor_de_uma_vida from '../../public/images/cards carrosel/campaigns_Item_01.png'
+
+import natal1 from '../../public/images/Campanhas/Natal/natal1.jpg'
+import natal2 from '../../public/images/Campanhas/Natal/natal2.jpg'
+import natal3 from '../../public/images/Campanhas/Natal/natal3.jpg'
+
+//----------------------------------------------
+
+//----------------------------------------------
+// imagem principal
 import Inverno_Solidario_valor_de_uma_vida from '../../public/images/cards carrosel/campaigns_Item_02.png'
+
+import inverno1 from '../../public/images/Campanhas/Inverno/inverno1.jpg'
+import inverno2 from '../../public/images/Campanhas/Inverno/inverno2.jpg'
+import inverno3 from '../../public/images/Campanhas/Inverno/inverno3.jpg'
+
+//----------------------------------------------
+
+//----------------------------------------------
+// imagem principal
 import dia_das_criancas_valor_de_uma_vida from '../../public/images/cards carrosel/campaigns_Item_03.png'
 
+import dia_das_criancas1 from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas1.JPG'
+import dia_das_criancas2 from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas2.JPG'
+import dia_das_criancas3 from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas3.JPG'
+//----------------------------------------------
+
+
+//----------------------------------------------
 import icon_natal_valor_de_uma_vida from '../../public/images/icon-natal-valor-de-uma-vida.svg'
 import icon_inverno_valor_de_uma_vida from '../../public/images/icon_SnowMan.svg'
 import icon_dia_das_criancas_valor_de_uma_vida from '../../public/images/icon_Teddy_Bear.svg'
+//----------------------------------------------
 
+//----------------------------------------------
 import arrow_icon_rose from '../../public/images/btn_Icon-rose.svg'
 import arrow_icon_blue from '../../public/images/btn_Icon-blue.svg'
 import arrow_icon_emerald from '../../public/images/btn_btn_Icon-emerald.svg'
+//----------------------------------------------
 
 
 const natal = {
   title: 'natal solidário',
-  photos: [Natal_valor_de_uma_vida, Natal_valor_de_uma_vida, Natal_valor_de_uma_vida],
+  mainPhoto: Natal_valor_de_uma_vida,
+  photos: [natal1, natal2, natal3],
   icon: icon_natal_valor_de_uma_vida,
   arrowIcon: arrow_icon_rose,
   alt: 'natal solidário valor de uma vida'
@@ -25,7 +56,8 @@ const natal = {
 
 const inverno = {
   title: 'inverno solidário',
-  photos: [Inverno_Solidario_valor_de_uma_vida, Inverno_Solidario_valor_de_uma_vida, Inverno_Solidario_valor_de_uma_vida],
+  mainPhoto: Inverno_Solidario_valor_de_uma_vida,
+  photos: [inverno1, inverno2, inverno3],
   icon: icon_inverno_valor_de_uma_vida,
   arrowIcon: arrow_icon_blue,
   alt: 'inverno solidário valor de uma vida'
@@ -34,7 +66,8 @@ const inverno = {
 
 const diaDasCriancas = {
   title: 'dia das crianças',
-  photos: [dia_das_criancas_valor_de_uma_vida, dia_das_criancas_valor_de_uma_vida, dia_das_criancas_valor_de_uma_vida],
+  mainPhoto: dia_das_criancas_valor_de_uma_vida,
+  photos: [dia_das_criancas1, dia_das_criancas2, dia_das_criancas3],
   icon: icon_dia_das_criancas_valor_de_uma_vida,
   arrowIcon: arrow_icon_emerald,
   alt: 'dia das crianças solidário valor de uma vida'
@@ -72,18 +105,24 @@ export default function Home() {
           campaign={natal}
           mainColor={'bg-rose-500'}
           fontColor={'text-rose-500'}
+          id={'natal_solidario'}
+          url={'https://www.instagram.com/p/Cm9OdnIuIQh/?img_index=1'}
         />
 
         <Campaigns
           campaign={inverno}
           mainColor={'bg-sky-800'}
           fontColor={'text-sky-800'}
+          id={'inverno_solidario'}
+          url={'https://www.instagram.com/p/CSAEqB6Lezi/?img_index=1'}
         />
 
         <Campaigns
           campaign={diaDasCriancas}
           mainColor={'bg-teal-300'}
           fontColor={'text-emerald-300'}
+          id={'diaDasCriancas_solidario'}
+          url={'https://www.instagram.com/p/CyyCLOcg4Xn/?img_index=1'}
         />
 
 

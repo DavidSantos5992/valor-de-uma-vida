@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'; // Importe useState e useEffect do 
 import { Link as ScrollLink } from 'react-scroll';
 import Button from '../Button';
 import Image from 'next/image';
-import logo from '../../../public/images/header_Logo.svg'
+import logo from '../../../public/images/header_Logo.svg';
 
 export default function Header() {
 
@@ -17,9 +17,18 @@ export default function Header() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenuOnLinkClick = () => {
+        console.log('clicou')
+        if (isMenuOpen) {
+            setIsMenuOpen(false);
+        }
+    };
+
     useEffect(() => {
+
         // Abra ou feche o menu e adicione a lógica aqui
         // Por exemplo, você pode adicionar classes para mostrar/ocultar o menu
+
         const menu = document.querySelector('.navbar-menu');
         const backdrop = document.querySelector('.navbar-backdrop');
 
@@ -32,6 +41,7 @@ export default function Header() {
                 backdrop.classList.add('hidden');
             }
         }
+
     }, [isMenuOpen]);
 
     return (
@@ -41,7 +51,12 @@ export default function Header() {
 
                 <ScrollLink
                     to='inicio'
-                    className=" flex items-center  text-3 font-bold leading-none" >
+                    className=" flex items-center  text-3 font-bold leading-none"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={closeMenuOnLinkClick} // Fecha o menu ao clicar em um link
+                >
 
                     <Image
                         className='w-[55.8px] mr-[20px] text-shadow whitespace-nowrap'
@@ -124,11 +139,17 @@ export default function Header() {
                     </li>
                 </ul>
 
-                <Button
+                <ScrollLink
                     className="sm:hidden lg:block w-[158px] h-[34px] text-[15px] shadow-inner bg-yellow-400 hover:bg-yellow-500 shadow-gray-700  rounded-[20px] uppercase"
-                    title={'seja parceiro'}
-                    onPress={() => respawn()}
-                />
+                    to='contato'
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
+                    <p className='h-[100%] text-center flex justify-center items-center hover:cursor-pointer'>
+                        seja parceiro
+                    </p>
+                </ScrollLink>
 
 
             </nav>
@@ -171,6 +192,10 @@ export default function Header() {
                                 <ScrollLink
                                     to='inicio'
                                     className="block p-4 text-sm font-semibold hover:bg-blue-50 hover:text-blue-600 rounded"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={closeMenuOnLinkClick}
                                 >
                                     Início
                                 </ScrollLink>
@@ -183,6 +208,10 @@ export default function Header() {
                                 <ScrollLink
                                     to="quem_somos"
                                     className="block p-4 text-sm font-semibold hover:bg-blue-50 hover:text-blue-600 rounded"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={closeMenuOnLinkClick}
                                 >
                                     Sobre nós
                                 </ScrollLink>
@@ -194,6 +223,10 @@ export default function Header() {
                                 <ScrollLink
                                     to='parceiros'
                                     className="block p-4 text-sm font-semibold hover:bg-blue-50 hover:text-blue-600 rounded"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={closeMenuOnLinkClick}
                                 >
                                     Parceiros
                                 </ScrollLink>
@@ -216,6 +249,10 @@ export default function Header() {
                                 <ScrollLink
                                     to='contato'
                                     className="block p-4 text-sm font-semibold hover:bg-blue-50 hover:text-blue-600 rounded"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={closeMenuOnLinkClick}
                                 >
                                     Contato
                                 </ScrollLink>
@@ -227,7 +264,16 @@ export default function Header() {
 
                     <div className="mt-auto">
                         <div className="pt-6">
-                            <a className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl" >Seja parceiro</a>
+                            <ScrollLink
+                                to='contato'
+                                className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onClick={closeMenuOnLinkClick}
+                            >
+                                Seja parceiro
+                            </ScrollLink>
                         </div>
                         <p className="my-4 text-xs text-center ">
                             <span>Copyright © 2023, Valor de uma vida</span>

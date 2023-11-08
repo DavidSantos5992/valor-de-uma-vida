@@ -26,9 +26,9 @@ export default function SectionMakeDonation() {
         if (navigator.clipboard) {
             navigator.clipboard.writeText(textoACopiar)
                 .then(() => {
-                    setCopiado(true);
+                    setCopied(true);
                     setTimeout(() => {
-                        setCopiado(false);
+                        setCopied(false);
                     }, 3000);
                 })
                 .catch((error) => {
@@ -48,9 +48,9 @@ export default function SectionMakeDonation() {
         input.select();
         document.execCommand('copy');
         document.body.removeChild(input);
-        setCopiado(true);
+        setCopied(true);
         setTimeout(() => {
-            setCopiado(false);
+            setCopied(false);
         }, 3000);
     };
 
