@@ -67,7 +67,7 @@ const inverno = {
 const diaDasCriancas = {
   title: 'dia das crianças',
   mainPhoto: dia_das_criancas_valor_de_uma_vida,
-  photos: [dia_das_criancas1, dia_das_criancas2, dia_das_criancas3],
+  photos: ['/images/Campanhas/Dia_das_criancas/dia_das_criancas1.jpg', '/images/Campanhas/Dia_das_criancas/dia_das_criancas2.jpg', '/images/Campanhas/Dia_das_criancas/dia_das_criancas3.jpg'],
   icon: icon_dia_das_criancas_valor_de_uma_vida,
   arrowIcon: arrow_icon_emerald,
   alt: 'dia das crianças solidário valor de uma vida'

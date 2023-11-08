@@ -11,11 +11,15 @@ export default function Campaigns({ campaign, mainColor, fontColor, id, url }) {
             <div className={` w-[98px] h-[67px] flex items-end justify-center box-border pb-3 rounded-tl-lg rounded-tr-lg ${mainColor} absolute top-[-67px] left-0 `}>
                 <Image
                     alt={campaign.alt}
+                    width={55}
+                    height={55}
                     className='w-[15px] h-auto mr-[10px] ' src={campaign.icon}
                 />
 
                 <Image
                     alt={campaign.alt}
+                    width={55}
+                    height={55}
                     className='w-[24px] h-auto' src={campaign.icon}
                 />
 
@@ -33,7 +37,12 @@ export default function Campaigns({ campaign, mainColor, fontColor, id, url }) {
 
                 <div className='sm:w-[100px] sm:h-[100px] md:w-[188px] lg:w-[292px] md:h-[188px] lg:h-[292px] md:mt-[40px] mr-[40px] overflow-hidden mb-[23px] left-0 top-0 flex items-center justify-center sm:rounded-[20px] md:rounded-[35px] border-2 border-zinc-300 '>
 
-                    <Image className='w-[282px] h-auto sm:rounded-[20px] md:rounded-[35px]' src={campaign.mainPhoto} alt='icon campanha valor de uma vida' />
+                    <Image
+                        width={55}
+                        height={55}
+                        className='w-[282px] h-auto sm:rounded-[20px] md:rounded-[35px]'
+                        src={campaign.mainPhoto} alt='icon campanha valor de uma vida'
+                    />
 
                 </div>
 
@@ -44,7 +53,12 @@ export default function Campaigns({ campaign, mainColor, fontColor, id, url }) {
                 >
                     <p className={`${fontColor} sm:h-[100%]  lg:h-[33px]  capitalize flex justify-center items-center sm:text-[10px]  md:text-[19px] lg:text-[28px] font-bold font-sans md:leading-[42px]`}>ver mais</p>
 
-                    <Image className='sm:w-[15px]  md:w-[39px] ' src={campaign.arrowIcon} alt='arrow_Valor_de_Uma_Vida' />
+                    <Image
+                        width={55}
+                        height={55}
+                        className='sm:w-[15px]  md:w-[39px] '
+                        src={campaign.arrowIcon} alt='arrow_Valor_de_Uma_Vida'
+                    />
 
                 </a>
 
@@ -57,7 +71,13 @@ export default function Campaigns({ campaign, mainColor, fontColor, id, url }) {
 
                         <div key={index} className=' sm:w-[68px] sm:h-[68px] md:w-[188px] lg:w-[292px] md:h-[188px] lg:h-[292px]  flex items-center justify-center rounded-[10px] md:rounded-[35px] sm:mr-[10px] md:mr-[20px] lg:mr-[30px] overflow-hidden'>
 
-                            <Image alt={campaign.alt} className=' w-[282px] h-auto sm:rounded-[10px] md:rounded-[35px]' src={element} />
+                            <Image
+                                width={55}
+                                height={55}
+                                alt={campaign.alt}
+                                className=' w-[282px] h-auto sm:rounded-[10px] md:rounded-[35px]'
+                                src={element}
+                            />
 
                         </div>
 
