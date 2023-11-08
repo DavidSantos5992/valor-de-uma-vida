@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 
+import teste from '../../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas1.jpg'
+
 export default function Campaigns({ campaign, mainColor, fontColor, id, url }) {
 
     return (

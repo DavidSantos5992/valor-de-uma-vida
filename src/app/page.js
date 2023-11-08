@@ -62,6 +62,8 @@ const inverno = {
 
 }
 
+import teste from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas1.jpg'
+
 const diaDasCriancas = {
   title: 'dia das crianças',
   mainPhoto: dia_das_criancas_valor_de_uma_vida,
