@@ -26,9 +26,9 @@ import inverno3 from '../../public/images/Campanhas/Inverno/inverno3.jpg'
 // imagem principal
 import dia_das_criancas_valor_de_uma_vida from '../../public/images/cards carrosel/campaigns_Item_03.png'
 
-import dia_das_criancas1 from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas1.JPG'
-import dia_das_criancas2 from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas2.JPG'
-import dia_das_criancas3 from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas3.JPG'
+import dia_das_criancas1 from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas1.jpg'
+import dia_das_criancas2 from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas2.jpg'
+import dia_das_criancas3 from '../../public/images/Campanhas/Dia_das_criancas/dia_das_criancas3.jpg'
 //----------------------------------------------
 
 

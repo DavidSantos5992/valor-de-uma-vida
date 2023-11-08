@@ -155,7 +155,6 @@ export default function Header() {
             </nav>
 
             {/* ----------celular---------- */}
-
             <ul className={isMenuOpen ? 'navbar-menu' : 'navbar-menu hidden'}>
                 <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 z-40" onClick={toggleMenu}></div>
                 <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto z-[999] ">
