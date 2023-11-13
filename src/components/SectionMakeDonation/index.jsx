@@ -1,18 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
-import logo from '../../../public/images/cc_Logo.svg'
-import qrCode from '../../../public/images/qr_Code.svg'
-import iconFacebook from '../../../public/images/icon_Facebook.svg'
-import iconWhatsApp from '../../../public/images/icon_WhatsApp.svg'
-import iconInstagram from '../../../public/images/icon_Instagram.svg'
-import iconAvc from '../../../public/images/icon-avx.svg'
-import iconDistrofia from '../../../public/images/icon_distrofia.svg'
-import iconAlzaheimer from '../../../public/images/C.svg'
-import iconParalisia from '../../../public/images/icon_paralisia.svg'
-import iconHidrosefalia from '../../../public/images/icon_Hidrocefalia.svg'
-import iconCancer from '../../../public/images/icon_cancer.svg'
-import iconutras from '../../../public/images/icon_outras.svg'
 
 import { FaCopy, FaClipboardCheck } from 'react-icons/fa'
 
@@ -58,43 +46,43 @@ export default function SectionMakeDonation() {
     const doences = [
         {
             name: 'AVC',
-            icon: iconAvc,
+            icon: '/images/icon-avx.svg',
             alt: 'icone de avc Valor de uma vida ',
             color: 'text-cyan-600'
         },
         {
             name: 'Distrofia Muscular',
-            icon: iconDistrofia,
+            icon: '/images/icon_distrofia.svg',
             alt: 'icone de Distrofia Muscular Valor de uma vida ',
             color: 'text-sky-800'
         },
         {
             name: 'Alzheimer',
-            icon: iconAlzaheimer,
+            icon: '/images/C.svg',
             alt: 'icone de Alzaheimer Valor de uma vida ',
             color: 'text-pink-900'
         },
         {
             name: 'Paralisia Cerebral',
-            icon: iconParalisia,
+            icon: '/images/icon_paralisia.svg',
             alt: 'icone de Paralisia Cerebral Valor de uma vida ',
             color: 'text-red-800'
         },
         {
             name: 'Hidrocefalia',
-            icon: iconHidrosefalia,
+            icon: '/images/icon_Hidrocefalia.svg',
             alt: 'icone de Hidrocefalia Valor de uma vida ',
             color: 'text-red-600'
         },
         {
             name: 'Câncer',
-            icon: iconCancer,
+            icon: '/images/icon_cancer.svg',
             alt: 'icone de Câncer Valor de uma vida ',
             color: 'text-orange-500'
         },
         {
             name: 'Outras doenças',
-            icon: iconutras,
+            icon: '/images/icon_outras.svg',
             alt: 'icone de Outras doenças Valor de uma vida ',
             color: 'text-yellow-400'
         },
@@ -119,6 +107,8 @@ export default function SectionMakeDonation() {
                                 <Image
                                     className='md:w-[26px] lg:w-[36px] h-auto'
                                     src={doence.icon}
+                                    width={500}
+                                    height={500}
                                     alt={doence.alt}
                                 />
 
@@ -134,7 +124,9 @@ export default function SectionMakeDonation() {
                 <section className='sm:w-[370px] md:w-[375px] sm:ml-[.7%] sm:h-[840px] md:h-[890px] lg:w-[500px] lg:h-[1194px] flex flex-col items-center shadow-black shadow-lg box-border sm:pt-[100px] md:pt-[250px] border-none rounded-[30px] mb-[50px] absolute  md:right-[36px] lg:right-[116px] bg-facaColaboracao '>
 
                     <div id='contato' className='md:mt-[20px] lg:mt-[160px]'>
-                        <Image src={logo}
+                        <Image src="/images/cc_Logo.svg"
+                            width={500}
+                            height={500}
                             className='md:w-[107px] lg:w-[142px] h-auto ml-auto mb-[14px] mr-auto'
                             alt='Logo Valor de Uma Vida'
                         />
@@ -150,7 +142,9 @@ export default function SectionMakeDonation() {
                     <h3 className='md:text-[20px] lg:text-[28px] text-shadow font-bold font-sans uppercase sm:mt-[15px] lg:mt-[20px] mb-[40px]'>faça uma colaboração via pix</h3>
 
                     <Image className='sm:w-[185px] md:w-[150px] lg:w-[200px] h-auto sm:mb-[25px] md:mb-[30px]  '
-                        src={qrCode}
+                        src="/images/qr_Code.svg"
+                        width={500}
+                        height={500}
                         alt='Código QRcode'
                     />
 
@@ -177,7 +171,13 @@ export default function SectionMakeDonation() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image className='md:w-[22px] lg:w-[30px] h-auto ' src={iconInstagram} alt='Instagram - Valor de Uma Vida' />
+                            <Image
+                                className='md:w-[22px] lg:w-[30px] h-auto '
+                                src="/images/icon_Instagram.svg"
+                                width={500}
+                                height={500}
+                                alt='Instagram - Valor de Uma Vida'
+                            />
                         </a>
 
                         <a className='hover:transform hover:scale-110'
@@ -185,7 +185,13 @@ export default function SectionMakeDonation() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image className='md:w-[22px] lg:w-[30px] h-auto ' src={iconFacebook} alt='Facebook - Valor de Uma Vida' />
+                            <Image
+                                className='md:w-[22px] lg:w-[30px] h-auto '
+                                src="/images/icon_Facebook.svg"
+                                width={500}
+                                height={500}
+                                alt='Facebook - Valor de Uma Vida'
+                            />
                         </a>
 
                         <a className='hover:transform hover:scale-110'
@@ -193,7 +199,13 @@ export default function SectionMakeDonation() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image className='md:w-[22px] lg:w-[30px] h-auto ' src={iconWhatsApp} alt='Whatsapp - Valor de Uma Vida' />
+                            <Image
+                                className='md:w-[22px] lg:w-[30px] h-auto '
+                                src="/images/icon_WhatsApp.svg"
+                                width={500}
+                                height={500}
+                                alt='Whatsapp - Valor de Uma Vida'
+                            />
                         </a>
                     </div>
 

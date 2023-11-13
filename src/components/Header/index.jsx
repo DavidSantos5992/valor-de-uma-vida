@@ -61,8 +61,8 @@ export default function Header() {
                     <Image
                         className='w-[55.8px] h-auto mr-[20px] text-shadow whitespace-nowrap'
                         priority={true}
-                        width={55}
-                        height={55}
+                        width={500}
+                        height={500}
                         src='/images/header_Logo.svg'
                         alt="logo valor de uma vida"
                     />
@@ -168,8 +168,8 @@ export default function Header() {
                         >
                             <Image
                                src='/images/header_Logo.svg'
-                               width={55}
-                               height={55}
+                               width={500}
+                               height={500}
                                 alt="logo valor de uma vida"
                                 className="w-[55.8px] mr-[20px] mb-3 text-shadow whitespace-nowrap"
                             />
