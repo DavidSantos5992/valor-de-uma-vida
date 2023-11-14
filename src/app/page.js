@@ -1,74 +1,33 @@
-import Carrossel from "@/components/Carrossel"
-import SectionPhoto from "@/components/SectionPhoto"
-import Campaigns from "@/components/Campaigns"
-
-//----------------------------------------------
-// imagem principal
-import Natal_valor_de_uma_vida from '../../public/images/cards carrosel/campaigns_Item_01.png'
-
-import natal1 from '../../public/images/Campanhas/Natal/natal1.jpg'
-import natal2 from '../../public/images/Campanhas/Natal/natal2.jpg'
-import natal3 from '../../public/images/Campanhas/Natal/natal3.jpg'
-
-//----------------------------------------------
-
-//----------------------------------------------
-// imagem principal
-import Inverno_Solidario_valor_de_uma_vida from '../../public/images/cards carrosel/campaigns_Item_02.png'
-
-import inverno1 from '../../public/images/Campanhas/Inverno/inverno1.jpg'
-import inverno2 from '../../public/images/Campanhas/Inverno/inverno2.jpg'
-import inverno3 from '../../public/images/Campanhas/Inverno/inverno3.jpg'
-
-//----------------------------------------------
-
-//----------------------------------------------
-// imagem principal
-import dia_das_criancas_valor_de_uma_vida from '../../public/images/cards carrosel/campaigns_Item_03.png'
-
-
-//----------------------------------------------
-
-
-//----------------------------------------------
-import icon_natal_valor_de_uma_vida from '../../public/images/icon-natal-valor-de-uma-vida.svg'
-import icon_inverno_valor_de_uma_vida from '../../public/images/icon_SnowMan.svg'
-import icon_dia_das_criancas_valor_de_uma_vida from '../../public/images/icon_Teddy_Bear.svg'
-//----------------------------------------------
-
-//----------------------------------------------
-import arrow_icon_rose from '../../public/images/btn_Icon-rose.svg'
-import arrow_icon_blue from '../../public/images/btn_Icon-blue.svg'
-import arrow_icon_emerald from '../../public/images/btn_btn_Icon-emerald.svg'
-//----------------------------------------------
-
+import dynamic from 'next/dynamic';
+const Carrossel = dynamic(() => import("@/components/Carrossel"));
+const SectionPhoto = dynamic(() => import("@/components/SectionPhoto"));
+const Campaigns = dynamic(() => import("@/components/Campaigns"));
 
 const natal = {
   title: 'natal solidário',
-  mainPhoto: Natal_valor_de_uma_vida,
-  photos: [natal1, natal2, natal3],
-  icon: icon_natal_valor_de_uma_vida,
-  arrowIcon: arrow_icon_rose,
+  mainPhoto: '/images/cards carrosel/campaigns_Item_01.png',
+  photos: ['/images/Campanhas/Natal/natal1.jpg', '/images/Campanhas/Natal/natal2.jpg', '/images/Campanhas/Natal/natal3.jpg'],
+  icon: '/images/icon-natal-valor-de-uma-vida.svg',
+  arrowIcon: '/images/btn_Icon-rose.svg',
   alt: 'natal solidário valor de uma vida'
 }
 
 const inverno = {
   title: 'inverno solidário',
-  mainPhoto: Inverno_Solidario_valor_de_uma_vida,
-  photos: [inverno1, inverno2, inverno3],
-  icon: icon_inverno_valor_de_uma_vida,
-  arrowIcon: arrow_icon_blue,
+  mainPhoto: '/images/cards carrosel/campaigns_Item_02.png',
+  photos: ['/images/Campanhas/Inverno/inverno1.jpg', '/images/Campanhas/Inverno/inverno2.jpg', '/images/Campanhas/Inverno/inverno3.jpg'],
+  icon: '/images/icon_SnowMan.svg',
+  arrowIcon: '/images/btn_Icon-blue.svg',
   alt: 'inverno solidário valor de uma vida'
-
 }
 
 
 const diaDasCriancas = {
   title: 'dia das crianças',
-  mainPhoto: dia_das_criancas_valor_de_uma_vida,
+  mainPhoto: '/images/cards carrosel/campaigns_Item_03.png',
   photos: ['/images/Campanhas/Dia_das_criancas/dia_das_criancas1.jpg', '/images/Campanhas/Dia_das_criancas/dia_das_criancas2.jpg', '/images/Campanhas/Dia_das_criancas/dia_das_criancas3.jpg'],
-  icon: icon_dia_das_criancas_valor_de_uma_vida,
-  arrowIcon: arrow_icon_emerald,
+  icon: '/images/icon_Teddy_Bear.svg',
+  arrowIcon: '/images/btn_btn_Icon-emerald.svg',
   alt: 'dia das crianças solidário valor de uma vida'
 }
 
@@ -77,7 +36,6 @@ export default function Home() {
   return (
 
     <>
-
       <Carrossel
         title={'campanhas'}
         type={'card'}

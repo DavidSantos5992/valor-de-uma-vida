@@ -1,48 +1,38 @@
 'use client'
-import { useState, useEffect } from 'react'; // Importe useState e useEffect do React
+import { useState, useEffect, useMemo } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import Button from '../Button';
 import Image from 'next/image';
-import logo from '../../../public/images/header_Logo.svg';
 
 export default function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const respawn = () => {
-        console.log('teste')
-    }
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
     const closeMenuOnLinkClick = () => {
-        console.log('clicou')
         if (isMenuOpen) {
             setIsMenuOpen(false);
         }
     };
 
+    const menuStyles = useMemo(() => {
+        return {
+            visibility: isMenuOpen ? 'visible' : 'hidden',
+            opacity: isMenuOpen ? 1 : 0,
+        };
+    }, [isMenuOpen]);
+
     useEffect(() => {
-
-        // Abra ou feche o menu e adicione a lógica aqui
-        // Por exemplo, você pode adicionar classes para mostrar/ocultar o menu
-
         const menu = document.querySelector('.navbar-menu');
         const backdrop = document.querySelector('.navbar-backdrop');
 
         if (menu && backdrop) {
-            if (isMenuOpen) {
-                menu.classList.remove('hidden');
-                backdrop.classList.remove('hidden');
-            } else {
-                menu.classList.add('hidden');
-                backdrop.classList.add('hidden');
-            }
+            menu.style.visibility = menuStyles.visibility;
+            backdrop.style.opacity = menuStyles.opacity;
         }
-
-    }, [isMenuOpen]);
+    }, [menuStyles]);
 
     return (
         <header className='fixed top-0 z-50 w-full'>
@@ -167,9 +157,9 @@ export default function Header() {
                             className="mr-auto text-3xl flex flex-col justify-center items-center font-bold leading-none"
                         >
                             <Image
-                               src='/images/header_Logo.svg'
-                               width={500}
-                               height={500}
+                                src='/images/header_Logo.svg'
+                                width={500}
+                                height={500}
                                 alt="logo valor de uma vida"
                                 className="w-[55.8px] mr-[20px] mb-3 text-shadow whitespace-nowrap"
                             />

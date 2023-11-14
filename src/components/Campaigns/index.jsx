@@ -6,7 +6,7 @@ export default function Campaigns({ campaign, mainColor, fontColor, id, url }) {
 
     return (
 
-        <div id={id} className={`w-full  md:h-[322.67px] lg:h-[411px] ${mainColor} mt-[120px] flex items-center justify-start relative z-10`}>
+        <div id={id} className={`w-full md:h-[322.67px] lg:h-[411px] ${mainColor} mt-[120px] flex items-center justify-start relative z-10`}>
 
             <div className={` w-[98px] h-[67px] flex items-end justify-center box-border pb-3 rounded-tl-lg rounded-tr-lg ${mainColor} absolute top-[-67px] left-0 `}>
                 <Image
@@ -69,14 +69,15 @@ export default function Campaigns({ campaign, mainColor, fontColor, id, url }) {
                 {
                     campaign.photos.map((element, index) => (
 
-                        <div key={index} className=' sm:w-[108px]   sm:h-[100px] md:w-[188px] lg:w-[292px] md:h-[188px] lg:h-[292px]  flex items-center justify-center rounded-[10px] md:rounded-[35px] sm:mr-auto sm:ml-auto md:mr-[20px] lg:mr-[30px] overflow-hidden'>
+                        <div key={index} className='sm:w-[108px] sm:h-[100px] md:w-[188px] lg:w-[292px] md:h-[188px] lg:h-[292px] flex items-center justify-center rounded-[10px] md:rounded-[35px] sm:mr-auto sm:ml-auto md:mr-[20px] lg:mr-[30px] overflow-hidden'>
 
                             <Image
                                 width={500}
                                 height={500}
                                 alt={campaign.alt}
-                                className=' w-[282px] h-auto sm:rounded-[10px] md:rounded-[35px]'
+                                className='w-[282px] h-auto sm:rounded-[10px] md:rounded-[35px]'
                                 src={element}
+                                loading="lazy"
                             />
 
                         </div>
