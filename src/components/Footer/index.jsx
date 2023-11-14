@@ -19,6 +19,7 @@ export default function Footer() {
 
                     <li className="social-icon__item"><a className="social-icon__link"
                         href="https://www.instagram.com/valordeumavida.ong/"
+                        about='instagram valor de uma vida'
                         target='blank'>
                         <ion-icon name="logo-facebook">
                             <FaInstagram />

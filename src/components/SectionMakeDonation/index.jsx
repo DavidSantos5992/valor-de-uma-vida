@@ -91,13 +91,11 @@ export default function SectionMakeDonation() {
     return (
         <>
 
-
-
             <div className="w-full md:h-[905px] lg:h-[1194px] absolute sm:top-[3000px] md:top-[3580px] left-0  md:z-0 ">
 
                 <section className='md:w-[400px] lg:w-[558px]  md:h-[677px] absolute md:top-[300px] md:left-[60px] lg:top-[530px] lg:left-[122px] '>
 
-                    <p className=' sm:text-center md:text-left md:w-[400px] lg:w-[558px] sm:mt-[900px] md:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] '> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
+                    <p className='   sm:text-center md:text-left md:w-[400px] lg:w-[558px] sm:mt-[900px] md:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] '> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
 
                     {
                         doences.map((doence, index) => (
@@ -105,7 +103,7 @@ export default function SectionMakeDonation() {
                             <div key={index} className='flex items-center mb-[20px] box-border sm:pl-2 md:pl-0'>
 
                                 <Image
-                                    className='md:w-[26px] lg:w-[36px] h-auto'
+                                    className='sm:w-[26px] lg:w-[36px] h-auto'
                                     src={doence.icon}
                                     width={500}
                                     height={500}
@@ -121,13 +119,14 @@ export default function SectionMakeDonation() {
 
                 </section>
 
-                <section className='sm:w-[370px] md:w-[375px] sm:ml-[.7%] sm:h-[840px] md:h-[890px] lg:w-[500px] lg:h-[1194px] flex flex-col items-center shadow-black shadow-lg box-border sm:pt-[100px] md:pt-[250px] border-none rounded-[30px] mb-[50px] absolute  md:right-[36px] lg:right-[116px] bg-facaColaboracao '>
+                <section className='sm:w-[350px] md:w-[375px] sm:ml-[.7rem] sm_1:ml-[2rem] sm_2:ml-[2.5rem]  sm:h-[840px] md:h-[890px] lg:w-[500px] lg:h-[1194px] flex flex-col items-center shadow-black shadow-lg box-border sm:pt-[100px] md:pt-[250px] border-none rounded-[30px] mb-[50px] absolute  md:right-[36px] lg:right-[116px] sm:bg-facaColaboracao '>
 
                     <div id='contato' className='md:mt-[20px] lg:mt-[160px]'>
-                        <Image src="/images/cc_Logo.svg"
+                        <Image
+                            src="/images/cc_Logo.svg"
                             width={500}
                             height={500}
-                            className='md:w-[107px] lg:w-[142px] h-auto ml-auto mb-[14px] mr-auto'
+                            className='sm:w-[107px] lg:w-[142px] h-auto ml-auto mb-[14px] mr-auto'
                             alt='Logo Valor de Uma Vida'
                         />
                         <strong className='text-base text-[21px] font-bold uppercase text-shadow text-gray-800 not-italic'>VALOR DE UMA VIDA</strong>
@@ -168,11 +167,12 @@ export default function SectionMakeDonation() {
 
                         <a className='hover:transform hover:scale-110'
                             href="https://www.instagram.com/valordeumavida.ong/"
+                            about='instagram valor de uma vida'
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <Image
-                                className='md:w-[22px] lg:w-[30px] h-auto '
+                                className='sm:w-[25px] lg:w-[30px] h-auto '
                                 src="/images/icon_Instagram.svg"
                                 width={500}
                                 height={500}
@@ -186,7 +186,7 @@ export default function SectionMakeDonation() {
                             rel="noopener noreferrer"
                         >
                             <Image
-                                className='md:w-[22px] lg:w-[30px] h-auto '
+                                className='sm:w-[25px] lg:w-[30px] h-auto '
                                 src="/images/icon_Facebook.svg"
                                 width={500}
                                 height={500}
@@ -200,7 +200,7 @@ export default function SectionMakeDonation() {
                             rel="noopener noreferrer"
                         >
                             <Image
-                                className='md:w-[22px] lg:w-[30px] h-auto '
+                                className='sm:w-[25px] lg:w-[30px] h-auto '
                                 src="/images/icon_WhatsApp.svg"
                                 width={500}
                                 height={500}
