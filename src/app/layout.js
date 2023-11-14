@@ -2,20 +2,21 @@ import Head from 'next/head';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import About from '@/components/About';
-import Button from '@/components/Button';
 import SectionMakeDonation from '@/components/SectionMakeDonation';
 import Image from 'next/image';
 import './globals.css';
 
-import logo from '../../public/images/hero_Logo.svg';
-import Whatsapp from '../../public/images/whatsapp_Icon_Fixed.svg';
-import fundo from '../../public/images/fundo.svg';
-import foto_quem_somos_valor_de_uma_vida from '../../public/images/quem-somos-valor-de-uma-vida.png';
-import escorregador_Valor_de_Uma_Vida from '../../public/images/escorregador-Valor-de-Uma-Vida.png';
-import mesabrasilImg from '../../public/images/parceiros/img_Mesa_Brasil.svg';
-import sescImg from '../../public/images/parceiros/img_Sesc.svg';
-import ksbImg from '../../public/images/parceiros/img_KSB.svg';
-import RotaryImg from '../../public/images/parceiros/img_Rotary.svg';
+
+// Importe as imagens usando require para lazy loading
+const logo = require('../../public/images/hero_Logo.svg');
+const Whatsapp = require('../../public/images/whatsapp_Icon_Fixed.svg');
+const fundo = require('../../public/images/fundo.svg');
+const foto_quem_somos_valor_de_uma_vida = require('../../public/images/quem-somos-valor-de-uma-vida.png');
+const escorregador_Valor_de_Uma_Vida = require('../../public/images/escorregador-Valor-de-Uma-Vida.png');
+const mesabrasilImg = require('../../public/images/parceiros/img_Mesa_Brasil.svg');
+const sescImg = require('../../public/images/parceiros/img_Sesc.svg');
+const ksbImg = require('../../public/images/parceiros/img_KSB.svg');
+const RotaryImg = require('../../public/images/parceiros/img_Rotary.svg');
 import BannerPartner from '@/components/BannerPartner';
 
 
@@ -75,7 +76,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content="Ong não governamental, voltada para ajuda de, crianças, adultos e idosos, com doenças crônicas" />
 
         {/* imagem a ser exibida quando o conteúdo do seu site é compartilhado em redes sociais. */}
-        <meta property="og:image" content="https://scontent.fcpq17-1.fna.fbcdn.net/v/t39.30808-6/359737765_661134682731609_6214284387648160420_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFnurcvImlRbZGk0YzLzTbUhg5j8ZNfrCiGDmPxk1-sKKpCqgDX6V1EOZeIW8DsfKr6h0U9rN5bcivj83I-FRaP&_nc_ohc=DwJ9NGKEXa8AX9qmBhF&_nc_ht=scontent.fcpq17-1.fna&oh=00_AfAP32eLkgpgLR-H-j-9kHDh_AA5UyGVcoAFLEDuP7VJJQ&oe=6551470A" />
+        <meta property="og:image" content="/images/hero_Logo.svg" />
 
         {/* define o tipo de conteúdo do seu site, como "website", "article", "product", etc. */}
         <meta property="og:type" content="website" />
