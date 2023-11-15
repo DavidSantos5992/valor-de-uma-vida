@@ -37,7 +37,7 @@ const About = React.memo(({ image, photo, title, text, className }) => {
             {photo == 2 && (
                 <dynamicImage className='rounded-[50%] lg:w-[575px] h-auto md:w-[426px]'
                     src={image}
-                    alt='Entrega de presente - Valor de uma Vida'
+                    alt='Entrega de presentes - Valor de uma Vida'
                 />
             )}
 
