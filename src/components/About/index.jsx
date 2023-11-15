@@ -45,6 +45,8 @@ const About = React.memo(({ image, photo, title, text, className }) => {
     )
 })
 
+About.displayName = 'About';
+
 export default About;
 
 
