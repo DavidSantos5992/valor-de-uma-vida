@@ -24,7 +24,7 @@ const About = React.memo(({ image, photo, title, text, className }) => {
                     {title}
                 </p>
 
-                <div className='font-normal lg:text-[28px] md:text-[21px]  bg-green-400 leading-8 bg-lay'>
+                <div className='font-normal lg:text-[28px] md:text-[21px] leading-8 bg-lay'>
 
                     <p className='md:w-[448px]  md:ml-4 lg:ml-0'>
                         {text}

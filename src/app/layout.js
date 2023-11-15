@@ -45,14 +45,6 @@ export const metadata = {
   description: 'Ong Valor de uma Vida, ',
 };
 
-// Adicionado para carregamento dinâmico
-const DynamicAbout = dynamic(() => import('@/components/About'));
-
-export async function getServerSideProps() {
-  return {
-    props: {},
-  };
-}
 
 export default function RootLayout({ children }) {
   return (
