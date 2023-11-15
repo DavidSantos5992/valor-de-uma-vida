@@ -1,7 +1,9 @@
 import dynamic from 'next/dynamic';
+
 const Carrossel = dynamic(() => import("@/components/Carrossel"));
 const SectionPhoto = dynamic(() => import("@/components/SectionPhoto"));
-const Campaigns = dynamic(() => import("@/components/Campaigns"));
+const Campaigns = dynamic(() => import("@/components/Campaigns"), { ssr: false });
+
 
 const natal = {
   title: 'natal solidário',
@@ -36,6 +38,7 @@ export default function Home() {
   return (
 
     <>
+
       <Carrossel
         title={'campanhas'}
         type={'card'}

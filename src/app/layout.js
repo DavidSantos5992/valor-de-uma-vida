@@ -4,6 +4,8 @@ import Footer from '@/components/Footer';
 import About from '@/components/About';
 import SectionMakeDonation from '@/components/SectionMakeDonation';
 import Image from 'next/image';
+import dynamic from 'next/dynamic'; // Adicionado para carregamento dinâmico
+
 import './globals.css';
 
 
@@ -18,8 +20,6 @@ const sescImg = require('../../public/images/parceiros/img_Sesc.svg');
 const ksbImg = require('../../public/images/parceiros/img_KSB.svg');
 const RotaryImg = require('../../public/images/parceiros/img_Rotary.svg');
 import BannerPartner from '@/components/BannerPartner';
-
-
 
 const partners = [
   {
@@ -45,10 +45,17 @@ export const metadata = {
   description: 'Ong Valor de uma Vida, ',
 };
 
+// Adicionado para carregamento dinâmico
+const DynamicAbout = dynamic(() => import('@/components/About'));
+
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
+}
+
 export default function RootLayout({ children }) {
-
   return (
-
     <html lang="pt-br">
 
       <Head>
@@ -266,5 +273,4 @@ export default function RootLayout({ children }) {
 
     </html>
   )
-
 }
