@@ -3,12 +3,6 @@ import { React, useRef, useState, useEffect } from 'react';
 import './styles.css'
 import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image';
-import img from '../../../public/images/cards carrosel/campaigns_Item_01.png'
-import img2 from '../../../public/images/cards carrosel/campaigns_Item_02.png'
-import img3 from '../../../public/images/cards carrosel/campaigns_Item_03.png'
-
-import arrow_Left from '../../../public/images/arrow_Left.svg'
-import arrow_Right from '../../../public/images/arrow_Right.svg'
 
 export default function Carrossel({ title, className, type }) {
 
@@ -16,7 +10,7 @@ export default function Carrossel({ title, className, type }) {
 
         {
             name: 'natal',
-            photo: img,
+            photo: '/images/cards carrosel/campaigns_Item_01.png',
             text: '',
             alt: 'Camapanha de natal valor de uma vida',
             id: 'natal_solidario'
@@ -24,7 +18,7 @@ export default function Carrossel({ title, className, type }) {
 
         {
             name: 'inverno',
-            photo: img2,
+            photo: '/images/cards carrosel/campaigns_Item_02.png',
             text: '',
             alt: 'Camapanha de inverno valor de uma vida',
             id: 'inverno_solidario'
@@ -32,7 +26,15 @@ export default function Carrossel({ title, className, type }) {
 
         {
             name: 'dia das crianças',
-            photo: img3,
+            photo: '/images/cards carrosel/campaigns_Item_03.png',
+            text: '',
+            alt: 'Camapanha de dia das crinaças valor de uma vida',
+            id: 'diaDasCriancas_solidario'
+        },
+
+        {
+            name: 'dia das crianças',
+            photo: '/images/cards carrosel/campaigns_Item_03.png',
             text: '',
             alt: 'Camapanha de dia das crinaças valor de uma vida',
             id: 'diaDasCriancas_solidario'
@@ -44,22 +46,14 @@ export default function Carrossel({ title, className, type }) {
 
         {
             title: 'lorem ipsum',
-            photo: img3,
+            photo: '/images/cards carrosel/campaigns_Item_03.png',
             alt: '',
             text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
             url: ''
         },
         {
             title: 'lorem ipsum',
-            photo: img3,
-            alt: '',
-            text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
-            url: ''
-        },
-
-        {
-            title: 'lorem ipsum',
-            photo: img3,
+            photo: '/images/cards carrosel/campaigns_Item_03.png',
             alt: '',
             text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
             url: ''
@@ -67,7 +61,7 @@ export default function Carrossel({ title, className, type }) {
 
         {
             title: 'lorem ipsum',
-            photo: img3,
+            photo: '/images/cards carrosel/campaigns_Item_03.png',
             alt: '',
             text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
             url: ''
@@ -75,26 +69,26 @@ export default function Carrossel({ title, className, type }) {
 
         {
             title: 'lorem ipsum',
-            photo: img3,
+            photo: '/images/cards carrosel/campaigns_Item_03.png',
             alt: '',
             text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
             url: ''
         },
 
-
+        {
+            title: 'lorem ipsum',
+            photo: '/images/cards carrosel/campaigns_Item_03.png',
+            alt: '',
+            text: 'Lorem ipsum dolor sit amet consectetur. Etiam diam massa nunc vitae commodo nisi. Dolor velit sed eu orci ornare aliquet duis duis arcu. Cras tempus at feugiat gravida eget pellentesque mi in posuere. scelerisque massa...',
+            url: ''
+        },
 
     ])
 
     const carousel = useRef(null)
+    
 
-    const handleLeftClick = (e) => {
-        carousel.current.scrollLeft -= carousel.current.offsetWidth
-    }
 
-    const handleRightClick = (e) => {
-        console.log('Clicou no botão direito');
-        carousel.current.scrollLeft += carousel.current.offsetWidth;
-    }
 
     const handleClickCarrosel = (k) => {
         console.log('clicou', k)
@@ -193,7 +187,13 @@ export default function Carrossel({ title, className, type }) {
                                         onClick={() => handleClickCarrosel(key)}
                                         key={key}
                                     >
-                                        <Image className='w-full h-full' src={item.photo} alt={item.alt} />
+                                        <Image
+                                            width={500}
+                                            height={500}
+                                            className='w-full h-full'
+                                            src={item.photo}
+                                            alt={item.alt}
+                                        />
 
                                     </ScrollLink>
 
@@ -242,16 +242,6 @@ export default function Carrossel({ title, className, type }) {
                         </>
                     )
                 }
-
-
-                <button className='leftClick sm:hidden lg:block' onClick={handleLeftClick}>
-                    {<Image src={arrow_Left} alt='Seta para esquerda' />}
-                </button>
-
-                <button className='rightClick sm:hidden lg:block' onClick={handleRightClick} >
-                    {<Image src={arrow_Right} alt='Seta para direita' />}
-                </button>
-
 
             </div>
 
