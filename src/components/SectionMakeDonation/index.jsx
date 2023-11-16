@@ -91,16 +91,16 @@ export default function SectionMakeDonation() {
     return (
         <>
 
-            <div className="w-full md:h-[905px] lg:h-[1194px] absolute sm:top-[3000px] md:top-[3580px] left-0  md:z-0 ">
+            <div className="w-full md:h-[905px] lg:h-[1194px] absolute sm:top-[3000px] md:top-[3470px] lg:top-[3580px] left-0  md:z-0 ">
 
                 <section className='md:w-[400px] lg:w-[558px]  md:h-[677px] absolute md:top-[300px] md:left-[60px] lg:top-[530px] lg:left-[122px] '>
 
-                    <p className='   sm:text-center md:text-left md:w-[400px] lg:w-[558px] sm:mt-[900px] md:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] '> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
+                    <p className='sm:text-center md:text-left md:w-[270px] lg:w-[558px] sm:mt-[900px] md:mt-20 lg:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] '> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
 
                     {
                         doences.map((doence, index) => (
 
-                            <div key={index} className='flex items-center mb-[20px] box-border sm:pl-2 md:pl-0'>
+                            <div key={index} className='flex items-center sm:mb-[20px] lg:mb-[20px] md:mt-20 box-border sm:pl-2 md:pl-0'>
 
                                 <Image
                                     className='sm:w-[26px] lg:w-[36px] h-auto'
@@ -119,7 +119,7 @@ export default function SectionMakeDonation() {
 
                 </section>
 
-                <section className='sm:w-[350px] md:w-[375px] sm:ml-[.7rem] sm_1:ml-[2rem] sm_2:ml-[2.5rem]  sm:h-[840px] md:h-[890px] lg:w-[500px] lg:h-[1194px] flex flex-col items-center shadow-black shadow-lg box-border sm:pt-[100px] md:pt-[250px] border-none rounded-[30px] mb-[50px] absolute  md:right-[36px] lg:right-[116px] sm:bg-facaColaboracao '>
+                <section id='sectionDonation' className='sm:w-[350px] md:w-[375px] sm:ml-[.7rem] sm_1:ml-[2rem] sm_2:ml-[2.5rem] sm_3:ml-[6rem] sm:h-[840px] md:h-[890px] lg:w-[500px] lg:h-[1194px] flex flex-col items-center shadow-black shadow-lg box-border sm:pt-[100px] md:pt-[250px] border-none rounded-[30px] mb-[50px] absolute  md:right-[36px] lg:right-[116px] sm:bg-facaColaboracao '>
 
                     <div id='contato' className='md:mt-[20px] lg:mt-[160px]'>
                         <Image
@@ -138,7 +138,7 @@ export default function SectionMakeDonation() {
 
                     </address>
 
-                    <h3 className='md:text-[20px] lg:text-[28px] text-shadow font-bold font-sans uppercase sm:mt-[15px] lg:mt-[20px] mb-[40px]'>faça uma colaboração via pix</h3>
+                    <h3 className='md:text-[20px] lg:text-[23px] text-center text-shadow font-bold font-sans uppercase sm:mt-[15px] lg:mt-[20px] mb-[40px]'>faça uma colaboração via pix</h3>
 
                     <Image className='sm:w-[185px] md:w-[150px] lg:w-[200px] h-auto sm:mb-[25px] md:mb-[30px]  '
                         src="/images/qr_Code.svg"

@@ -150,7 +150,7 @@ export default function Carrossel({ title, className, type }) {
         }
 
         return (
-            <div className="carrosel lg:h-[528px] md:h-[409px] " ref={slider}>
+            <div className="carrosel lg:h-[528px] md:h-[225px] " ref={slider}>
                 {props.children}
             </div>
         );

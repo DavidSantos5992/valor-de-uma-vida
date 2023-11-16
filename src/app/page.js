@@ -42,7 +42,7 @@ export default function Home() {
       <Carrossel
         title={'campanhas'}
         type={'card'}
-        className={'sm:w-[350px] md:w-[912px] lg:h-[515px] md:h-[350px] ml-auto mr-auto '}
+        className={'sm:w-[280px] teste:w-11 text-stone-300 md:w-[700px] lg:w-[912px] overflow-hidden lg:h-[515px] md:h-[350px] ml-auto mr-auto '}
       />
 
       <SectionPhoto />
@@ -59,7 +59,7 @@ export default function Home() {
 
       <section className="w-full sm:h-[1340px] md:h-[1771px]  absolute top-[4837px] box-border pt-[60px] ">
 
-        <h1 className="sm:w-[356px] md:w-[322.67px] lg:w-[484px] h-[60px] text-shadow mr-auto ml-auto border-b-4 border-stone-900 text-black sm:text-[25.33px] sm:text-center lg:text-[38px] font-bold font-sans uppercase leading-[76.50px]">Campanhas realizadas</h1>
+        <h1 className="sm:w-[90%] md:w-[322.67px] lg:w-[484px] h-[60px] text-shadow mr-auto ml-auto border-b-4 border-stone-900 text-black sm:text-[19.9px] sm:text-center lg:text-[38px] font-bold font-sans uppercase leading-[76.50px]">Campanhas realizadas</h1>
 
         <Campaigns
           campaign={natal}

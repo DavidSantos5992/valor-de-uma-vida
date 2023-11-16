@@ -16,10 +16,10 @@ export default function BannerPartner() {
 
             <div className="overlay absolute inset-0 flex flex-col items-center justify-center bg-opacity-30 bg-black">
 
-                <p className="text-white text-4xl sm:text-5xl lg:text-7xl font-bold font-sans uppercase leading-tight text-shadow mt-4 mb-12">Faça Parte Dessa História</p>
+                <p className="text-white text-4xl sm:text-[20px] text-center lg:text-7xl font-bold font-sans uppercase leading-tight text-shadow mt-4 mb-12">Faça Parte Dessa História</p>
 
                 <ScrollLink
-                    className='cursor-pointer btn-yellow text-black shadow-inner hover:bg-yellow-500 rounded-full px-8 py-3 text-xl font-bold font-sans uppercase'
+                    className='cursor-pointer btn-yellow text-black md:mt-11 shadow-inner bg-yellow-400 hover:bg-yellow-500 shadow-gray-700 rounded-full px-8 py-3 sm:text-[15px] md:text-xl font-bold font-sans uppercase '
                     to='contato'
                     spy={true}
                     smooth={true}

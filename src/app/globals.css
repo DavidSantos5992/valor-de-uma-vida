@@ -38,6 +38,11 @@ img {
     clip-path: polygon(100% 0, 0 38.5%, 100% 100%);
 }
 
+.custom-clip-tablet {
+    clip-path: polygon(100% 0, 0 45%, 100% 100%);
+}
+
+
 .custom-clip-mobile {
     clip-path: polygon(50% 27%, 100% 0, 100% 30%, 57% 60%, 41% 60%, 0 30%, 0 0);
 }
@@ -57,11 +62,40 @@ body {
 
 @media (max-width: 960px) {
 
+    .custom-clip-left3 {
+        clip-path: polygon(100% 0, 0 45%, 100% 100%);
+    }
+
     /* responsalve */
     .custom-clip-blue-tablet {
         clip-path: polygon(100% 0, 0 0, 100% 87%);
         transform: rotate(0deg) !important;
     }
+}
+
+@media (max-width: 768px) {
+
+    .custom-clip-left3 {
+        clip-path: polygon(100% 0, 0 48%, 100% 100%);
+    }
+}
+
+@media (min-width: 912px) {
+    .custom-clip-left3 {
+        clip-path: polygon(100% 0, 0 40.5%, 100% 100%);
+    }
+}
+
+@media (max-width: 280px) {
+    #sectionDonation {
+        width: 250px;
+    }
+
+    #sectionDonation address,
+    #sectionDonation div:last-child  {
+        width: 100%;
+    }
+
 }
 
 /* ------ */

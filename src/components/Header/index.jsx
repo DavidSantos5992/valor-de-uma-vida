@@ -57,7 +57,7 @@ export default function Header() {
                         alt="logo valor de uma vida"
                     />
 
-                    <strong className='font-sans text-[16px] font-bold  text-black text-shadow whitespace-nowrap'>Valor de uma vida</strong>
+                    <strong className='font-sans sm:hidden text-[16px] font-bold  text-black text-shadow whitespace-nowrap'>Valor de uma vida</strong>
 
                 </ScrollLink>
 

@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
 
           <div
             id='inicio'
-            className=' w-full h-[100%] flex items-center sm:justify-center md:justify-normal relative box-border pl-[25.45px] pr-[25.45px] background-Fundo'
+            className=' w-full h-[100%] flex items-center sm:justify-center md:justify-normal relative box-border pl-[25.45px] pr-[25.45px] background-Fundo '
           >
 
             <div className='flex items-center sm:flex-col md:flex-row sm:justify-center '>
@@ -131,11 +131,11 @@ export default function RootLayout({ children }) {
 
             </div>
 
-            <div className='lg:w-[48%] md:w-[60%] h-[100%]  absolute lg:right-0  bg-layoutClipPath box-shadow-custom custom-clip-path'>
+            <div className='lg:w-[48%] md:w-[60%] h-[100%]  absolute md:right-0  bg-layoutClipPath box-shadow-custom custom-clip-path'>
 
               <div className='w-full h-full relative '>
 
-                <h1 className='max-w-[517px] text-shadow absolute right-[25px] top-[43%] lg:text-[21px] md:text-[18px] uppercase leading-[27px] text-white font-sans font-bold text-end whitespace-wrap'>
+                <h1 className='lg:max-w-[517px] md:max-w-[400px] text-shadow absolute right-[25px] md:top-[38%] lg:top-[43%] lg:text-[21px] md:text-[15px] uppercase leading-[27px] text-white font-sans font-bold text-end whitespace-wrap'>
                   desde 2014 prestando auxílio <br /> a pessoas com <strong className='text-yellow-300'> Vulnerabilidades sociais</strong> e portadoras de diversas <strong className='text-yellow-300'>doenças crônicas</strong> Em <strong>várzea Paulista</strong>
                 </h1>
 
@@ -156,7 +156,7 @@ export default function RootLayout({ children }) {
           <div id="quem_somos">
             <About
               image={foto_quem_somos_valor_de_uma_vida}
-              className={'w-[95%] sm:flex-col md:flex-row flex justify-between items-center absolute lg:top-[2200px] md:top-[2280px] z-10'}
+              className={'w-[95%] sm:flex-col md:flex-row flex justify-between items-center absolute lg:top-[2200px] md:top-[2330px] z-10'}
               photo={1}
               title={'Quem somos'}
               text={'Nossa instituição, desde 2014, vem prestando serviços com grande potencial na cidade de Várzea Paulista, onde nos localizamos. E, é claro, que ajudamos amigos de todos os lugares, levando o bem e a boa qualidade de vida.'}
@@ -167,7 +167,7 @@ export default function RootLayout({ children }) {
 
         <div>
 
-          <div className='sm:hidden md:block w-[100%] h-[992.668px]  absolute top-[2513px] left-0  bg-layoutClipPath3 box-shadow-custom custom-clip-left'></div>
+          <div className='sm:hidden md:block w-[100%] h-[992.668px]  absolute top-[2513px] left-0 bg-layoutClipPath3 box-shadow-custom custom-clip-left '></div>
 
           {/* md para cima  */}
 
@@ -187,7 +187,7 @@ export default function RootLayout({ children }) {
 
             <About
               image={escorregador_Valor_de_Uma_Vida}
-              className={'w-[95%]  flex flex-col justify-between items-center absolute top-[2200px] right-0 z-10 '}
+              className={' sm:w-[95%] sm_1:w-[95%] mr-5  flex flex-col justify-between items-center absolute top-[2200px] right-0 z-10 '}
               photo={1}
               title={'sobre nós'}
               text={' Nossa equipe conta com pessoas engajadas em fazer o bem ao próximo, e devido a isso, realizamos nosso trabalho com muito amor e carinho aos nossos amigos que precisam de suporte, sejam eles pessoas doentes ou moradores de rua. Com carinho, recebemos todo tipo de auxílio, seja ele financeiro ou em espécie, pois o que realmente importa é o carinho e amor com o próximo.'}
@@ -197,9 +197,9 @@ export default function RootLayout({ children }) {
 
         </div>
 
-        <div className='sm:hidden md:block md:w-[594px] md:h-[800.668px] lg:w-[77%] lg:h-[992.668px]  absolute md:top-[3009px] lg:top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
+        <div className='sm:hidden md:block md:w-[594px] md:h-[800.668px] lg:w-[77%] lg:h-[992.668px]  absolute md:top-[3008px]  lg:top-[3009px] right-0  bg-layoutClipPath4 box-shadow-custom custom-clip-left3 z-[2]'></div>
 
-        <div className='sm:hidden md:block w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2600px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
+        <div className='sm:hidden md:block w-[90.728px] md:h-[1500px] lg:h-[2000.334px] bg-layoutClipPath2 absolute md:top-[3000px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
 
         {/* clip versão mobile quem somos */}
 
@@ -214,9 +214,9 @@ export default function RootLayout({ children }) {
 
         <div className='sm:block w-full sm:h-[1300px] md:h-[929px] bg-layoutClipPath4 absolute clipPathMobile sm:top-[2000px] md:hidden z-[-1]'></div>
 
-        <div className='sm:hidden md:block md:w-[90.728px] lg:w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
+        <div className='sm:hidden md:block md:w-[90.728px] lg:w-[90.728px] md:h-[1500px] lg:h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2850px] lg:top-[2650px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
 
-        <div className='sm:hidden md:block md:w-[90.728px] lg:w-[90.728px] h-[2000.334px] bg-layoutClipPath2 absolute md:top-[2750px] lg:top-[2800px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div>
+        {/* <div className='sm:hidden md:block md:w-[90.728px] lg:w-[90.728px] md:h-[1500px] lg:h-[2000.334px] bg-layoutClipPath2 absolute md:top-[280px] lg:top-[2800px] md:rotate-[62deg] lg:rotate-[72deg] z-0'></div> */}
 
         <SectionMakeDonation />
 

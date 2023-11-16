@@ -17,12 +17,13 @@ module.exports = {
       },
     },
     screens: {
-      sm: '375px',
-      sm_1: '414px',
-      sm_2: '430px',
+      sm: '280px', // se
+      sm_1: '412px', //xr
+      sm_2: '430px', //14 pro max
+      sm_3: '539px', //surface duo
       md: '768px',
       lg: '960px',
-      xl: '1200px',
+      xl: '1024px',
     },
   },
   plugins: [],
