@@ -80,6 +80,14 @@ body {
     }
 }
 
+@media (min-width: 1024px) {
+
+    .custom-clip-left3 {
+        clip-path: polygon(100% 0, 0 38.4%, 100% 100%) !important;
+        /* background: red !important; */
+    }
+}
+
 @media (min-width: 912px) {
     .custom-clip-left3 {
         clip-path: polygon(100% 0, 0 40.5%, 100% 100%);

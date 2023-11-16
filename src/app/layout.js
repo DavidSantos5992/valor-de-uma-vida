@@ -230,7 +230,7 @@ export default function RootLayout({ children }) {
 
 
 
-            <div className="md:w-[542.667px]  lg:w-[1000px] md:h-[285.333px] lg:h-[500px] absolute md:-top-[300px] lg:-top-[160px]  md:right-[0px] lg:-right-[250px] bg-blue-400 md:rotate-[36deg] lg:rotate-[36deg] z-0 custom-clip-blue-tablet"></div>
+            <div className="md:w-[542.667px]  lg:w-[1000px]  md:h-[285.333px] lg:h-[500px] absolute md:-top-[300px] lg:-top-[160px]  md:right-[0px] lg:-right-[250px] bg-blue-400 md:rotate-[36deg] lg:rotate-[36deg] z-0 custom-clip-blue-tablet"></div>
 
             <div id='parceiros' className="w-full absolute md:top-0 lg:top-[384px] ">
 
