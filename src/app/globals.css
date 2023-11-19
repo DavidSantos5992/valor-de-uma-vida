@@ -7,7 +7,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     background: rgb(238, 238, 238);
 }
 
@@ -100,10 +100,18 @@ body {
     }
 
     #sectionDonation address,
-    #sectionDonation div:last-child  {
+    #sectionDonation div:last-child {
         width: 100%;
     }
 
 }
 
 /* ------ */
+
+/* #doencas {
+    background-color: red;
+} */
+
+#doencas .doenca:nth-child(2) {
+    margin-top: 20%;
+}

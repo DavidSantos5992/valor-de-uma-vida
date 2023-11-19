@@ -42,7 +42,7 @@ const partners = [
 
 export const metadata = {
   title: 'Valor de uma Vida',
-  description: 'Ong Valor de uma Vida, ',
+  description: 'ONG, valor vida, ajudar pessoas, verdadeiro valor da vida, como ajudar uma ong, fazer doação para ong, solidariedade, ajudar pessoas, valores materiais, como calcular o valor de uma vida, como doar para uma ong, verdadeiro valor da vida, qualquer motivo, ong varzea paulista, ong jundiai, Ong Jundiai, ONG JUNDIAI, ONG JUNDIAI',
 };
 
 
@@ -156,10 +156,10 @@ export default function RootLayout({ children }) {
           <div id="quem_somos">
             <About
               image={foto_quem_somos_valor_de_uma_vida}
-              className={'w-[95%] sm:flex-col md:flex-row flex justify-between items-center absolute lg:top-[2200px] md:top-[2330px] z-10'}
+              className={'w-[95%] sm:flex-col md:flex-row flex justify-between items-center absolute text-justify lg:top-[2200px] md:top-[2330px] z-10'}
               photo={1}
               title={'Quem somos'}
-              text={'Nossa instituição, desde 2014, vem prestando serviços com grande potencial na cidade de Várzea Paulista, onde nos localizamos. E, é claro, que ajudamos amigos de todos os lugares, levando o bem e a boa qualidade de vida.'}
+              text={'Acreditamos que todos têm o direito de viver uma vida plena e digna, independentemente de sua condição social ou de saúde. Por isso, trabalhamos incansavelmente para melhorar a qualidade de vida das pessoas que assistimos.'}
             />
           </div>
 
@@ -174,10 +174,10 @@ export default function RootLayout({ children }) {
           <div className='sm:hidden md:block' id='sobre_nos'>
             <About
               image={escorregador_Valor_de_Uma_Vida}
-              className={'w-[95%]  flex justify-between items-center absolute top-[2780px] right-0 z-10 '}
+              className={'w-[95%] flex justify-between text-justify items-center absolute top-[2780px] right-0 z-10 '}
               photo={2}
               title={'sobre nós'}
-              text={' Nossa equipe conta com pessoas engajadas em fazer o bem ao próximo, e devido a isso, realizamos nosso trabalho com muito amor e carinho aos nossos amigos que precisam de suporte, sejam eles pessoas doentes ou moradores de rua. Com carinho, recebemos todo tipo de auxílio, seja ele financeiro ou em espécie, pois o que realmente importa é o carinho e amor com o próximo.'}
+              text={' Estamos comprometidos em fornecer serviços de alta qualidade e personalizados para atender às necessidades de cada indivíduo. Também estamos comprometidos em trabalhar em parceria com a comunidade para criar um mundo mais justo e equitativo para todos.'}
             />
           </div>
 

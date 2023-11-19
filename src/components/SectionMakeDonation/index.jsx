@@ -93,14 +93,14 @@ export default function SectionMakeDonation() {
 
             <div className="w-full md:h-[905px] lg:h-[1194px] absolute sm:top-[3000px] md:top-[3470px] lg:top-[3580px] left-0  md:z-0 ">
 
-                <section className='md:w-[400px] lg:w-[558px]  md:h-[677px] absolute md:top-[300px] md:left-[60px] lg:top-[530px] lg:left-[122px] '>
+                <section id='doencas' className='md:w-[400px] lg:w-[558px]  md:h-[677px] absolute md:top-[300px] md:left-[60px] lg:top-[530px] lg:left-[122px] '>
 
-                    <p className='sm:text-center md:text-left md:w-[270px] lg:w-[558px] sm:mt-[900px] md:mt-20 lg:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] '> Temos como objetivo principal prestar auxílio a pessoas com <strong className='font-normal'>vulnerabilidade</strong> social e portadoras de diversas <strong className='font-normal'>doenças</strong>  <strong className='font-normal'>crônicas</strong>, dentre elas:</p>
+                    <p className='sm:text-center md:text-left md:w-[270px] lg:w-[558px] sm:mt-[900px] md:mt-20 lg:m-0 h-44 md:mb-[54px] text-black md:text-[21px] lg:text-[28px] font-normal font-Sans leading-[42px] text-justify'> Ao longo de nossa jornada, realizamos diversas campanhas especiais para ajudar pessoas doentes e moradores de rua. Essas campanhas são uma demonstração de nosso compromisso em fazer a diferença no mundo</p>
 
                     {
                         doences.map((doence, index) => (
 
-                            <div key={index} className='flex items-center sm:mb-[20px] lg:mb-[20px] md:mt-20 box-border sm:pl-2 md:pl-0'>
+                            <div key={index} className='doenca flex items-center sm:mb-[20px] lg:mb-[20px]  box-border sm:pl-2 md:pl-0'>
 
                                 <Image
                                     className='sm:w-[26px] lg:w-[36px] h-auto'

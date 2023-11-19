@@ -32,14 +32,6 @@ export default function Carrossel({ title, className, type }) {
             id: 'diaDasCriancas_solidario'
         },
 
-        {
-            name: 'dia das crianças',
-            photo: '/images/cards carrosel/campaigns_Item_03.png',
-            text: '',
-            alt: 'Camapanha de dia das crinaças valor de uma vida',
-            id: 'diaDasCriancas_solidario'
-        },
-
     ])
 
     const [news, setNews] = useState([
