@@ -1,10 +1,11 @@
 import Head from 'next/head';
+import Script from 'next/script'; // Importe o componente Script
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import About from '@/components/About';
 import SectionMakeDonation from '@/components/SectionMakeDonation';
 import Image from 'next/image';
-import dynamic from 'next/dynamic'; // Adicionado para carregamento dinâmico
+import dynamic from 'next/dynamic';
 
 import './globals.css';
 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
 
       <Head>
+
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
 
@@ -87,6 +89,19 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body>
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FF8F005LXF"
+          strategy="afterInteractive"
+        />
+        <Script strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FF8F005LXF');
+          `}
+        </Script>
 
         <Header />
 

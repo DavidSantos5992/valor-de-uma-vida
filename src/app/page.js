@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-
+import Head from 'next/head';
 const Carrossel = dynamic(() => import("@/components/Carrossel"));
 const SectionPhoto = dynamic(() => import("@/components/SectionPhoto"));
 const Campaigns = dynamic(() => import("@/components/Campaigns"), { ssr: false });
@@ -38,6 +38,7 @@ export default function Home() {
   return (
 
     <>
+      
 
       <Carrossel
         title={'campanhas'}
