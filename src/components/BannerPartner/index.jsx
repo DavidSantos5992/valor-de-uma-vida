@@ -11,7 +11,7 @@ export default function BannerPartner() {
                 width={500}
                 height={500}
                 src='/images/banner_escorregador.svg'
-                alt="Banner Valor de uma vida"
+                alt="Banner Valor de uma vidaa"
             />
 
             <div className="overlay absolute inset-0 flex flex-col items-center justify-center bg-opacity-30 bg-black">
