@@ -6,7 +6,16 @@ const Campaigns = dynamic(() => import("@/components/Campaigns"), { ssr: false }
 
 
 const natal = {
-  title: 'natal solidário',
+  title: 'natal solidário 2022',
+  mainPhoto: '/images/cards carrosel/campaigns_Item_01.png',
+  photos: ['/images/Campanhas/Natal/natal1.jpg', '/images/Campanhas/Natal/natal2.jpg', '/images/Campanhas/Natal/natal3.jpg'],
+  icon: '/images/icon-natal-valor-de-uma-vida.svg',
+  arrowIcon: '/images/btn_Icon-rose.svg',
+  alt: 'natal solidário valor de uma vida'
+}
+
+const natal2023 = {
+  title: 'natal solidário 2023',
   mainPhoto: '/images/cards carrosel/campaigns_Item_01.png',
   photos: ['/images/Campanhas/Natal/natal1.jpg', '/images/Campanhas/Natal/natal2.jpg', '/images/Campanhas/Natal/natal3.jpg'],
   icon: '/images/icon-natal-valor-de-uma-vida.svg',
@@ -68,6 +77,14 @@ export default function Home() {
           fontColor={'text-rose-500'}
           id={'natal_solidario'}
           url={'https://www.instagram.com/p/Cm9OdnIuIQh/?img_index=1'}
+        />
+       
+        <Campaigns
+          campaign={natal2023}
+          mainColor={'bg-rose-500'}
+          fontColor={'text-rose-500'}
+          id={'natal_solidario_2023'}
+          url={'https://www.instagram.com/p/C04Kpa-scs2/?img_index=1'}
         />
 
         <Campaigns

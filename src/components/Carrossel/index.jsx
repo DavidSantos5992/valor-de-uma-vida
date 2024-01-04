@@ -17,11 +17,11 @@ export default function Carrossel({ title, className, type }) {
         },
 
         {
-            name: 'inverno',
-            photo: '/images/cards carrosel/campaigns_Item_02.png',
+            name: 'dia das crianças',
+            photo: '/images/cards carrosel/campaigns_Item_04.png',
             text: '',
-            alt: 'Camapanha de inverno valor de uma vida',
-            id: 'inverno_solidario'
+            alt: 'Camapanha de dia das crinaças valor de uma vida',
+            id: 'natal_solidario_2023'
         },
 
         {
@@ -31,6 +31,18 @@ export default function Carrossel({ title, className, type }) {
             alt: 'Camapanha de dia das crinaças valor de uma vida',
             id: 'diaDasCriancas_solidario'
         },
+
+        {
+            name: 'inverno',
+            photo: '/images/cards carrosel/campaigns_Item_02.png',
+            text: '',
+            alt: 'Camapanha de inverno valor de uma vida',
+            id: 'inverno_solidario'
+        },
+
+      
+
+    
 
     ])
 
