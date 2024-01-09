@@ -16,8 +16,8 @@ const natal = {
 
 const natal2023 = {
   title: 'natal solidário 2023',
-  mainPhoto: '/images/cards carrosel/campaigns_Item_01.png',
-  photos: ['/images/Campanhas/Natal/natal1.jpg', '/images/Campanhas/Natal/natal2.jpg', '/images/Campanhas/Natal/natal3.jpg'],
+  mainPhoto: '/images/cards carrosel/campaigns_Item_04.png',
+  photos: ['/images/Campanhas/natal2023/ana.jpg', '/images/Campanhas/natal2023/papai-noel.jpg', '/images/Campanhas/natal2023/pintura.jpg'],
   icon: '/images/icon-natal-valor-de-uma-vida.svg',
   arrowIcon: '/images/btn_Icon-rose.svg',
   alt: 'natal solidário valor de uma vida'
