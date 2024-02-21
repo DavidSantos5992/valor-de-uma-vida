@@ -48,7 +48,8 @@ const partners = [
 
 export const metadata = {
   title: 'Valor de uma Vida',
-  description: 'ONG, valor vida, ajudar pessoas, verdadeiro valor da vida, como ajudar uma ong, fazer doação para ong, solidariedade, ajudar pessoas, valores materiais, como calcular o valor de uma vida, como doar para uma ong, verdadeiro valor da vida, qualquer motivo, ong varzea paulista, ong jundiai, Ong Jundiai, ONG JUNDIAI, ONG JUNDIAI',
+  description: 'O Valor de Uma Vida é uma entidade não governamental que atua desde 2014 na área do terceiro setor. Nosso objetivo principal é prestar auxílio a pessoas com vulnerabilidade e portadoras de diversas doenças crônicas',
+  keywords: 'ong,valor vida, como ajudar uma ong, fazer doação para ong, valor de uma vida, solidariedade, ajudar pessoas, verdadeiro valor da vida,quanto vale uma vida, valores materiais'
 };
 
 
@@ -82,7 +83,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content="Ong não governamental, voltada para ajuda de, crianças, adultos e idosos, com doenças crônicas" />
 
         {/* imagem a ser exibida quando o conteúdo do seu site é compartilhado em redes sociais. */}
-        <meta property="og:image" content="/images/hero_Logo.svg" />
+        <meta property="og:image" content="/images/logo.png" />
 
         {/* define o tipo de conteúdo do seu site, como "website", "article", "product", etc. */}
         <meta property="og:type" content="website" />
