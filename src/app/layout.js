@@ -97,10 +97,11 @@ export default function RootLayout({ children }) {
       <body>
 
         <Script
+          id="google-tag-manager-script"
           src="https://www.googletagmanager.com/gtag/js?id=G-FF8F005LXF"
           strategy="afterInteractive"
         />
-        <Script strategy="afterInteractive">
+        <Script id="inline-script" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
