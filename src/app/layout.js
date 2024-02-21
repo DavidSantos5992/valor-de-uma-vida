@@ -20,6 +20,7 @@ const mesabrasilImg = require('../../public/images/parceiros/img_Mesa_Brasil.svg
 const sescImg = require('../../public/images/parceiros/img_Sesc.svg');
 const ksbImg = require('../../public/images/parceiros/img_KSB.svg');
 const RotaryImg = require('../../public/images/parceiros/img_Rotary.svg');
+const thyssenkrupp = require('../../public/images/parceiros/Thyssenkrupp.svg');
 import BannerPartner from '@/components/BannerPartner';
 
 const partners = [
@@ -38,6 +39,10 @@ const partners = [
   {
     name: 'Rotary Varzea Paulista parceiro Valor de uma Vida',
     image: RotaryImg
+  },
+  {
+    name: 'thyssenkrupp Varzea Paulista parceiro Valor de uma Vida',
+    image: thyssenkrupp
   },
 ];
 
