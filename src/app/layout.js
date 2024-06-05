@@ -21,6 +21,7 @@ const sescImg = require('../../public/images/parceiros/img_Sesc.svg');
 const ksbImg = require('../../public/images/parceiros/img_KSB.svg');
 const RotaryImg = require('../../public/images/parceiros/img_Rotary.svg');
 const thyssenkrupp = require('../../public/images/parceiros/Thyssenkrupp.svg');
+const ND_CAR = require('../../public/images/parceiros/ND-CAR.svg');
 import BannerPartner from '@/components/BannerPartner';
 
 const partners = [
@@ -43,6 +44,10 @@ const partners = [
   {
     name: 'thyssenkrupp Varzea Paulista parceiro Valor de uma Vida',
     image: thyssenkrupp
+  },
+  {
+    name: 'Auto peças e serviços',
+    image: ND_CAR
   },
 ];
 
