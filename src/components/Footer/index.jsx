@@ -56,7 +56,7 @@ export default function Footer() {
                     Desenvolvido por:
                     <a href="https://www.astrocode.com.br/"
                         target="_blank"
-                        style="text-decoration: none;"
+                        className=''
                     >
                         Astro Code
                     </a>
