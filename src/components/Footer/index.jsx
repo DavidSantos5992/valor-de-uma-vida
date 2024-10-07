@@ -58,7 +58,9 @@ export default function Footer() {
                         target="_blank"
                         className=''
                     >
-                        Astro Code
+                        <strong>
+                            Astro Code
+                        </strong>
                     </a>
                 </p>
 
