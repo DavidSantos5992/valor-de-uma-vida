@@ -52,6 +52,16 @@ export default function Footer() {
                 </ul> */}
 
                 <p>Copyright &copy; 2023 O Valor de Uma Vida. Todos os direitos reservados.</p>
+                <p>
+                    Desenvolvido por:
+                    <a href="https://www.astrocode.com.br/"
+                        target="_blank"
+                        style="text-decoration: none;"
+                    >
+                        Astro Code
+                    </a>
+                </p>
+
             </footer>
 
         </>
