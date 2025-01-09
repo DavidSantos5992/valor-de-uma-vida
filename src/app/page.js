@@ -23,6 +23,15 @@ const natal2023 = {
   alt: 'natal solidário valor de uma vida'
 }
 
+const natal2024 = {
+  title: 'natal solidário 2024',
+  mainPhoto: '/images/cards carrosel/campaigns_Item_05.png',
+  photos: ['/images/Campanhas/natal2024/ester.jpg', '/images/Campanhas/natal2024/ana.jpg', '/images/Campanhas/natal2024/presente.jpg'],
+  icon: '/images/icon-natal-valor-de-uma-vida.svg',
+  arrowIcon: '/images/btn_Icon-rose.svg',
+  alt: 'natal solidário valor de uma vida'
+}
+
 const inverno = {
   title: 'inverno solidário',
   mainPhoto: '/images/cards carrosel/campaigns_Item_02.png',
@@ -85,6 +94,14 @@ export default function Home() {
           fontColor={'text-rose-500'}
           id={'natal_solidario_2023'}
           url={'https://www.instagram.com/p/C04Kpa-scs2/?img_index=1'}
+        />
+      
+        <Campaigns
+          campaign={natal2024}
+          mainColor={'bg-rose-500'}
+          fontColor={'text-rose-500'}
+          id={'natal_solidario_2024'}
+          url={'https://www.instagram.com/p/DEfg4fFxgsd/?img_index=1'}
         />
 
         <Campaigns

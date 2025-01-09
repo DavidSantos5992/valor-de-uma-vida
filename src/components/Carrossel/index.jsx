@@ -23,6 +23,14 @@ export default function Carrossel({ title, className, type }) {
             alt: 'Camapanha de dia das crinaças valor de uma vida',
             id: 'natal_solidario_2023'
         },
+     
+        {
+            name: 'dia das crianças',
+            photo: '/images/cards carrosel/campaigns_Item_05.png',
+            text: '',
+            alt: 'Camapanha de dia das crinaças valor de uma vida',
+            id: 'natal_solidario_2024'
+        },
 
         {
             name: 'dia das crianças',
