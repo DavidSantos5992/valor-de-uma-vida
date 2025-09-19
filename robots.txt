@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Permitir acesso a todas as páginas principais
+Allow: /index.html
+Allow: /about.html
+Allow: /donation.html
+
+# Permitir recursos estáticos
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /fonts/
+
+# Bloquear arquivos desnecessários para SEO
+Disallow: /*.git
+Disallow: /style.css
+
+# Sitemap
+Sitemap: https://www.valordeumavida.com.br/sitemap.xml
+
+# Configurações específicas para bots de redes sociais
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /

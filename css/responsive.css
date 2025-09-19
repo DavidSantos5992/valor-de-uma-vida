@@ -1,0 +1,627 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.search-forum {
+  left: -250px;
+}
+.main-menu ul li a {
+  padding: 28px 8px;
+}
+.slider-wraper{width:970px;}
+.volunteer-form::before {
+	width: 100%;
+}	
+.info-box {
+  padding-left: 26px;
+}
+.donate-box-button a {
+  padding: 14px 20px;
+}
+.volunteer-form > h1 {
+  font-size: 32px;
+}
+.single-causes-text {
+  padding: 30px 10px;
+}
+.single-causes-text h2 a {
+  font-size: 14px;
+}
+.single-causes-text h2{margin-bottom:5px}
+.single-causes-text p {
+	font-size: 14px;margin-bottom:10px
+}
+.single-post-text li a {
+	padding-right: 0;
+}
+.donate-amount span {
+	padding: 10px 13px;
+}
+.home2-logo.logo {
+	margin-top: 24px;
+}
+.cause-list-thumb {
+  width: 40%;
+  margin-right: 20px;
+  float: left;
+}
+.cause-list-inner {
+  width: 50%;
+  float: right;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+body {
+font-size: 15px;
+line-height: 24px;
+}	
+h1 {
+font-size: 22px;
+}
+h2 {
+font-size: 18px;
+}
+h3 {
+font-size: 16px;
+}
+.volunteer-form::before {
+	width: 100%;
+	left: 0;
+}
+.donation-status{margin-top:40px;}
+.single-causes-detials img{margin-bottom:20px;}	
+.sidebar h1{
+margin-top: 40px;
+margin-bottom: 25px;	
+}
+.billing-form.billing-details{
+	padding-right:0px;
+}
+.billing-form.shipping-details {
+    padding-left: 0;
+    margin-top: 30px;
+}
+.info-box {
+  padding-left: 0;
+}
+.sec-title h1 {
+	font-size: 28px;
+}
+.social-profile li a i {
+	height: 30px;
+	line-height: 30px;
+	margin: 0 0px;
+	width: 30px;
+}
+.social-profile li a {
+  margin-bottom: 5px;
+}
+.main-menu ul li a {
+  padding: 29px 5px;font-size:13px
+}
+.cart-button {
+  padding: 28px 60px;
+}
+.site-search {
+  padding: 28px 20px;
+}
+.search-forum {
+  left: -218px;
+}
+.all-slide .owl-item {
+  height: 550px;
+}
+.slider-wraper{width:100%;}
+.slider-text {
+width:100%;
+}
+.donate-box-inner {
+  margin-bottom: 40px;
+}
+.donate-box > img {
+  width: 100%;
+}
+.slider-text h1 {
+  font-size: 36px;
+}
+.volunteer-form {
+  padding:50px 50px 50px 50px;
+}
+.testimonial-text > h1,
+.volunteer-form > h1 {
+	font-size: 28px;
+}
+.blog-meta {
+	padding: 0px 10px;
+}
+.causes-fund span {
+	width: 100%;
+	display: inline-block;
+}
+.single-causes-text {
+	padding:20px 10px;
+}
+.blog-grid-filter li, .simplefilter li {
+	padding: 10px 26px;
+}
+.causes-button span a {
+  margin: 10px ;
+}
+.counting_sl {
+  margin: 30px 0;
+}
+.counting_sl h4 {
+  font-size: 14px;
+}
+.feature-thumb > img {
+  width: 100%;
+}
+.testimonial-text {
+  margin-bottom: 70px;
+}
+.blog-meta li {
+ padding: 5px 0px;
+}
+.bussiness-time {
+  margin-top: 33px;
+}
+.wedget-newsletter {
+	margin-top: 40px;
+}
+
+.all-patner.owl-carousel.owl-theme img {
+  padding: 50px;
+}
+.team-sec .col-lg-3.col-md-3.col-sm-6.col-xs-12:nth-child(2n+1) {
+  clear: both;
+}
+.update-cart-left input[type="text"] {
+	width: 160px;
+    padding: 14px 6px;
+}
+.update-cart-right li a, .checkout-button a{
+	    padding: 14px 20px;
+}
+.payment-method {
+	padding-left:0px;margin-top:30px
+}
+.donate-amount {
+	margin-bottom: 30px;
+}
+.sidebar {
+	margin-top: 40px;
+}
+.product-text h2 a {
+	font-size: 16px;
+}
+.product-meta .add-to-cart a {
+	padding: 10px 10px;
+}
+.add-to-rating a i {
+	font-size: 12px;
+}
+
+.home2-logo.logo {
+	text-align: center;
+}
+.hd-sec.home2 .menu {
+	text-align: center;
+}
+.admin-email, .social-link{border:none;}
+.donor-testimonial .owl-controls {
+	top: 120px;
+}
+.faq-sec {
+	padding-right:0px;
+}
+
+}
+@media only screen and (min-width: 810px) and (max-width: 991px) {
+.slider-text {
+  padding-left: 120px;
+  padding-right: 120px;
+}		
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+body {
+font-size: 14px;
+line-height: 24px;
+}	
+h1 {
+font-size: 22px;
+}
+h2 {
+font-size: 18px;
+}
+h3 {
+font-size: 16px;
+}
+.pt-100{padding-top:60px}
+.pb-100{padding-bottom:60px}
+.pb-30{padding-bottom:10px}
+.pb-70{padding-bottom:30px}
+.pb-80{padding-bottom:40px}
+.faq-sec {
+	padding-right:0px;
+}
+.gallery-full-sec .inner{width:50%;}
+.billing-form.billing-details{
+	padding-right:0px;
+}
+.search-forum{left:0;}
+
+.billing-form.shipping-details {
+    padding-left: 0;
+    margin-top: 30px;
+}
+.single-causes-detials img{margin-bottom:20px;}
+.sidebar h1{
+margin-top: 40px;
+margin-bottom: 25px;	
+}
+.bussiness-time{margin:40px 0px;}
+.event-button-area, .event-button {
+	position: relative;
+	display: inline;
+	margin-top: 10px;
+}
+.event-desc .event-meta ul {
+	position: relative;
+	top: 0;
+	transform: none;
+}
+.event-desc .event-meta {
+	float: left;
+	height: 100%;
+	padding-left: 20px;
+	width: 100%;
+	padding-top: 20px;
+}
+.gallery-overlay h2{font-size:14px}
+.counting_sl h2 {
+	font-size: 32px;
+}
+.counting_sl h4 {
+	font-size: 14px;
+}
+.error-page-content h1{margin-left:0px;}
+.event-title h1 {
+	line-height: 32px;
+}
+.admin-email, .social-link{border:none;}
+.top-bar-sec {
+	border-bottom: 0px;
+	padding-top: 70px;
+	padding-bottom: 0;
+}
+.home2-logo.logo {
+	margin-top: 16px;
+	padding-bottom: 15px;
+}
+.event-thumb {
+	width: 100%;
+	float:none;
+}
+.all-testimonial.owl-theme .owl-dots .owl-dot span {
+	top: -3px;
+}
+.sec-title {
+  margin-left: 0;
+  margin-right: 0;
+}
+.sec-title h1 {
+  font-size: 28px;
+}	
+.all-patner-sec {
+  padding: 40px 0;
+}
+.info-box {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.info-box span {
+  text-align: center;
+}	
+.volunteer-form {
+  padding:50px 50px 50px 50px;
+}
+.slider-wraper{width:100%;}
+.slider-text {
+width:100%;
+}
+.volunteer-form::before {
+width:100%;
+}
+.blog-grid-filter li {
+	width: 100%;
+	margin-top: 5px;
+}
+.logo {
+	text-align: center;
+	margin-top: 20px;
+}
+.social-profile, .contact-info {
+ display:none;
+}
+.hd-top-sec {
+  padding: 10px;
+}
+
+.donate-box img {
+  width: 100%;
+}
+.hd-sec.home2 .menu {
+	display: none;
+}
+.mean-nav li a i {
+  display: none;
+}
+.donate-box-inner {
+  margin-bottom: 40px;
+}
+.volunteer-form {
+width: 100%;
+padding-right: 50px;
+}
+.feature-thumb > img,
+.causes-thumb  img {
+  width: 100%;
+}
+.counting_sl {
+  margin: 30px 0;
+}
+.all-slide .owl-item {
+  height: 550px;
+}
+.slider-text h1 {
+	font-size: 28px;
+	line-height: 36px;
+}
+.testimonial-text {
+  margin-bottom: 70px;
+}
+.slider-text li a {
+  margin-bottom: 20px;
+}	
+.countup-icon {
+  width: 60px;
+  height: 60px;
+}
+
+
+.breadcrumb-left {
+  text-align: center;
+}
+.breadcrumb-right{text-align:center}
+.breadcrumb-right span {
+  float: none;
+}
+.about-page-thumb img {
+  width: 100%;
+}
+.pagehding-sec {
+	padding-top: 120px;
+	padding-bottom: 48px;
+}
+.page-heading h1 {
+  font-size: 28px;
+}
+.simplefilter {
+  margin-top: 40px;
+}
+.shorttitle{background: #10cb7f none repeat scroll 0 0;
+display: block;
+margin-bottom: 40px;
+padding: 20px;}
+#navbarfiltr.navbar-collapse {
+  border: 0;
+  box-shadow: none;
+}
+.navbarsort .navbar-toggle {
+background: #ff6d0d none repeat scroll 0 0;
+margin-top: 15px;
+}
+.navbarsort .navbar-toggle .icon-bar {
+  background: #fff;
+}
+.footer-wedget-one {
+	margin-bottom: 40px;
+}
+.shorttitle h2 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  display: inline-block;
+  margin-left: 10px;
+}
+#navbar li {
+  display: inline-block;
+  width: 100%;
+}
+#navbar ul li a {
+  padding: 6px 9px;
+}
+
+.simplefilter li {
+display: inline-block;
+width: 100%;
+margin-bottom: 10px;
+}
+.navbarsort{display:block}
+.login-form.billing-form {
+	padding-left: 15px;
+	margin-top: 30px;
+}
+.update-cart-left {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.update-cart-right {
+	text-align: center;
+}
+.col-md-6.no-padding {
+	padding: 0px 15px;
+}
+.payment-method {
+	padding-left:0px;margin-top:30px
+}
+.donate-amount {
+	margin-bottom: 30px;
+}
+.donate-amount input[type="text"] {
+	width: 100%;
+	margin: 20px 0;
+}
+.payment-gateway {
+	margin-top:30px;
+	position: none;
+	top:0px;
+}
+.sidebar {
+	margin-top: 40px;
+}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 475px) {
+.all-patner.owl-carousel.owl-theme img {
+  padding: 40px;
+}
+.donate-box-text {
+  width: 100%;
+}
+.donate-box-button {
+float: left;
+width: 100%;
+display: inline-flex;
+}
+.volunteer-form > h1 {
+  font-size: 20px;
+}
+.all-patner.owl-carousel.owl-theme img {
+  padding: 0;
+}
+.product-details-inner .product-text span {
+	width: 100%;
+	margin-bottom: 15px;
+	display: inline-block;
+	width: 100%;
+}
+
+
+}
+@media only screen and (min-width: 0px) and (max-width: 399px) {	
+.cart-button {
+  padding: 28px 60px;
+}	
+.product-tab li {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}	
+}
+@media only screen and (min-width: 0px) and (max-width: 510px) {
+.speaker-info {
+	position: relative;
+	top: 0;
+	 transform:none;
+	display: inline-block;
+	margin-top: 15px;
+}	
+.speaker-thumb {
+	width: 100%;
+	float: none;
+}
+.speaker-thumb img {
+	width: 100%;
+}
+.event-img-overlay ul {
+	margin: 0;padding:10px 0px
+}	
+}
+
+@media only screen and (min-width: 0px) and (max-width: 659px) {
+.cause-list {
+	position: relative;
+	width: 100%;background:#fff
+}
+
+.cause-list-thumb {
+	width: 100%;
+	margin-right: 0;
+	float: none;
+}
+.cause-list-inner {
+	width: 100%;
+	float: none;
+	position: absolute;
+	bottom: 0;
+}
+.cause-list-inner .single-causes-text {
+	text-align: left;
+	position: relative;
+	transform: none;
+	padding-top: 30px;background: #fff;
+}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+.post-tags {
+  display: inline-block;
+  float: none;
+  width: 100%;
+}
+
+}
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+.post-tags {
+  display: inline-block;
+  float: none;
+  width: 100%;
+}
+.update-cart-left input[type="submit"] {
+margin-top:20px
+}
+.event-speaker-tab li {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 390px) {
+.sec-title h1 {
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+.update-cart-right li:last-child a {
+margin-top:20px
+}
+.cause-list-inner {
+	width: 100%;
+	float: none;
+	position: absolute;
+	bottom: -90px;
+}
+.cause-list {
+	margin-bottom: 118px;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 570px) {
+	.blog-meta{padding:0px 10px;}
+	.blog-meta h4{
+	line-height:14px;
+	margin-bottom:5px;
+	}
+	.blog-meta h4 a {
+	font-size: 12px;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 359px) {
+
+.commentar-sec img {
+  margin-bottom:20px;
+}
+
+}
